@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a401e7918faa3a97324ebe16adfa994c",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      "MD5-CAM-1.0.1" : "4b3a36adf461cd76a2bea0406888a667",
+      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -163,19 +165,19 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.1",
+        "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-063.v1",
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.2",
+        "nodeId" : "at0.6",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-limitation_of_treatment-064.v0",
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -279,7 +281,7 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "43ab1f51-7ffe-4fe8-a3cb-c956f6a31a82",
+    "uid" : "cab53008-fe72-4887-b63c-376e8529b99b",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -288,62 +290,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F878CF8DC1D1C03B615B010EC1399BC3"
+        "PARENT:MD5-CAM-1.0.1" : "EFE9BDEFE0EF572B821B77012E7AF8DD"
       },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.",
-          "keywords" : [ "Leben, Testament, Entscheidung, Richtlinie, Verfügung, Recht, Präferenz, EoL, DNR, DNACPR, Reanimation" ],
-          "use" : "Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.\r\n\r\nDie Anordnung zur medizinischen Versorgung kann auch als Patientenverfügung, Patientenanordnung, Patientenentscheidung, Patientenverweigerung, persönliche Anordnung, Patientenverfügung zur medizinischen Versorgung oder medizinische Anordnung bezeichnet werden. Eine Patientenverfügung wird üblicherweise verwendet, um eine lebenserhaltende Behandlung zu verweigern, die unter anderem Folgendes umfassen kann: Herz-Lungen-Wiederbelebung (HLW), klinisch unterstützte Ernährung und Flüssigkeitszufuhr, unterstützte Beatmung und Antibiotika bei lebensbedrohlichen Infektionen. Sie könnte auch positive Präferenzen und Anweisungen für zukünftige Prioritäten in der Gesundheitsversorgung, bei den Lebensumständen und in persönlichen Angelegenheiten beinhalten. Eine fähige Person kann eine Richtlinie zur medizinischen Vorabversorgung erstellen, um ihre Präferenzen für die medizinische Versorgung und Behandlung im Voraus festzuhalten, die als Leitfaden für die Entscheidungsfindung in zukünftigen Situationen dienen soll, in denen die Person nicht in der Lage ist, Entscheidungen zu treffen oder mitzuteilen. \r\n\r\nDieser Archetyp wurde speziell als Rahmen oder Struktur entwickelt, die für die komplexe Vielfalt von Anwendungsfällen und lokalen Anforderungen erweitert werden kann, indem eine Vielzahl möglicher CLUSTER-Archetypen verschachtelt wird, die je nach nationalen oder anderen lokalen Anforderungen spezifische Angaben enthalten. \r\n\r\nIn einigen Ländern ist eine Patientenverfügung rechtlich überzeugend, ohne einen offiziellen Rechtsstatus zu haben. In anderen Ländern handelt es sich um ein rechtsverbindliches Dokument und es MUSS sichergestellt werden, dass der Archetyp der Patientenverfügung und alle verschachtelten Archetypen den einschlägigen rechtlichen Anforderungen entsprechen.\r\n",
-          "misuse" : "Nicht zur Repräsentation von Organspende-Präferenzen zu verwenden. Verwenden Sie für diesen Zweck einen bestimmten Archetyp.\r\n\r\nNicht zur Repräsentation von Angaben über eine Vollmacht oder einen anderen gesetzlichen Vertreter/Vollmachtgeber zu verwenden. Verwenden Sie für diesen Zweck einen bestimmten Archetyp.\r\n\r\nNicht zur Repräsentation von einer Entscheidung zur Einstellung oder Einschränkung einer bestimmten medizinischen Behandlung oder Versorgung zu verwenden. Verwenden Sie für diesen Zweck einen bestimmten Archetyp.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere et individs viljeserklæring i forbindelse medisinsk fremtidig behandling og omsorg.",
-          "keywords" : [ "livstestament, EoL, End-of-life, R-, Res minus, livsforlengende, behandlingsreservasjon" ],
-          "use" : "Bruk som et rammeverk for å kommunisere et individs vilje i forbindelse med fremtidig medisinsk behandling og omsorg.\r\n\r\nEt individ som har mental kapasitet til det kan lage en viljesrerklæring som uttrykker sine ønsker knyttet til fremtidig medisinsk behandling og omsorg. Dette har til hensikt å veilede beslutninger i fremtidige situasjoner der individet er ute av stand til å gjøre, eller formidle egne valg. Et fremtidig behandlingsvalg blir normalt brukt til å motsette seg livsforlengende behandling som kan, men er ikke begrenset til, hjerte- lungeredning (HLR), kunstig tilført ernæring og væske, invasiv- og non-invasiv ventilasjonsstøtte, og antibiotikabehandling av livstruende infeksjoner. I tillegg kan det inneholde ønsker og instrukser av ikke-restriktiv art for fremtidig behandling, boform eller personlige forhold. For eksempel å prioritere god smertelindring til tross for at dette kan forkorte livet.\r\n\r\nDenne arketypen har blitt designet som et rammeverk for å kunne dekke et vidt spekter av brukssituasjoner ved å nøste inn en eller flere CLUSTER-arketyper med spesifikke detaljer og nasjonale eller lokale krav. \r\n\r\nI noen land er et et fremtidig behandlingsvalg retningsgivende uten å være et offisielt juridisk dokument. I andre land er det juridisk bindende, og det må da sikres at arketypen \"Fremtidig behandlingsvalg\" og eventuelle arketyper som nøstes inn i denne, tilfredsstiller de juridiske krav som stilles lokalt.",
-          "misuse" : "Skal ikke brukes for å registrere ønsker knyttet til organdonasjon. Bruk spesifikke arketyper for dette formålet.\r\n\r\nSkal ikke brukes for å registrere stedfortredende beslutningstaker eller annen juridisk representant, som for eksempel verge, for individet. Bruk spesifikke arketyper for dette formålet.\r\n\r\nSkal ikke brukes for å dokumentere selve beslutningen tatt i et behandlingsforløp om å avslutte eller begrense medisinsk behandling eller omsorg. Bruk spesifikke arketyper for dette formålet.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the preferences of an individual for future medical treatment and care.",
-          "keywords" : [ "living, will, advance, advanced, directive, decision, legal, preference, EoL, DNR, DNACPR, resuscitation," ],
-          "use" : "Use to record the preferences of an individual for future medical treatment and care.\r\n\r\nAdvance care directive may also be known as living will, advance directive, advance decision, advance decision to refuse treatment, personal directive, advance healthcare directive, or medical directive. An advance care directive is commonly used to refuse life-sustaining treatment which may include, but is not limited to: cardiopulmonary resuscitation (CPR); clinically assisted nutrition and hydration; assisted ventilation; and antibiotics for life-threatening infections. It could also include positive preferences and instructions for future health care priorities, living arrangements and personal matters. An individual with capacity may create an advance care directive to record their preferences for medical care and treatment in advance, which is intended to guide decision-making in future situations in which the individual is unable to make or communicate decisions. \r\n\r\nThis archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. \r\n\r\nIn some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.",
-          "misuse" : "Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record a decision to discontinue or limit specific medical treatment or care. Use a specific archetype for this purpose.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_care_directive.v1",
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_care_directive.v2",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-063.v1"
+      "value" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -358,14 +313,16 @@
       "termDefinitions" : {
         "en" : { },
         "nb" : { },
-        "de" : { }
+        "de" : { },
+        "nl" : { },
+        "pt-br" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "3ea33f43-d862-4c0d-b13e-2b12253e3476",
+    "buildUid" : "680cdc05-99ef-439f-bc4d-24e6c94a24cc",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -399,15 +356,43 @@
         "codeString" : "nb"
       },
       "author" : {
-        "name" : "Vebjørn Arntzen, Silje Ljosland Bakke, Liv Laugen",
+        "name" : "Vebjørn Arntzen, Silje Ljosland Bakke, Liv Laugen, Marit Alice Venheim",
         "organisation" : "Oslo University Hospital, Helse Vest IKT AS, ​Oslo University Hospital, Norway",
-        "email" : "varntzen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no, liv.laugen@ous-hf.no"
+        "email" : "varntzen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no, liv.laugen@ous-hf.no, marit.alice.venheim@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Royal Philips",
+        "email" : "vrppizzo@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
       },
       "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "4fa2604b-a1c6-4585-8829-ebb1b4669fde",
+    "uid" : "17b0182f-2e6c-410e-9b49-678df4457fe4",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -416,32 +401,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "AE314FAF01ACBB50C8CB7CBC8EAA33FA"
+        "PARENT:MD5-CAM-1.0.1" : "FEF12ACA9033560751C7E28A75C5EF54"
       },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the decision/s about limitation of future treatment, determined by a senior clinician.",
-          "keywords" : [ "DNR", "DNAR", "DNACPR", "NFR", "resuscitation", "EoL", "directive", "preference" ],
-          "use" : "Use to record the decision/s about limitation of future treatment, determined by a senior clinician. \r\n\r\nIn many clinical situations, there are 'Not For Resuscitation' or 'Do not attempt resuscitation' orders in place, recorded in clinical records. \r\n\r\nThe assumed default is that the patient should be resuscitated as clinically appropriate. This archetype has been designed to explicitly record 'No limitation of treatment' as default. Any alteration to this is also recorded explicitly in the health record. It is also possible to record specific limitations on treatment, for example allowing IV fluids and antibiotics only.\r\n\r\nIn keeping with recent trends, the 'Status' value set comprises 'No limitation of treatment' (for full resuscitation measures), 'Allow natural death' (for no active resuscitation measures, with the exception of treatments providing comfort) and the specification of treatment limitations at a category level.\r\n\r\nThe 'Limitation of treatment' information contained in this archetype should be aligned with an Advanced Care Directive, initiated by the patient or carers, wherever possible.",
-          "misuse" : "Not to be used to record an 'Advanced care directive' - use EVALUATION.advanced_care_directive for this purpose.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.limitation_of_treatment.v0",
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-limitation_of_treatment-064.v0"
+      "value" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -454,14 +422,16 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : { },
+        "nb" : { },
+        "de" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "a6c8461a-0688-4552-ac0f-e4e827f33d55",
+    "buildUid" : "3d99df16-8886-4c9a-b00d-7e1cbc9bd825",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -472,7 +442,35 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Alina Rehberg",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, John Tore Valand",
+        "organisation" : "Oslo University Hospital, Helse Bergen",
+        "email" : "varntzen@ous-hf.no, john.tore.valand@helse-bergen.no"
+      },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
