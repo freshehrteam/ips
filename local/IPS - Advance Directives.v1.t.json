@@ -17,14 +17,14 @@
     "references" : { },
     "conversionDetails" : { },
     "otherDetails" : {
-      "licence" : "",
-      "custodian_organisation" : "openEHR International",
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "14c977b7cf517e1977fb777942b3d088",
+      "MD5-CAM-1.0.1" : "bfc4c90ff2bc2d293c438b0714509ed1",
       "PARENT:MD5-CAM-1.0.1" : "B08FF6569A530B3E5FC70322F07E93B4"
     },
     "details" : {
