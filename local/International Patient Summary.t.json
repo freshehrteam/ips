@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "d9b9c1f2392337aa759deef910b87b64",
+      "MD5-CAM-1.0.1" : "09895b9d8ffdf2a369accd745b894193",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B",
       "original_language" : "ISO_639-1::en",
-      "sem_ver" : "1.0.0-alpha.11",
+      "sem_ver" : "1.0.0-alpha.12",
       "build_uid" : ""
     },
     "details" : {
@@ -125,46 +125,46 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.24",
+        "nodeId" : "at0.30",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Problem List",
+        "archetypeRef" : "Problem List.v1",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.16",
+        "nodeId" : "at0.32",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Allergies & Intolerances",
+        "archetypeRef" : "Allergies & Intolerances.v1",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.22",
+        "nodeId" : "at0.34",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Medication Summary",
+        "archetypeRef" : "Medication Summary.v1",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.26",
+        "nodeId" : "at0.36",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Immunizations",
+        "archetypeRef" : "Immunizations.v1",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.7",
+        "nodeId" : "at0.38",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Diagnostic Results",
+        "archetypeRef" : "Diagnostic Results.v1",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
