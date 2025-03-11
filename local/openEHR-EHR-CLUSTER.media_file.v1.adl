@@ -1,9 +1,8 @@
-archetype (adl_version=1.4; uid=e2c3697a-6163-4bc7-86d0-519dd6b954f9)
+﻿archetype (adl_version=1.4; uid=e2c3697a-6163-4bc7-86d0-519dd6b954f9)
 	openEHR-EHR-CLUSTER.media_file.v1
 
 concept
-	[at0000]
-
+	[at0000]	-- Media file
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -55,21 +54,17 @@ language
 			>
 		>
 	>
-
 description
 	original_author = <
-		["date"] = <"2019-12-10">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
+		["date"] = <"2019-12-10">
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Michael Anywar, Universitätsklinikum SH, Germany","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Paulo Bandiera-Paiva, Federal University of Sao Paulo, Brazil","itai Basel, Private, Israel","SB Bhattacharyya, Sudisa Consultancy Services, India","Stefan Dubois, Dep't of Pathology and Genetics, University Hospitals of Lund and Malmö, Sweden","Grant Forrest, Lunaria Ltd, United Kingdom","Rosane Gotardo, Systema Ltda., Brazil","Heather Grain, Llewelyn Grain Informatics, Australia","Mikkel Johan Gaup Grønmo, Forvaltningssenter EPJ, Helse-Nord, Norway (openEHR Editor)","Joost Holslag, Nedap, Netherlands","Anjali Kulkarni, Karkinos, India","Jörgen Kuylenstierna, eWeave AB, Sweden","Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Michael Lutz, BITsoft, Germany","Manisha Mantri, C-DAC, India","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom","Arunakiry Natarajan, medondo, Germany","Mikael Nyström, Cambio Healthcare Systems AB, Sweden","Ana Pereira, CINTESIS, CUF-Porto, Portugal","Sidharth Ramesh, Kasturba Medical College, India","FREDERICO RIBEIRO, Hospital das Clínicas da UFPE, Brazil","Saeed Samie, Pars Hospital, Iran","Bjoern Schreiweis, UKSH, Germany","Natalia Strauch, Medizinische Hochschule Hannover, Germany","Norwegian Review Summary, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Health Systems, Australia","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)","Michael Zampaglione, Australia","Wouter Zanen, Eurotranplant, Netherlands","Lin Zhang, Taikang Insurance Group, China">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Darstellung einer Mediendatei erworbenen und verwendeten im Bereich des Gesundheitswesens sowie der Informationen zu den zugehörigen Metadaten.">
-			keywords = <"Bild","Audio","Text","Video","Anwendung","Datei","Multimedia","DICOM","digital","Dokument","Foto","Sprachaufnahme">
 			use = <"Zur Darstellung einer Mediendatei erworbenen und verwendeten im Bereich des Gesundheitswesens sowie der Informationen zu den zugehörigen Metadaten.
 
 Die Absicht dieses Archetyps besteht nur darin, die Mediendatei und die Metadaten, die ihre Erfassung beschreiben, darzustellen. Dieser Archetyp wird in einen anderen Archetyp verschachtelt, normalerweise ein OBSERVATION- oder ACTION-Archetyp, der den Kontext und die Umstände im Zusammenhang mit der Erfassung der Mediendatei enthält. Zum Beispiel werden Details zu Modalität, Ansicht oder Aspekt eines Röntgenbildes und DICOM-Details im Archetyp OBSERVATION.imaging_exam_result dargestellt.
@@ -92,6 +87,7 @@ Wenn eine Reihe von Mediendateien als einzelnes Element dargestellt wird, z. B. 
 
 
 ">
+			keywords = <"Bild", "Audio", "Text", "Video", "Anwendung", "Datei", "Multimedia", "DICOM", "digital", "Dokument", "Foto", "Sprachaufnahme">
 			misuse = <"Nicht zur Darstellung von Informationen, Lehr- oder Schulungsmaterial verwenden, die außerhalb des Gesundheitsprozesses generiert werden, z. B. Broschüren zur Patientenaufklärung, die dem Patienten oder der Pflegeperson zur Verfügung gestellt werden. Verwenden Sie für diesen Zweck den Archetyp CLUSTER.information_resource.
 
 Nicht zur Darstellung von Referenz auf eine externe digitale Ressource, die als Quelle für maßgebliche Informationen oder Experteninformationen verwendet wird. Verwenden Sie für diesen Zweck den Archetyp CLUSTER.knowledge_base_reference.">
@@ -99,7 +95,6 @@ Nicht zur Darstellung von Referenz auf eine externe digitale Ressource, die als 
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
 			purpose = <"Para registar um ficheiro de media adquirido ou utilizado como parte do processo médico e detalhes sobre os metadados associados.">
-			keywords = <"imagem","áudio","texto","vídeo","aplicação","ficheiro","multimédia","áudio","DICOM","digital","documento","fotografia","voz">
 			use = <"Utilize para registar um ficheiro de media adquirido ou utilizado como parte do processo médico e detalhes sobre os metadados associados.
 
 A intenção deste arquétipo é apenas armazenar o ficheiro de media e os metadados que descrevem a sua captura. Este arquétipo estará aninhado dentro de outro arquétipo, geralmente uma OBSERVATION ou ACTION que conterá o contexto e as circunstâncias relacionadas com a captura do ficheiro de media. Por exemplo, os detalhes sobre a modalidade, visualização ou aspeto de uma imagem radiográfica e detalhes DICOM serão captados no arquétipo OBSERVATION.imaging_exam_result.
@@ -118,6 +113,7 @@ O elemento de dados 'Conteúdo' permite que o ficheiro de media seja capturado e
 Se tiver sido capturado mais do que um ficheiro de media, como imagens “antes” e “depois” de uma ferida, utilize uma instância separada deste arquétipo para representar cada ficheiro de media.
 
 Se uma série de ficheiros de media for representada como um único item, como uma tomografia computorizada, uma instância desse arquétipo pode ser utilizada para representar um caminho URI para o grupo.">
+			keywords = <"imagem", "áudio", "texto", "vídeo", "aplicação", "ficheiro", "multimédia", "áudio", "DICOM", "digital", "documento", "fotografia", "voz">
 			misuse = <"Não deve ser utilizado para representar informações, materiais instrucionais ou educativos fornecidos a um indivíduo ou ao seu cuidador, por exemplo, folhetos educativos para doentes. Utilize o CLUSTER.information_resource para este fim.
 
 Não deve ser utilizado para registar uma referência para uma base de conhecimento - utilize CLUSTER.knowledge_base_reference para este fim.">
@@ -125,7 +121,6 @@ Não deve ser utilizado para registar uma referência para uma base de conhecime
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att registrera en mediefil som förvärvats eller använts som en del i en vårdprocess, samt detaljer om filens metadata.">
-			keywords = <"bild","foto","ljud","text","video","film","applikation","fil","multimedia","DICOM","digital","dokument","röst">
 			use = <"Används för att registrera en mediefil som förvärvats eller används som del i en vårdprocess, samt detaljer om filens metadata. 
 
 Avsikten med denna arketyp är att inneha mediefilen och dess metadata som beskriver dess insamling. Arketypen nästlas vanligtvis i en OBSERVATION eller ACTION arketyp som innehåller information om kontexten och sammanhanget för registreringen av mediefilen. Till exempel kan detaljer om modaliteten, synvinkel eller aspekt av en röntgenbild eller detaljer rörande DICOM-filer lagras i arketypen OBSERVATION.imaging_exam_result.
@@ -144,6 +139,7 @@ Datafältet \"Innehåll\" tillåter mediefilen att förvärvas och lagras i jour
 Om mer än en mediefil har registrerats, såsom \"före\" och \"efter\" bilder av ett sår, använd separata instanser av denna arketyp för att representera varje mediefil.
 
 Om en serie av mediefiler representeras av ett enda objekt, till exempel en datortomografi, kan en instans av denna arketyp användas för att representera en URI sträng till filen.">
+			keywords = <"bild", "foto", "ljud", "text", "video", "film", "applikation", "fil", "multimedia", "DICOM", "digital", "dokument", "röst">
 			misuse = <"Ska inte användas för att representera information, instruktions- eller undervisningsmaterial tilldelade till en patient eller deras vårdgivare, till exempel som utbildningsbroschyrer. Använd CLUSTER.information_resource för detta syfte.
 
 Ska inte användas för att registrera en referens till en databas. Använd CLUSTER.knowledge_base_reference för detta syfte.
@@ -153,7 +149,6 @@ Ska inte användas för att registrera en referens till en databas. Använd CLUS
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å dokumentere detaljer om en mediafil, samt tilknyttede metadata, som er ervervet eller brukt i forbindelse med en helsetjeneste.">
-			keywords = <"bilde","foto","audio","tekstfil","video","applikasjon","fil","multimedia","DICOM","digital","dokument","skannet","scannet","lyd">
 			use = <"Brukes for å dokumentere detaljer om en mediafil, samt tilknyttede metadata, som er ervervet eller brukt i forbindelse med en helsetjeneste.
 
 Hensikten med denne arketypen er kun å være en bærer for mediafilen og metadataene som beskriver innholdet i filen. Denne arketypen vil være nøstet i en annen arketype, vanligvis en OBSERVATION eller ACTION arketype, som vil inneholde konteksten og omstendighetene knyttet til hvordan innholdet ble dannet. For eksempel blir detaljer om modalitet, visning eller aspekt av et radiologisk bilde og DICOM-detaljer dokumentert i arketypen OBSERVATION.imaging_exam_result.
@@ -172,6 +167,7 @@ Dataelementet \"Innhold\" gjør det mulig å fange og lagre mediafiler i den ele
 Hvis mer enn én mediafil skal dokumenteres, for eksempel bilder før og etter behandling av et sår, bruk en forekomst av denne arketypen for hvert bilde.
 
 Hvis en serie mediafiler er representert som et enkelt element, for eksempel en CT-skanning, kan en forekomst av denne arketypen brukes til å representere en URI til gruppen/serien.">
+			keywords = <"bilde", "foto", "audio", "tekstfil", "video", "applikasjon", "fil", "multimedia", "DICOM", "digital", "dokument", "skannet", "scannet", "lyd">
 			misuse = <"Skal ikke brukes til å representere informasjon, instruksjons- eller utdanningsmateriale levert til en person, eller dens omsorgsperson, for eksempel brosjyrer for pasientopplæring. Bruk CLUSTER.information_resource til dette formålet.
 
 Skal ikke brukes til å registrere en referanse til en kunnskapsbase - bruk CLUSTER. Knowledge_base_reference for dette formålet.">
@@ -179,7 +175,6 @@ Skal ikke brukes til å registrere en referanse til en kunnskapsbase - bruk CLUS
 		["sk"] = <
 			language = <[ISO_639-1::sk]>
 			purpose = <"Na zaznamenanie mediálneho súboru, ktorý sa získa alebo použije ako súčasť procesu zdravotnej starostlivosti, a podrobností o súvisiacich metadátach.">
-			keywords = <"obrázky","zvuky","text","video","aplikácie","súbory","multimédiá","zvuky","DICOM","digital","dokument","fotka","hlasový záznam">
 			use = <"Používa sa na zaznamenanie mediálneho súboru, ktorý sa získa alebo použije ako súčasť procesu zdravotnej starostlivosti, a podrobností o súvisiacich metadátach.
 
 Zámerom tohto archetypu je iba uchovávať mediálny súbor a metadáta popisujúce jeho zachytenie. Tento archetyp bude vnorený do iného archetypu, zvyčajne POZOROVANIA alebo AKCIE, ktorá bude obsahovať kontext a okolnosti súvisiace so zachytením mediálneho súboru. Napríklad podrobnosti o modalite, zobrazení alebo aspekte rádiografickej snímky a podrobnosti DICOM budú zachytené v rámci archetypu OBSERVATION.imaging_exam_result.
@@ -198,6 +193,7 @@ Príklady zahŕňajú, ale nie sú obmedzené na:
 Ak bol zachytený viac ako jeden mediálny súbor, napríklad obrázky rany „pred“ a „po“, použite na reprezentáciu každého mediálneho súboru samostatnú inštanciu tohto archetypu.
 
 Ak je séria mediálnych súborov reprezentovaná ako jedna položka, ako napríklad CT sken, tak sa môže jedna inštancia tohto archetypu použiť na reprezentáciu cesty pomocou URI k skupine.">
+			keywords = <"obrázky", "zvuky", "text", "video", "aplikácie", "súbory", "multimédiá", "zvuky", "DICOM", "digital", "dokument", "fotka", "hlasový záznam">
 			misuse = <"Nesmie sa používať na reprezentáciu informácií, inštruktážnych alebo vzdelávacích materiálov dodávaných jednotlivcom alebo ich opatrovateľom, napríklad letáky s informáciami pre pacientov. Na tento účel použite CLUSTER.information_resource.
 
 Nesmie sa používať na zaznamenanie odkazu na bázu znalostí – na tento účel použite CLUSTER.knowledge_base_reference.">
@@ -205,8 +201,6 @@ Nesmie sa používať na zaznamenanie odkazu na bázu znalostí – na tento ú�
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record a media file that is acquired or used as part of the healthcare process, and details about associated metadata.">
-			keywords = <"image","audio","text","video","application","file","multimedia","audio","DICOM","digital","document","photo","voice">
-			copyright = <"© openEHR Foundation">
 			use = <"Use to record a media file that is acquired or used as part of the healthcare process, and details about associated metadata.
 
 The intent of this archetype is only to hold the media file and the metadata describing its capture. This archetype will be nested within another archetype, usually an OBSERVATION or ACTION that will hold the context and circumstances related to the capture of the media file. For example, details about the modality, view or aspect of a radiographic image and DICOM details will be captured within the OBSERVATION.imaging_exam_result archetype. 
@@ -225,14 +219,15 @@ The 'Content' data element allows for the media file to be captured and stored w
 If more than one media file has been captured, such as 'before' and 'after' images of a wound, use a separate instance of this archetype to represent each media file.
 
 If a series of media files is represented as a single item, such as a CT scan, one instance of this archetype can be used to represent a URI path to the group.">
+			keywords = <"image", "audio", "text", "video", "application", "file", "multimedia", "audio", "DICOM", "digital", "document", "photo", "voice">
 			misuse = <"Not to be used to represent information, instructional or educational material supplied to an individual, or their carer, for example patient education leaflets. Use the CLUSTER.information_resource for this purpose.
 
 Not to be used to record a reference to a knowledge base - use CLUSTER.knowledge_base_reference for this purpose.">
+			copyright = <"© openEHR Foundation">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"Om een mediabestand vast te leggen dat is verkregen of gebruikt als onderdeel van het zorgproces, en details over bijbehorende metadata.">
-			keywords = <"afbeelding","audio","tekst","video","applicatie","bestand","multimedia","geluid","DICOM","digitaal","document","foto","spraak">
 			use = <"Te gebruiken om een mediabestand vast te leggen dat is verkregen of gebruikt als onderdeel van het zorgproces, en details over bijbehorende metadata.
 
 Dit archetype is alleen bedoeld voor het mediabestand en de metadata die het vastleggen ervan beschrijven. Dit archetype wordt genest binnen een ander archetype, meestal een OBSERVATION of ACTION die de context en omstandigheden bevat die verband houden met het vastleggen van het mediabestand. Bijvoorbeeld, details over de modaliteit, weergave of aspect van een radiografisch beeld en DICOM-details worden vastgelegd in het archetype OBSERVATION.imaging_exam_result.
@@ -251,11 +246,14 @@ Met het gegevenselement 'Inhoud' kan het mediabestand worden vastgelegd en opges
 Als er meer dan één mediabestand is vastgelegd, zoals 'voor' en 'na' beelden van een wond, gebruik dan een afzonderlijke instantie van dit archetype om elk mediabestand te vertegenwoordigen.
 
 Als een reeks mediabestanden wordt weergegeven als een enkel item, zoals een CT-scan, kan één instantie van dit archetype worden gebruikt om een URI-pad naar de groep weer te vertegenwoordigen.">
+			keywords = <"afbeelding", "audio", "tekst", "video", "applicatie", "bestand", "multimedia", "geluid", "DICOM", "digitaal", "document", "foto", "spraak">
 			misuse = <"Niet te gebruiken om informatie, instructie- of educatief materiaal weer te geven dat aan een persoon of hun verzorger wordt verstrekt, bijvoorbeeld folders voor patiënteneducatie. Gebruik hiervoor de CLUSTER.information_resource.
 
 Niet te gebruiken om een verwijzing naar een kennisbank op te nemen - gebruik hiervoor CLUSTER.knowledge_base_reference.">
 		>
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Michael Anywar, Universitätsklinikum SH, Germany", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Paulo Bandiera-Paiva, Federal University of Sao Paulo, Brazil", "itai Basel, Private, Israel", "SB Bhattacharyya, Sudisa Consultancy Services, India", "Stefan Dubois, Dep't of Pathology and Genetics, University Hospitals of Lund and Malmö, Sweden", "Grant Forrest, Lunaria Ltd, United Kingdom", "Rosane Gotardo, Systema Ltda., Brazil", "Heather Grain, Llewelyn Grain Informatics, Australia", "Mikkel Johan Gaup Grønmo, Forvaltningssenter EPJ, Helse-Nord, Norway (openEHR Editor)", "Joost Holslag, Nedap, Netherlands", "Anjali Kulkarni, Karkinos, India", "Jörgen Kuylenstierna, eWeave AB, Sweden", "Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Michael Lutz, BITsoft, Germany", "Manisha Mantri, C-DAC, India", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom", "Arunakiry Natarajan, medondo, Germany", "Mikael Nyström, Cambio Healthcare Systems AB, Sweden", "Ana Pereira, CINTESIS, CUF-Porto, Portugal", "Sidharth Ramesh, Kasturba Medical College, India", "FREDERICO RIBEIRO, Hospital das Clínicas da UFPE, Brazil", "Saeed Samie, Pars Hospital, Iran", "Bjoern Schreiweis, UKSH, Germany", "Natalia Strauch, Medizinische Hochschule Hannover, Germany", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Nyree Taylor, Ocean Health Systems, Australia", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)", "Michael Zampaglione, Australia", "Wouter Zanen, Eurotranplant, Netherlands", "Lin Zhang, Taikang Insurance Group, China">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -318,6 +316,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
