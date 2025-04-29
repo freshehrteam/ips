@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4b64280f2a7874e2c854fa11aac63a2d",
+      "MD5-CAM-1.0.1" : "ee53e57b6e211be2f59a47c20e14df68",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B",
       "original_language" : "ISO_639-1::en",
-      "sem_ver" : "1.0.0-alpha.13",
+      "sem_ver" : "1.0.0-alpha.14",
       "build_uid" : ""
     },
     "details" : {
@@ -125,55 +125,55 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.30",
+        "nodeId" : "at0.40",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Problem List.v1",
+        "archetypeRef" : "Problem List",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.32",
+        "nodeId" : "at0.42",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Allergies & Intolerances.v1",
+        "archetypeRef" : "Allergies & Intolerances",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.34",
+        "nodeId" : "at0.44",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Medication Summary.v1",
+        "archetypeRef" : "Medication Summary",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.36",
+        "nodeId" : "at0.46",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Immunizations.v1",
+        "archetypeRef" : "Immunizations",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.38",
+        "nodeId" : "at0.48",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Diagnostic Results.v1",
+        "archetypeRef" : "Diagnostic Results",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.28",
+        "nodeId" : "at0.50",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Advance Directives.v1",
+        "archetypeRef" : "Advance Directives",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -751,7 +751,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "B0019EDD823F602D5544A24B9E30ABD7"
+        "PARENT:MD5-CAM-1.0.1" : "03F9461E34A327AE0A6B413BEAAC0A13"
       },
       "details" : {
         "de" : {
@@ -1560,8 +1560,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -7437,8 +7437,8 @@
                                 "lower" : 1,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -8292,8 +8292,8 @@
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : true
+                                  "upperUnbounded" : true,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -8327,8 +8327,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -8343,8 +8343,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -8375,8 +8375,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -8391,8 +8391,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : false
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -9556,8 +9556,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -9610,8 +9610,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -9755,8 +9755,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -9817,8 +9817,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -9876,8 +9876,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -9930,8 +9930,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -10075,8 +10075,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -12365,8 +12365,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -12453,8 +12453,8 @@
                             "lower" : "PT0H",
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -13501,8 +13501,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -13535,8 +13535,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -13566,8 +13566,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -13653,8 +13653,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -13696,8 +13696,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -13709,8 +13709,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -13721,8 +13721,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -13734,8 +13734,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -14058,8 +14058,8 @@
                             "lower" : 1,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -14155,8 +14155,8 @@
                               "upper" : 7.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -14168,8 +14168,8 @@
                               "upper" : 0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           } ]
                         }, {
@@ -14181,8 +14181,8 @@
                               "upper" : 31.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -14194,8 +14194,8 @@
                               "upper" : 0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           } ]
                         }, {
@@ -14207,8 +14207,8 @@
                               "upper" : 365.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -14220,8 +14220,8 @@
                               "upper" : 0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           } ]
                         } ]
@@ -14278,8 +14278,8 @@
                               "upper" : 7.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -14294,8 +14294,8 @@
                               "upper" : 31.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -14335,8 +14335,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -14465,8 +14465,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -14480,8 +14480,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
