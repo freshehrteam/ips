@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "961ac7bb1882beaf745490d2dc20b056",
+      "MD5-CAM-1.0.1" : "920aff0f19df2159951594dcdda3daee",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "1.1.0-alpha.5",
+      "sem_ver" : "1.0.0-alpha.6",
       "build_uid" : ""
     },
     "details" : {
@@ -950,7 +950,7 @@
           "" : {
             "source" : "openEHR,FHIR"
           },
-          "/data[at0001]/items[at0101]" : {
+          "/data[at0001]/items[at0101.1]" : {
             "source" : "DAM, openEHR"
           }
         },
@@ -966,9 +966,6 @@
           },
           "/data[at0001]/items[at0002]" : {
             "source" : "openEHR, FHIR, DAM"
-          },
-          "/data[at0001]/items[at0101]" : {
-            "source" : "DAM, openEHR"
           },
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
@@ -987,14 +984,14 @@
           },
           "/protocol[at0042]/items[at0047.1]" : {
             "source" : "FHIR, openEHR, DAM"
+          },
+          "/data[at0001]/items[at0101.1]" : {
+            "source" : "DAM, openEHR"
           }
         },
         "sv" : {
           "/data[at0001]/items[at0002]" : {
             "source" : "openEHR,FHIR,DAM"
-          },
-          "/data[at0001]/items[at0101]" : {
-            "source" : "DAM, openEHR"
           },
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
@@ -1010,6 +1007,9 @@
           },
           "/protocol[at0042]/items[at0047.1]" : {
             "source" : "FHIR, openEHR, DAM"
+          },
+          "/data[at0001]/items[at0101.1]" : {
+            "source" : "DAM, openEHR"
           }
         }
       }
@@ -1059,6 +1059,26 @@
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0101.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1336,6 +1356,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0121", "at0122", "at0123" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0102", "at0103", "at0124" ]
         }
       }
     },
