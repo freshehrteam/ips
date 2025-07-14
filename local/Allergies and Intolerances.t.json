@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6b0fa403e1e4d89238542a070e06684f",
+      "MD5-CAM-1.0.1" : "a84d65250c9b159d7995883c826c41ce",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "1.0.0-alpha.8",
+      "sem_ver" : "2.0.0-alpha.8",
       "build_uid" : ""
     },
     "details" : {
@@ -1037,6 +1037,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0130.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1054,7 +1055,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.6" ],
+                      "constraint" : [ "ac0.7" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -1137,6 +1138,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0117.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1271,10 +1273,10 @@
             "description" : "Identification of the underlying physiological mechanism for the adverse reaction.",
             "comment" : "Immune-mediated responses have been traditionally regarded as an indicator for escalation of significant future risk. Contemporary knowledge suggests that some reactions previously thought to be immune are actually non-immune and still carry life threatening risk. \r\n\r\nImmunological testing may provide supporting evidence for the mechanism and causative substance , but no tests are 100% sensitive or specific for a sensitivity. \r\n\r\nIt is acknowledged that most clinicians will NOT be able to distinguish the mechanism of any specific reaction. However this data element is included because many legacy systems have captured this attribute."
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -1285,10 +1287,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -1299,10 +1301,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -1313,10 +1315,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -1327,10 +1329,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         }
@@ -1365,6 +1367,11 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0131", "at0132" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
           "members" : [ "at0131", "at0132" ]
         }
       }
