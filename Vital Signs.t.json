@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "65f17ebc3e7cf275acc82d17e151d7e7",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      "MD5-CAM-1.0.1" : "59860a13e47dd89206d72fb771c586e0",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -140,6 +142,36 @@
           "codeString" : "fr"
         },
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -327,7 +359,9 @@
           "text" : "Vital Signs",
           "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
         }
-      }
+      },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -351,7 +385,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "AC4E9E8F5DF9E8CC0B16B1D5A7B3A945"
+        "PARENT:MD5-CAM-1.0.1" : "9BCFBC3ED25D38676D4DB71A384DBD89"
       },
       "details" : {
         "de" : {
@@ -1079,7 +1113,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "C75BA8F0FF1D8D127E0E9469D06C9128"
+        "PARENT:MD5-CAM-1.0.1" : "73BD9C19CB9C80295C005CC16AD309AE"
       },
       "details" : {
         "de" : {
@@ -1283,6 +1317,36 @@
           "use" : "Te gebruiken voor de registratie van de werkelijke lengte/hoogte van een individu op elk moment in de tijd. Een verklaring over fysieke onvolledigheid van het lichaam kan worden opgenomen in het protocol element ‘ beïnvloedende factoren’, indien nodig. Dit is het gebruikelijke archetype voor een typische meting van de hoogte of lengte, onafhankelijk van de klinische setting. \r\nKan ook worden gebruikt voor het opnemen van een schatting van de lengte/hoogte meting in een klinisch scenario, waarin het niet mogelijk is om een nauwkeurige lengte te meten - bijvoorbeeld het meten van een onwillig kind. \r\nDit is niet expliciet gemodelleerd in het archetype, omdat het openEHR Referentie model een schatting in ieder kwantitatief data type toestaat. Bij de uitvoering, bijvoorbeeld, zou een applicatie gebruikersinterface, een adequaat geëtiketteerd selectievakje kunnen aanbieden aan clinici, naast de gegevens over het gewicht, waarin door selecteren aangegeven kan worden dat het opgenomen gewicht een schatting is, in plaats van het werkelijke gewicht.\r\n\r\nIn het engelse taaldomein wordt er verschil gemaakt tussen hoogte (height) en lengte (length), waarbij hoogte staande gemeten wordt en lengte liggend.\r\nIn dat geval zijn lengte metingen aanbevolen voor kinderen onder de leeftijd van 2 jaar en personen die niet kunnen staan; hoogte metingen voor alle anderen. \r\nIdealiter wordt de hoogte(NL: lengte) gemeten, staand op beide voeten met het gewicht gelijkmatig verdeeld, hielen tegen elkaar en beide billen en hakken in contact met een verticale achterkant; lichaamslengte wordt gemeten in een volledig uitgespreide rugligging met het bekken plat, benen gestrekt en voeten gebogen. \r\nWordt gebruikt voor het registreren van groei en verlies van lengte. Dit kan, in voorkomend geval, momenteel worden gemodelleerd, door het beperken van een 'any event', tot een interval in een template met bijbehorende rekenkundige functie van de groei of krimp.",
           "misuse" : "Niet te gebruiken ter registratie van de eerste lengte van een kind, spoedig na de geboorte, welke gekenmerkd wordt als de geboortelengte - gebruik hiervoor de specialisatie van dit archetype - zie OBSERVATION.height-birth.(OBSERVATION.lengte-geboorte).",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-co" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-co"
+          },
+          "purpose" : "Registrar la longitud del cuerpo desde la coronilla de la cabeza hasta la planta del pie de un individuo, ya sea medida con precisión o de forma aproximada, en posición de pie o en posición decúbito",
+          "keywords" : [ "Encogimiento", "Aumento", "Disminución", "Pérdida de altura", "Altura", "Longitud", "Crecimiento" ],
+          "use" : "Para ser utilizado para registrar la altura medida o la longitud del cuerpo de un individuo en cualquier momento. Se puede registrar una declaración que identifique la incompletitud física del cuerpo en el elemento de protocolo 'Factores confusos', si es necesario. Este es el arquetipo habitual a utilizar para una medición típica de la altura o longitud del cuerpo, independientemente del entorno clínico.\r\n\r\nTambién se puede utilizar para registrar una aproximación de la medición de la altura o longitud del cuerpo en un escenario clínico donde no sea posible medir con precisión la altura o longitud, por ejemplo, al medir a un niño que no coopera. Esto no está modelado explícitamente en el arquetipo, ya que el modelo de referencia openEHR permite aproximaciones para cualquier tipo de dato de cantidad al establecer el atributo Estado_magnitud en el valor '~'. En la implementación, por ejemplo, la interfaz de usuario de una aplicación podría permitir a los clínicos seleccionar una casilla de verificación etiquetada adecuadamente junto al campo de datos de Altura para indicar que la altura registrada es una aproximación, en lugar de la medida real.\r\n\r\nEn general, se recomiendan las mediciones de longitud para niños menores de 2 años e individuos que no pueden ponerse de pie; las mediciones de altura para todos los demás.\r\n\r\nCuando se registra la primera longitud de un recién nacido poco después del nacimiento, \"longitud al nacer\", utilice el evento \"Nacimiento\".\r\n\r\nÚselo para registrar el crecimiento o pérdida de altura. Esto puede modelarse actualmente restringiendo el 'cualquier evento' a un evento de intervalo dentro de una plantilla, con la función matemática asociada de aumento o disminución, según corresponda.",
+          "misuse" : "No debe utilizarse para registrar una altura ajustada, un cálculo de la altura completa de una persona que, por ejemplo, carece de partes o la totalidad de las extremidades inferiores o presenta contracturas. El peso corporal calculado puede basarse en mediciones de otras partes del cuerpo y un algoritmo. Utilice arquetipos específicos con este propósito.\r\n\r\nNo debe utilizarse para registrar la velocidad de crecimiento.\r\n\r\nNo debe utilizarse para registrar la longitud de un objeto o una parte específica del cuerpo.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar la llargària del cos d'un pacient des de la coroneta fins a la planta dels peus, ja siga mesurada o aproximada, i en una posició dreta o reclinada.",
+          "keywords" : [ "arronsament, augment, disminució, pèrdua d’alçada, alçada, llargària, creixement" ],
+          "use" : "Utilitzar per a registrar l’alçada o llargària del cos mesurada d'un pacient en un moment donat. Una declaració que indiqui que el cos no està complet es pot registrar en l’element protocol·lari «Factors de confusió» si fos necessari. Aquest es l'arquetip utilitzat normalment per a una mesura típica de l’alçada o llargària del cos, independentment dels entorns clínics.",
+          "misuse" : "No utilitzar per a registrar una alçada ajustada, un càlcul de l’alçada completa d’un pacient a qui, per exemple, li manquen parts, o la totalitat de les extremitats inferiors, o té contractures. Un pes corporal calculat es pot basar en mesures d'altres parts del cos i en un algoritme. Utilitzar arquetips específics per aquesta finalitat.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1561,7 +1625,9 @@
         "sv" : { },
         "fi" : { },
         "nb" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es-co" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1744,6 +1810,37 @@
         "name" : "Marja Buur",
         "organisation" : "Medisch Centrum Alkmaar",
         "email" : "m.buur-krom@mca.nl"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-co"
+      },
+      "author" : {
+        "name" : "Jessyca Gil",
+        "organisation" : "Hospital Clinic",
+        "email" : "jessyca.gil92@gmail.com"
+      },
+      "accreditation" : "Jessyca Gil",
+      "otherDetails" : {
+        "other_contributors" : "Does not have contributions"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral López",
+        "organisation" : "Servei Català de Salut",
+        "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -2288,7 +2385,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "FA62ACCECB4A643E142B1092B1128204"
+        "PARENT:MD5-CAM-1.0.1" : "E84CB8D79AA6BE805AB9E12095A987B9"
       },
       "details" : {
         "de" : {
@@ -2473,6 +2570,21 @@
           "keywords" : [ "frequentie", "ritme", "slag", "pols", "hart", "vitaal", "teken" ],
           "use" : "Gebruik voor het vastleggen van de aanwezigheid of afwezigheid van een pols of hartslag.\r\n\r\nIn de praktijk worden de termen hart frequentie and polsfrequentie vaak door elkaar gebruikt, hoewel ze op andere locaties op het lichaam gemeten kunnen worden. Dit archetype is bedoeld om gebruikt te worden voor beide termen en het element meetlocatie wordt gebruikt om ze te onderscheiden.\r\n\r\nGebruik voor het vastleggen van een meting van de polsfrequentie of de hartfrequentie, observaties over het bijbehorende patroon, karakter en de klinische interpretatie van de bevindingen.\r\n\r\nMetingen zoals de maximale pols- of hartfrequentie gedurende een interval kunnen worden vastgelegd met behulp van 'maximum' gebeurtenis. Andere momenten of interval gebeurtenissen kunnen gespecificieerd worden in een template of terwijl de applicatie loopt.\r\n\r\nTijdens de ontwikkeling van dit archetype is er spanning geweest rond het vastleggen van de regulariteit van de pols- of hartfreqeuntie. Dit archetype legt de relevante data apart vast: ten eerste door het vastleggen van 'regulair' of 'irregulair' en vervolgens, indien 'irregulair', de extra opties 'regelmatig irregulair' en 'onregelmatig irregulair'. In d praktijk kunnen klinische systemen een combinatie tonen aan de gebruiker van de waardes van de 'regulariteit' en 'irregulair type' - bijvoorbeeld, 'regulair', 'regemlatig irregulair' en 'onregelmatig irregulair' gekozen uit deze twee data elementen. Data kan vastgelegd worden in beide elementen onder de aanname dat wanneer een van de irregulaire types gekozen wordt, dat automatisch de waarde 'irregulair' wordt gekozen in het data element 'regulariteit'.\r\n\r\nIn bepaalde situaties is het belangrijk om heel specifiek te zijn zodat de frequentie, geobserveerd aan een perifeer lichaamslocatie, zoals de arteria radialis, onderscheiden kan worden van de hartfrequentie. Om een polsdeficit vast te leggen, dient de meting van de mechanische hartfrequentie en een perifere hartfrequentie in twee aparte versies van dit archetype vastgelegd te worden - het verschil tussen deze metingen is het polsdeficit. Het daadwerkelijke polsdeficit wordt in een apart OBSERVATION archetype vastgelegd.",
           "misuse" : "Niet te gebruiken voor het vastleggen van de R-R frequentie in de context van een electrocardiogram verslag - gebruik voor dat doel het OBSERVATION.ecg archetype.\r\n\r\nNiet te gebruiken voor het vastleggen van andere details van een volledig cardiovasculair onderzoek of beoordeling. Andere specifieke CLUSTER archetypes worden gebruikt voor het vastleggen van eigenschappen als apexhartslag, geruizen en bevindingen bij auscultatie. \r\n\r\nIn het bijzonder, is dit archetype niet bedoeld voor het vastleggen van een beoordeling van perifere vaculaire ziekte, die verslaglegging vereisen van de aanwezigheid of kracht van elke individuele perifere pols. Een specifiek CLUSTER archetype wordt gebruikt voor het vastleggen van bevindingen bij onderzoek van de perifere hartslag.\r\n\r\nNiet te gebruiken voor het vastleggen van foetale hartfrequentie - gebruik voor dat doel het OBSERVATION.fetal_heart archetype.\r\n\r\nNiet te gebruiken voor het vastleggen van het polsdeficit - gebruik voor dat doel een specifiek OBSERVATION archetype.\r\n\r\nConcepten zoals streef hart frequentie dienen vastgelegd te worden in een apart EVALUATION archetype gerelateerd aan doelen en inspannings beoordeling.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录关于脉搏或心跳的速率和种种相关特征属性/特性/属性的详细信息。",
+          "keywords" : [ "速率", "率", "节律", "跳动", "脉搏", "搏动", "心脏", "生命", "体征", "生命体征" ],
+          "use" : "旨在用于记录脉搏或心跳的存在情况或者说存在与否。\r\n\r\n在实践当中，术语“心率”和“脉搏[速]率”经常会互换使用，尽管用于测量二者的身体部位可能有所不同。本原始型旨在用于二者当中的任一术语，并且会利用测量部位元素对二者加以区分。\r\n\r\n旨在用于记录脉搏率或心率的测量结果、关于相关模式和特征/特点的观察结果以及对于结果/所见的临床解释。\r\n\r\n可以利用最大值事件“Maximum”来记录一段时间内或者说特定时间区间内最大的脉搏[速]率或心率等测量结果。可以在模板当中或运行时指定其他的时间点/时刻型或时间区间型事件。\r\n\r\n在开发编制本原始型的过程中，关于脉搏或心跳规律性的表示方法，存在着一些对立的意见。目前，本原始型会分别来表示相关的数据点：首先是确定 “规律”（Regular） 还是 “不规律”（Irregular）；然后，如果为 “不规律”，则进一步选择 “规律性不齐”（Regularly irregular） 还是 “不规律性不齐”（Irregularly irregular）。在实践中，临床系统可以为用户提供“规则性”与“不齐类型”取值的组合，如提取自这两个数据元的“规律”、“规律性不齐”和 “不规律性不齐”。可以同时针对两个数据元来记录数据，而前提则是，如果选择了其中的一种不齐类型，则 还会同时选定规律性数据元“Regularity”之中的取值 “不规律”。\r\n\r\n在某些情况下，重要的是要做到非常地具体或者说具有针对性，以便将末梢部位（如桡动脉）所观察到的心率与心脏部位所观察到的心率区别开来。要记录脉搏短绌（pulse deficit），请采用本原始型的两个实例来分别记录机械心率（mechanical heart rate）和外周脉搏率（peripheral pulse rate）的测量结果 - 这两个测量结果之间的差值就是脉搏短绌。实际脉搏短绌取值的记录则会采用单独的观察型原始型。",
+          "misuse" : "并非旨在用于记录心电图报告上下文背景下的 R-R 间期心率/速率 - 对此，请采用观察型心电图原始型 OBSERVATION.ecg。\r\n\r\n并非旨在用于记录完整心血管检查或评估结果的其他详情。将会采用其他具有针对性的群簇型原始型莱记录种种的特性/特征，如心尖搏动、心跳杂音/异常音或听诊所见/结果。\r\n\r\n特别是，本原始型并非旨在用于记录外周血管疾病的评估结果（其中需要记录每次外周脉搏的存在情况和强度）。外周脉搏检查一般所见/发现/结果的记录将会采用具有针对性的群簇型原始型。\r\n\r\n并非旨在用于记录胎儿心率 - 对此，请采用观察型心电图胎儿心脏原始型 OBSERVATION.fetal_heart。\r\n\r\n并非旨在用于记录脉搏短绌（pulse deficit） - 对此，请采用具有针对性的观察型原始型。\r\n\r\n对于目标心率（Target Heart Rate）等概念，则应当采用单独的，与目标和运动评估相关的评估型原始型来加以记录。\r\n\r\n\r\n",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3080,7 +3192,8 @@
         "fi" : { },
         "nb" : { },
         "nl" : { },
-        "el" : { }
+        "el" : { },
+        "zh-cn" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3249,6 +3362,20 @@
       },
       "accreditation" : "MD",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -3261,7 +3388,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "93D7ADBBD994326C03BC2D9063553DFC"
+        "PARENT:MD5-CAM-1.0.1" : "4392B7F4A6A83F88886A23854BE82BB7"
       },
       "details" : {
         "de" : {
@@ -3480,6 +3607,36 @@
           "keywords" : [ "*temperature(en)", "*body(en)", "*core(en)", "*fever(en)", "*hypothermia(en)", "*hyperthermia(en)" ],
           "use" : "*Used for recording the measurement of an individual's body temperature, which is a surrogate for the core body temperature of the individual.\r\n\r\nAdditional clusters can be included to provide additional state data - including environmental conditions and exertion details, where appropriate.\r\n\r\nPlease Note: The site and method of recording may need to be displayed to the end user to facilitate accurate interpretation of the temperature recorded.(en)",
           "misuse" : "*This archetype is not to be used to record the temperature of any other object.\r\n\r\nThis archetype is not to be used to record the temperature of a part of the body in isolation e.g. temperature of the sole of the foot as a part of chronic diabetes management.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "Για την καταγραφή της μετρούμενης θερμοκρασίας ενός ατόμου - ως υποκατάστατο για τη θερμοκρασία του πυρήνα του σώματος.",
+          "keywords" : [ "θερμοκρασία", "σώμα", "πυρήνας", "Πυρετός", "υποθερμία", "υπερθερμία" ],
+          "use" : "Χρησιμοποιείται για την καταγραφή της μέτρησης της θερμοκρασίας σώματος ενός ατόμου, η οποία είναι υποκατάστατο της βασικής θερμοκρασίας σώματος του ατόμου.\r\n\r\nΜπορούν να συμπεριληφθούν πρόσθετες ομάδες για την παροχή πρόσθετων δεδομένων κατάστασης - συμπεριλαμβανομένων των περιβαλλοντικών συνθηκών και των λεπτομερειών άσκησης, κατά περίπτωση.\r\n\r\nΣημείωση: Ο ιστότοπος και η μέθοδος καταγραφής ενδέχεται να χρειαστεί να εμφανίζονται στον τελικό χρήστη για να διευκολύνεται η ακριβής ερμηνεία της θερμοκρασίας που καταγράφεται.",
+          "misuse" : "Αυτό το αρχέτυπο δεν πρέπει να χρησιμοποιείται για την καταγραφή της θερμοκρασίας οποιουδήποτε άλλου αντικειμένου.\r\n\r\nΑυτό το αρχέτυπο δεν πρέπει να χρησιμοποιείται για την καταγραφή της θερμοκρασίας ενός μέρους του σώματος μεμονωμένα, π. χ. της θερμοκρασίας του πέλματος του ποδιού ως μέρος της χρόνιας διαχείρισης του διαβήτη.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar el mesurament de la temperatura corporal d'un pacient, com a substitut de la temperatura central.",
+          "keywords" : [ "temperatura", "cos", "central", "febre", "hipotèrmia", "hipertèrmia" ],
+          "use" : "S'utilitza per registrar la mesura de la temperatura corporal d'un pacient, que és un substitut de la temperatura corporal central.\r\n\r\nEs poden incloure clústers addicionals per proporcionar dades addicionals de l'estat, incloses les condicions ambientals i els detalls d'esforç, si escau.\r\n\r\nTingueu en compte que potser calgui mostrar al pacient el lloc i el mètode d'enregistrament per tal de facilitar una interpretació precisa de la temperatura registrada.",
+          "misuse" : "No s'ha d'utilitzar per registrar la temperatura de cap altre objecte.\r\nNo s'ha d'utilitzar per registrar la temperatura d'una part del cos de manera aïllada, per exemple, la temperatura de la planta del peu com a part de la gestió de la diabetis crònica.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3701,7 +3858,9 @@
         "ja" : { },
         "fi" : { },
         "it" : { },
-        "nl" : { }
+        "nl" : { },
+        "el" : { },
+        "ca" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3898,6 +4057,36 @@
       },
       "accreditation" : "MD",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "el"
+      },
+      "author" : {
+        "name" : "Erasmia Partafylla",
+        "organisation" : "Sigmasoft",
+        "email" : "c.partafylla@sigmasoft.gr"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "TRADCREA"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -3910,7 +4099,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "EECEB738A2D2841EA677E01DA20B4618"
+        "PARENT:MD5-CAM-1.0.1" : "756CFA5B54C9FE79674A0AC09A2E6CBE"
       },
       "details" : {
         "sv" : {
@@ -4210,7 +4399,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "02D54A1F08B1D0D12BDEB8DFD499D214"
+        "PARENT:MD5-CAM-1.0.1" : "9B34EF48D236BB3A28FB31CD3776BAA7"
       },
       "details" : {
         "de" : {
@@ -4856,7 +5045,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "E6E1FB050659D261B841146D96F4DFB0"
+        "PARENT:MD5-CAM-1.0.1" : "5ECFDCF3AE4416D246D07663DD016027"
       },
       "details" : {
         "de" : {
@@ -5046,6 +5235,36 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar el índice de masa corporal (IMC) de un individuo.",
+          "keywords" : [ "obesidad", "índice", "masa corporal", "IMC", "anorexia", "quetelet", "desnutrición", "retraso del crecimiento", "bulimia" ],
+          "use" : "Se utiliza para registrar el Índice de Masa Corporal (IMC) tanto en adultos como en niños.\r\n\r\nSe utiliza para introducir el IMC manualmente (es decir, calculado e introducido directamente por el profesional sanitario) o automáticamente (es decir, el cálculo y la introducción se realizan automáticamente mediante una aplicación informática, basándose en mediciones independientes de altura y peso).\r\n\r\nFórmulas: El IMC se calcula comúnmente como peso (kg) / [altura (m) al cuadrado]. Esta es la fórmula habitual, a menos que se especifique lo contrario en el elemento \"Fórmula\" del protocolo. Como alternativa, se puede estimar el IMC utilizando libras y pulgadas: peso (lb) / [altura (in) al cuadrado] x 703 (con onzas (oz) y fracciones convertidas a decimales).\r\n\r\nEn algunas situaciones, la fórmula del IMC se corrige, por ejemplo, para su uso en amputados; esta fórmula específica se puede registrar como parte del protocolo. Como alternativa, se puede utilizar el cálculo común del IMC con amputados y lesiones o discapacidades similares si se utiliza la altura y/o el peso ajustados, según corresponda, en lugar de la altura y el peso reales. Consulte openEHR-EHR-OBSERVATION.height-adjusted y openEHR-EHR-OBSERVATION.body_weight-adjusted.\r\n\r\nConsulte la referencia de la OMS sobre el ajuste de la talla/longitud para el índice de masa corporal en pediatría.\r\n\r\nEn niños y adolescentes, el IMC debe evaluarse utilizando tablas de referencia relacionadas con la edad.",
+          "misuse" : "No está destinado a registrar información sobre los percentiles del índice de masa corporal: utilice el arquetipo OBSERVATION.child_growth para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar l'índex de massa corporal (IMC) d'un pacient.",
+          "keywords" : [ "obesitat", "índex", "massa", "corporal", "IMC", "anorèxia", "Quetelet", "desnutrició", "problemes", "en", "el", "desenvolupament", "bulímia" ],
+          "use" : "S'utilitza per registrar l'índex de massa corporal tant d'adults com de nens.\r\n\r\nS'utilitza per introduir l'Índex de Massa corporal de forma manual (és a dir, calculat i introduït directament pel clínic), o automàticament (és a dir, el càlcul i l'entrada es fa automàticament per una aplicació de programari, basada en mesures d'alçada i pes separades).\r\n\r\nFórmules: l'índex de massa corporal es calcula normalment com a pes (kg) / [alçada (m) al quadrat). Aquesta és la fórmula assumida llevat que s'especifiqui el contrari en l'element Fórmula dins del Protocol. Alternativament estimeu l'índex de massa corporal utilitzant lliures i polzades: pes (lb) / [alçada (a) al quadrat] x 703 (amb unces (oz) i fraccions canviades a valors decimals).\r\n\r\nEn algunes situacions, la fórmula de l'Índex de Massa del Cos és corregida per exemple per al seu ús en amputats - aquesta fórmula específica es pot registrar com a part del protocol. Alternativament, el càlcul de l'Índex de Massa del Cos comú es pot utilitzar amb amputats i lesions o discapacitats similars si s'utilitza l'alçada i/o el pes ajustat, segons correspongui, en lloc de l'alçada i el pes reals. Vegeu openEHR-EHR-OBSERVATION.height-adjusted i openEHR-EHR-OBSERVATION.body.weight-adjusted.\r\n\r\nVegeu la referència de l'OMS per ajustar l'alçada/longitud de l'índex de massa corporal en pediatria.\r\n\r\nEn nens i adolescents, l'IMC ha de ser avaluat utilitzant gràfics de referència relacionats amb l'edat.",
+          "misuse" : "No està destinat a registrar informació relativa als percentils de l'índex de massa corporal - utilitzeu l'arquetip OBSERVATION.child.growth per a aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -5195,7 +5414,9 @@
         "nb" : { },
         "sv" : { },
         "fi" : { },
-        "de" : { }
+        "de" : { },
+        "es" : { },
+        "ca" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5367,6 +5588,34 @@
       },
       "accreditation" : "Nurse Informatics",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "TRADCREA, Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -5379,7 +5628,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "D9F6C309F70B55A7BA405FB68EE2F28E"
+        "PARENT:MD5-CAM-1.0.1" : "F5DB932744CD963FB5079719C817901C"
       },
       "details" : {
         "de" : {
@@ -6937,6 +7186,34 @@
       "codeString" : "fr"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
     "otherDetails" : { }
   } ]
 }
