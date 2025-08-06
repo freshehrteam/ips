@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f0d7a792968492e0e6fa40d2d7a609ac",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
+      "MD5-CAM-1.0.1" : "59b8b688b8d3ef8f318e0e5cdd64f665",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
       "sem_ver" : "1.1.0-alpha.4",
       "build_uid" : ""
     },
@@ -142,6 +142,36 @@
           "codeString" : "fr"
         },
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -275,7 +305,9 @@
           "text" : "Medication Summary",
           "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
         }
-      }
+      },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -3111,7 +3143,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
+        "PARENT:MD5-CAM-1.0.1" : "301D939F428B1A2F46DDE641AAFC47E5"
       },
       "details" : {
         "de" : {
@@ -3204,6 +3236,36 @@
           "misuse" : "*Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar detalls sobre un medicament o un component d'un medicament, inclosa la concentració, la forma i els detalls de qualsevol component específic.",
+          "keywords" : [ "medicació", "ordre", "prescriure", "teràpia", "substància", "medicament", "terapèutic", "bé terapèutic", "ad-hoc", "adhoc", "ad hoc", "extemporani", "formulació", "medicina" ],
+          "use" : "S'utilitza per registrar detalls sobre un medicament o un component d'un medicament, inclosa la concentració, la forma i els detalls de qualsevol component específic.\r\n\r\nAquest arquetip està pensat per registrar detalls d'un medicament o component d'un medicament quan calgui especificar amb més detall la forma i els components detallats del medicament, per exemple infusions i barreges ad hoc, o quan no es disposi de terminologia de medicaments. En el context d'una ordre d'administració o dispensació d'un medicament, anideu aquest arquetip al SLOT \"Detalls del medicament\" dins de l'arquetip INSTRUCTION.medication_order. En el context del registre de l'administració o dispensació real d'un medicament, anideu aquest arquetip al SLOT \"Detalls del medicament\" dins de l'arquetip ACTION.medication.\r\n\r\nAquest arquetip pot ser redundant en situacions en què la sol·licitud dun medicament mitjançant recepta faci ús duna terminologia per identificar larticle. En aquest cas, la marca o el nom del producte poden identificar la forma i la concentració de la substància.",
+          "misuse" : "No s'ha de fer servir per portar el control de l'estoc de farmàcia ni dels catàlegs de medicaments.\r\n\r\nNo s'ha de fer servir per registrar la dosi prevista o administrada d'un medicament. Per fer-ho, utilitzeu els arquetips INSTRUCTION.medication_order o CLUSTER.dosage.\r\n\r\nNo s'ha de fer servir per si mateix per emplenar una llista de medicació. Per fer-ho, utilitzeu un arquetip de tipus ENTRY relacionat amb la medicació, com INSTRUCTION.medication_order o ACTION.medication.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar datos sobre un medicamento o componente de un medicamento, incluida la dosis, la forma y los detalles de cualquier componente específico.",
+          "keywords" : [ "medicación", "prescripción", "prescribir", "terapia", "substancia", "droga", "fármaco", "terapéutico", "producto terapéutico", "ad-hoc", "ad hoc", "extemporáneo", "formulación", "medicina" ],
+          "use" : "Usar para registrar detalles sobre un medicamento o componente de un medicamento, incluyendo la dosis, la forma y los detalles de cualquier componente específico.\r\n\r\nEste arquetipo está diseñado para registrar datos de un medicamento o de un componente del mismo cuando se necesite especificar con mayor detalle la forma y los componentes del medicamento. Por ejemplo, en el caso de infusiones, mezclas preparadas ad hoc, o cuando no se disponga de una terminología estandarizada de medicamentos.\r\n\r\nEn el contexto de una prescripción, administración o dispensación de un medicamento, este arquetipo debe ubicarse dentro del SLOT «Datos de la medicación» del arquetipo INSTRUCTION.medication_order. En el caso del registro de la administración o dispensación real del medicamento, se debe ubicar dentro del SLOT «Datos de la medicación» del arquetipo ACTION.medication.\r\n\r\nEste arquetipo puede resultar redundante en situaciones donde se solicite un medicamento mediante una prescripción que utiliza una terminología codificada para identificar el medicamento. En estos casos, la marca o el nombre del producto ya pueden implicar la forma farmacéutica y la concentración de la sustancia.\r\n\r\n",
+          "misuse" : "No utilizar para el control del inventario de farmacia ni dentro de los catálogos de medicamentos.\r\n\r\nNo utilizar para registrar la dosis prevista o administrada de un medicamento. Utilizar los arquetipos INSTRUCTION.medication_order o CLUSTER.dosage para esta finalidad.\r\n\r\nNo utilizar por sí mismo para rellenar una lista de medicación. Utilizar un arquetipo relevante de tipo ENTRY relacionado con la medicación, como INSTRUCTION.medication_order o ACTION.medication para esta finalidad.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -3229,7 +3291,9 @@
         "pt" : { },
         "de" : { },
         "nl" : { },
-        "sv" : { }
+        "sv" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3319,6 +3383,34 @@
       },
       "accreditation" : "MD",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -3331,7 +3423,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "926B8773E3FBB271F2820D4198B4F63E"
+        "PARENT:MD5-CAM-1.0.1" : "7642B7C6FD3E445EA35DA32279728164"
       },
       "details" : {
         "de" : {
@@ -3402,6 +3494,48 @@
           "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "fluid", "nutrition", "timing", "administration", "dose" ],
           "use" : "Use to record the combination of a medication amount and the administration timing for a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items. \r\nThe timing pattern for a single day can be as simple as a single administration time, or multiple administration times with varying levels of complexity.\r\n\r\nTiming details which are not within a single day, for example, weekly or monthly timings, are carried in the CLUSTER 'Timing - non-daily' archetype carried within the CLUSTER 'Therapeutic direction' archetype.\r\n\r\nIn the context of a therapeutic INSTRUCTION, this archetype may be inserted into the 'Structured dose and timing directions' SLOT in the 'Therapeutic direction' CLUSTER to record the dose and timing details of the pattern of single intended administrations of a therapeutic item. \r\n\r\nIn the context of an ACTION archetype insert this archetype directly into the 'Amount' SLOT to record the dose and timing of the actual administration of a therapeutic item.\r\n\r\nSpecific administration start/stop times should be specified within a contained CLUSTER 'Timing - daily' archetype.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sk" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sk"
+          },
+          "purpose" : "Slúži pre záznam množstva dávky a časov podania za jeden deň - ako časť preskripcie alebo medikácie alebo pre iné terapeutické/preskribovateľné položky.",
+          "keywords" : [ "medikácia", "objendávka", "preskricpia", "terapia", "účinná látka", "liek", "terapeutický", "farmaceutický", "produkt", "liečba", "tekutina", "výživa", "časový rozpis", "podanie", "dávka" ],
+          "use" : "Slúži pre záznam množstva dávky a časov podania za jeden deň - ako časť preskripcie alebo medikácie alebo pre iné terapeutické/preskribovateľné položky.\r\nČasový rozpis pre jeden deň môže byť jednoduchý - ako napr. jeden konkrétny čas podania alebo viacej časov podania - v závislosti od úrovne komplexity\r\nČasový rozpis, ktorý sa netýka iba jedného dňa napr. týždenný alebo mesačný rozpis, je potrebné zadať v CLUSTER 'Timing - non-daily' archetype , ktorý má byť vnorený v rámci CLUSTER 'Therapeutic direction' archetype.\r\n\r\nV kontexte INSTRUCTION tento archetyp má byť vložený v SLOTe \"Štrukturované dávkovanie a časy podania\" v rámci CLUSTER 'Therapeutic direction' archetypu - aby bolo možné zadať dávku a časový rozpis pre jednotlivé požadované podanie preskribovanej položky\r\nV kontexte ACTION tento archetyp má byť vložený priamo do SLOTu \"Množstvo\" - aby bolo možné zadať dávku a čas pre aktuálne podanie položky\r\n\r\nŠpecifické časy pre začiatok podávania a koniec podávania majú byť špecifikované vo vloženom CLUSTER 'Timing - daily' archetype.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar la combinación de una cantidad de medicación y el momento de administración en un mismo día, como parte de una prescripción o gestión de medicación, o para otros elementos terapéuticos/prescribibles apropiados.",
+          "keywords" : [ "medicación", "orden", "prescribir", "terapia", "sustancia", "medicamento", "terapéutico", "bien terapéutico", "farmacéutico", "producto", "posología", "tratamiento", "fluido", "nutrición", "timing", "administración", "dosis" ],
+          "use" : "Se utiliza para registrar la combinación de una cantidad de medicación y el momento de administración para un solo día, como parte de una prescripción o gestión de medicación, o para otros elementos terapéuticos/prescribibles apropiados. \r\n\r\nLa pauta temporal de un único día puede ser tan simple como una sola hora de administración, o varias horas de administración con distintos niveles de complejidad.\r\n\r\nLos detalles de temporización que no correspondan a un único día, por ejemplo, temporizaciones semanales o mensuales, han de llevarse a cabo en el arquetipo de tipo CLUSTER 'Temporización - no diaria', dentro del arquetipo CLUSTER 'Dirección terapéutica'.\r\n\r\nEn el contexto de una INSTRUCTION terapéutica, este arquetipo puede insertarse en el SLOT \"Direcciones estructuradas de dosis y timing\", dentro del CLUSTER \"Dirección terapéutica\", para registrar los detalles de dosis y timing del patrón de administraciones únicas previstas de un elemento terapéutico. \r\n\r\nEn el contexto de un arquetipo de tipo ACTION, inserte este arquetipo directamente en el SLOT \"Cantidad\" para registrar la dosis y el momento de la administración real de un elemento terapéutico.\r\n\r\nLas horas específicas de inicio y finalización de la administración deben especificarse dentro de un arquetipo CLUSTER \"Timing - diario\".\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar la combinació d’una quantitat de medicació i el moment d’administració en un mateix dia, com a part d’una prescripció o gestió de medicació o per a altres elements terapèutics/prescriptibles apropiats.",
+          "keywords" : [ "medicació", "encàrrec", "prescriure", "teràpia", "substància", "medicament", "terapèutic", "producte terapèutic", "fàrmac", "producte", "posologia", "tractament", "fluid", "nutrició", "temporització", "administració", "dosi" ],
+          "use" : "Utilitzar per a registrar la combinació d’una quantitat de medicació i el moment d’administració en un mateix dia, com a part d’una prescripció o gestió de medicació o per a altres elements terapèutics/prescriptibles apropiats.\r\nLa pauta horària d’un únic dia pot ser tan simple com una sola hora d’administració o diverses hores d’administració amb diversos nivells de complexitat.\r\n\r\nLes dades de temporització que no corresponguin a un únic dia; per exemple, temporitzacions setmanals o mensuals, estan contingudes en l’arquetip de tipus CLUSTER «Temporització – no diària», que es troba dins de l’arquetip de tipus CLUSTER «Instruccions terapèutiques».\r\n\r\nEn el context d’una INSTRUCTION terapèutica, aquest arquetip es pot inserir al SLOT «Instruccions estructurals de dosi i temporització» dins del CLUSTER «Instruccions terapèutiques» per a registrar les dades de dosi i temporalització de les pautes d’administracions úniques previstes d’un element terapèutic.\r\n\r\nEn el context d’un arquetip de tipus ACTION, aquest arquetip s’ha d’inserir directament al SLOT «Quantitat» per a registrar la dosi i el moment d’una administració concreta d’un element terapèutic.\r\n\r\nEls moments específics d’inici i de finalització s’han d’especificar dins d’un arquetip «Temporització – diària» de tipus CLUSTER.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3692,7 +3826,10 @@
         "nb" : { },
         "pt-br" : { },
         "de" : { },
-        "sv" : { }
+        "sv" : { },
+        "es" : { },
+        "ca" : { },
+        "sk" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3767,6 +3904,50 @@
       },
       "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sk"
+      },
+      "author" : {
+        "name" : "Alica Ciglanska",
+        "organisation" : "Prosoft Košice, a.s.",
+        "email" : "ciglanska.alica@prosoftke.sk"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4078,6 +4259,34 @@
       "codeString" : "fr"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
     "otherDetails" : { }
   } ]
 }
