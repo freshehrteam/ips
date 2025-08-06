@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "febc144d678f409cbb93303913d664a9",
-      "PARENT:MD5-CAM-1.0.1" : "19F2BC4F565422749861B468594E50E7"
+      "MD5-CAM-1.0.1" : "9067ea3fa5875283a2a7c61afa9187d1",
+      "PARENT:MD5-CAM-1.0.1" : "C8015C0CAA2F425EF80DB7A794F19DB9",
+      "sem_ver" : "0.1.0",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -80,6 +82,51 @@
           "codeString" : "en"
         },
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "el" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "el"
+        },
+        "purpose" : "*To record the clinical assessment of the propensity for an individual to experience an adverse reaction if exposed, or re-exposed, to a specified substance or class of substances.(en)",
+        "keywords" : [ "*reaction(en)", "*allergy(en)", "*allergic(en)", "*adverse(en)", "*event(en)", "*effect(en)", "*sensitivity(en)", "*intolerance(en)", "*hypersensitivity(en)", "*side effect(en)", "*toxicity(en)", "*drug(en)", "*food(en)", "*agent(en)", "*substance(en)", "*immune(en)", "*non-immune(en)", "*chemical(en)", "*anaphylaxis(en)", "*allergen(en)", "*medication(en)", "*supplement(en)", "*medicine(en)", "*natural remedies(en)", "*immunological(en)", "*non-immunological(en)", "*risk(en)" ],
+        "use" : "*Use to record a clinical assessment of a propensity for an adverse reaction upon future exposure to a specified substance or class of substances including, but not limited to, incipients and excipients in medicinal preparations, biological products, metal salts, and organic chemical compounds. \r\n\r\nThis archetype is intended to provide a single place within the health record to document the propensity for the full range of reactions, from trivial to life-threatening:\r\n- immune-mediated: Types I-IV (including allergic reactions and hypersensitivities); or \r\n- non-immune-mediated: including pseudo-allergic reactions, side effects, intolerances, and drug toxicities.\r\nIn clinical practice distinguishing between immune-mediated and non-immune-mediated reactions can be difficult. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient.\r\n\r\nWhere a propensity is identified, information or evidence about one or more reaction events can be recorded using the CLUSTER.adverse_reaction_event archetype in the 'Reaction event summary' SLOT.\r\n\r\nIdentification of the severity of the manifestation of the reaction, recorded in the CLUSTER.adverse_reaction_event archetype, can inform the 'Criticality' of the adverse reaction risk. For example, experiencing anaphylaxis on first exposure to a substance would warrant setting a 'Criticality' of 'high', due to the high risk that anaphylaxis is likely to recur on second and subsequent exposures.\r\n\r\nThis archetype has been designed to allow the recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (e.g. Penicillins). If a class of substance is recorded, identification of the exact substance can be recorded on a per-reaction basis using the CLUSTER.adverse_reaction_event archetype.\r\n\r\nUse to record information about the positive presence of the risk of an adverse reaction:\r\n- to support the direct clinical care of an individual; \r\n- as part of a managed adverse reaction or allergy/intolerance list; \r\n- to support the exchange of information about the propensity and events related to adverse reactions; \r\n- to inform adverse reaction reporting; and \r\n- to assist with computerised knowledge-based activities such as clinical decision support and alerts.\r\n\r\nThe risk of an adverse reaction event or manifestation must always propose a causative substance or class of substance. If there is a degree of uncertainty that a specific substance is the cause, the level of uncertainty can be recorded using the ‘Verification status’ data element. If more than one possible substance may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction risk archetype with the ‘Verification status’ set to an initial state of ‘Unconfirmed’ so that adverse reaction checking can be activated in clinical systems. If the substance is later proven not to be causal then the ‘Verification status’ can be modified to ‘Refuted’ - for example, after allergy testing.(en)",
+        "misuse" : "*Not to be used for recording physiological reactions to physical agents, such as heat, cold, sunlight, vibration, exercise activity, by infectious agents or food contaminants. Use a specific archetype for EVALUATION.problem/diagnosis or CLUSTER.symptom/sign for this purpose.\r\n\r\nNot to be used to record adverse events, including failures of clinical process, interventions or products. For example: abnormal use, incorrect dosage or maladministration of an agent or substance; mislabelling; harm or injury caused by an intervention or procedure; overdose/poisoning etc. Use a specific archetype for the purpose. \r\n\r\nNot to be used to record an adverse reaction where the substance is unknown. Use EVALUATION.problem_diagnosis or CLUSTER.symptom_sign to record as part of the health record until a possible substance is identified.\r\n\r\nNot to be used to record reactions to transfusions of blood products. Use a specific archetype for this purpose. \r\n\r\nNot to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.\r\n\r\nNot to be used for recording failed therapy.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a reaction to 'any substances' or to identified substances, for example ‘No known allergies or adverse reactions’ or ‘No known allergies to Penicillin’. Use the EVALUATION.exclusion_global or EVALUATION.exclusion_specific archetypes to express a positive statement of adverse reaction exclusion.\r\n\r\nNot to be used for the explicit recording that no information was able to be obtained about the adverse reaction status of a patient. Use the EVALUATION.absence archetype to record that a positive statement that information was not able to be obtained, for example, if a non-cooperative patient refuses to answer questions.(en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Registrar l'avaluació clínica de la propensió d’un pacient d’experimentar una reacció adversa en cas d'exposició, o reexposició, d'una substància específica o substàncies d’una altra categoria.",
+        "keywords" : [ "reacció", "al·lèrgia", "al·lèrgic", "advers", "esdeveniment", "efecte", "sensibilitat", "intolerància", "hipersensibilitat", "efecte secundari", "toxicitat", "medicament", "aliments", "agent", "substància", "immune", "no immune", "químic", "anafilaxi", "al·lergen", "medicació", "suplement", "medicina", "remeis naturals", "immunològic", "no-immunològic", "risc" ],
+        "use" : "Utilitzar per a registrar una avaluació clínica d’una propensió a una reacció adversa de cap a una futura exposició a una substància específica o a una altra categoria de substàncies, inclosos, però sense limitar-se a, incipients i excipients en els medicaments, productes biològics, sals metàl·liques, i compostos químics orgànics. \r\n\r\nAquest arquetip pretén proporcionar un únic lloc dins de la història clínica per a documentar la propensió de tota mena de reaccions, des de les trivials fins a les mortals: \r\n\r\n- immunomediades: Tipus I-IV (incloses reaccions al·lèrgiques i hipersensibilitat); o\r\n\r\n- no immunomediades: incloses reaccions pseudoal·lèrgiques, efectes secundaris, intoleràncies i toxicitat dels medicaments. \r\n\r\nEn la pràctica clínica, distingir entre les reaccions immunomediades i no immunomediades pot resultat difícil. Identificar el tipus de recció no és un indici de la gravetat o el risc de dany per al pacient. \r\n\r\nQuan s'identifica una propensió, es pot registrar la informació o l'evidència d'un o més esdeveniments de reacció mitjançant l'ús de l’arquetip CLUSTER.adverse_reaction_event dins del SLOT «Sumari d’esdeveniments de reacció». \r\n\r\nIdentificar la gravetat de la manifestació de la reacció, registrada en l'arquetip CLUSTER.adverse_reaction_event pot indicar la «Criticitat» del risc d’una reacció adversa. Per exemple, sofrir anafilaxi en la primera exposició a una substància justificaria la fixació de la «Criticitat» com a «Elevada», com que el risc elevat d'anafilaxi pot tornar a ocórrer en segones i subseqüents exposicions. \r\n\r\nAquest arquetip s’ha dissenyat per a permetre l'enregistrament de la informació de substàncies específiques (amoxicil·lina, ostres, o el verí d’una picada d’abella) o, alternativament, una categoria de substàncies (ex. Penicil·lina). Si una categoria de substàncies no es troba registrada, la identificació de la substància exacta es pot registrar en una base de perreacció utilitzant l’arquetip CLUSTER.adverse_reaction_event. \r\n\r\nUtilitzar la informació registrada de la presència positiva de risc d'una reacció adversa:\r\n\r\n- per ajudar al cuidat clínic directe d'un pacient; \r\n\r\n- com a part d'una reacció adversa controlada o com a llista d'al·lèrgies/intoleràncies;\r\n\r\n- per ajudar a l’intercanvi d'informació sobre la propensió i esdeveniments relacionats amb les reaccions adverses; \r\n\r\n- per informar d'un informe de reacció adversa, i\r\n\r\n- per ajudar en les activitats informatitzades basades en el coneixement, com ajudes a les decisions i alertes clíniques. \r\n\r\nEl risc d’un esdeveniment de reacció adversa o d’una manifestació suggereix sempre una substància o categoria de substàncies causant. Si existeix un cert grau d’incertesa que una substància específica sigui la causa, el nivell d’incertesa es pot registrar utilitzant les dades «Estat de verificació». Si més d’una substància poden ser les causants d’una reacció/manifestació, cada substància s’ha de registrar utilitzant una instància separada d’aquest arquetip de risc de reacció adversa amb el nom d'«Estat de verificació», establert en un inici com «No confirmat». D’aquesta manera la comprovació de la reacció adversa es pot activar en els sistemes clínics. Si es prova posteriorment que la substància no ha sigut la causant, doncs «L’estat de verificació» es pot modificar a «Refutat», per exemple, després d’unes proves d’al·lèrgia.",
+        "misuse" : "No utilitzar per a registrar reaccions fisiològiques d’agents físics, com la calor, el fred, la llum solar, la vibració, les activitats esportives, per agents infecciosos o contaminants alimentaris. Utilitzar un arquetip específic EVALUATION.problem/diagnosis o CLUSTER.symptom/sign per aquesta finalitat. \r\n\r\nNo utilitzar per a registrar esdeveniments adversos, incloses les errades en els processos, intervencions o productes clínics. Per exemple, ús indegut, dosificació incorrecta o mala administració d’un agent o substància; error d’etiquetatge; sobredosi/enverinament, etc. Utilitzar un arquetip específic per aquesta finalitat. \r\n\r\nNo utilitzar per a registrar reaccions adverses quan la substància és desconeguda. Utilitzar EVALUATION.problem_diagnosis o CLUSTER.symptom_sign per a registrar com a part d’una història clínica fins que s’identifiqui una possible substància. \r\n\r\nNo utilitzar per a registrar reaccions a transfusions de productes sanguinis. Utilitzar un arquetip específic per aquesta finalitat. \r\n\r\nNo utilitzar per a registrar «alertes». Utilitzar EVALUATION.precaution, EVALUATION.contraindication o arquetips relacionats amb aquesta finalitat. \r\n\r\nNo utilitzar per a registrar teràpies fallides. \r\n\r\nNo utilitzar per a l’enregistrament explícit d’una absència (o absència negativa) d’una reacció a «Cap substància» o a substàncies identificades, per exemple «Al·lèrgies o reaccions adverses desconegudes» o «Cap reacció al·lèrgica coneguda a la Penicil·lina». Utilitzar l’arquetip EVALUATION.exclusion_global o EVALUATION.exclusion_specific per a expressar una afirmació positiva de l’exclusió d’una reacció adversa. \r\n\r\nNo utilitzar per a l’enregistrament explícit de què cap informació no es va poder obtindre sobre l’estat de la reacció adversa del pacient. Utilitzar l’arquetip EVALUATION.absence per a registrar que d’una declaració positiva, no s’ha pogut obtindre informació, per exemple, si un pacient no cooperatiu nega respondre les qüestions.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Registrar la evaluación cínica de la propensión de un paciente a experimentar una reacción adversa en caso de exposición, o reexposición, de una substancia específica o substancias de otra categoría.",
+        "keywords" : [ "reacción", "alergia", "alérgico", "adverso", "evento", "efecto", "sensibilidad", "intolerancia", "hipersensibilidad", "efecto secundario", "toxicidad", "medicamento", "alimentos", "agente", "substancia", "inmune", "no inmune", "químico", "anafiláctico", "alergeno", "medicación", "suplemento", "medicina", "remedio natural", "inmunológico", "no inmunológico", "riesgo" ],
+        "use" : "Usar para registrar una evaluación clínica de una propensión a una reacción adversa ante una futura exposición a una sustancia específica o a otra categoría de sustancias, incluidas, pero no limitadas a, excipientes y principios activos en los medicamentos, productos biológicos, sales metálicas y compuestos químicos orgánicos.\r\n\r\nEste arquetipo tiene como objetivo proporcionar un único lugar dentro de la historia clínica para documentar la propensión a todo tipo de reacciones, desde las triviales hasta las mortales:\r\n\r\nInmunomediadas: Tipo I-IV (incluidas reacciones alérgicas e hipersensibilidad); o\r\n\r\nNo inmunomediadas: incluidas reacciones pseudoalérgicas, efectos secundarios, intolerancias y toxicidad medicamentosa.\r\n\r\nEn la práctica clínica, puede resultar difícil distinguir entre las reacciones inmunomediadas y no inmunomediadas. Identificar el tipo de reacción no implica necesariamente una indicación de la gravedad o el riesgo de daño para el paciente.\r\n\r\nCuando se identifica una propensión, se puede registrar la información o evidencia de uno o más eventos de reacción mediante el uso del arquetipo CLUSTER.adverse_reaction_event dentro del SLOT «Resumen de eventos de reacción».\r\n\r\nIdentificar la gravedad de la manifestación de la reacción, registrada en el arquetipo CLUSTER.adverse_reaction_event, puede indicar la \"criticidad\" del riesgo de una reacción adversa. Por ejemplo, sufrir anafilaxia en la primera exposición a una sustancia justificaría clasificar la \"criticidad\" como \"Alta\", ya que existe un alto riesgo de que la anafilaxia vuelva a ocurrir en exposiciones posteriores.\r\n\r\nEste arquetipo ha sido diseñado para permitir el registro de información sobre sustancias específicas (amoxicilina, ostras, o el veneno de una picadura de abeja) o, alternativamente, sobre una categoría de sustancias (p. ej., penicilina). Si no se ha registrado una categoría de sustancias, la identificación de la sustancia exacta puede hacerse en una base por reacción, utilizando el arquetipo CLUSTER.adverse_reaction_event.\r\n\r\nUsar la información registrada sobre la existencia positiva de un riesgo de reacción adversa:\r\n\r\n- Para apoyar la atención clínica directa del paciente;\r\n- Como parte de una lista controlada de reacciones adversas o como lista de alergias/intolerancias;\r\n- Para facilitar el intercambio de información sobre la propensión y eventos relacionados con reacciones adversas;\r\n- Para la elaboración de informes de reacciones adversas, y\r\n- Para apoyar actividades informatizadas basadas en el conocimiento, como ayudas a la decisión y alertas clínicas.\r\n\r\nEl riesgo de un evento de reacción adversa o de una manifestación siempre sugiere una sustancia o categoría de sustancias causante. Si existe cierto grado de incertidumbre respecto a que una sustancia específica sea la causa, dicho nivel de incertidumbre puede registrarse utilizando los datos de \"Estado de verificación\". Si varias sustancias pudieran ser las causantes de una reacción o manifestación, cada sustancia debe registrarse utilizando una instancia separada de este arquetipo de riesgo de reacción adversa, con el campo de \"Estado de verificación\" inicialmente establecido como \"No confirmado\". De este modo, la comprobación de reacciones adversas puede activarse en los sistemas clínicos. Si posteriormente se demuestra que la sustancia no fue la causa, entonces el \"Estado de verificación\" puede modificarse a \"Refutado\", por ejemplo, tras realizar pruebas de alergia.",
+        "misuse" : "No usar para registrar reacciones fisiológicas provocadas por agentes físicos, como el calor, el frío, la luz solar, la vibración, las actividades deportivas, agentes infecciosos o contaminantes alimentarios. Para este propósito, utilizar un arquetipo específico como EVALUATION.problem_diagnosis o CLUSTER.symptom_sign.\r\n\r\nNo usar para registrar eventos adversos, incluidas fallas en procesos, intervenciones o productos clínicos. Por ejemplo: uso indebido, dosificación incorrecta o mala administración de un agente o sustancia; error de etiquetado; sobredosis/envenenamiento, etc. Para ello, utilizar un arquetipo específico.\r\n\r\nNo usar para registrar reacciones adversas cuando la sustancia es desconocida. En estos casos, utilizar EVALUATION.problem_diagnosis o CLUSTER.symptom_sign como parte de la historia clínica, hasta que se identifique una posible sustancia causante.\r\n\r\nNo usar para registrar reacciones a transfusiones de productos sanguíneos. Utilizar un arquetipo específico para ese propósito.\r\n\r\nNo usar para registrar “alertas”. Para ello, utilizar EVALUATION.precaution, EVALUATION.contraindication o arquetipos relacionados con ese fin.\r\n\r\nNo usar para registrar terapias fallidas.\r\n\r\nNo usar para registrar explícitamente la ausencia (o ausencia negativa) de una reacción a “ninguna sustancia” o a sustancias específicas, por ejemplo: “Alergias o reacciones adversas desconocidas” o “Ninguna reacción alérgica conocida a la penicilina”. En estos casos, utilizar el arquetipo EVALUATION.exclusion_global o EVALUATION.exclusion_specific para expresar una declaración positiva de exclusión de una reacción adversa.\r\n\r\nNo usar para registrar explícitamente que no se pudo obtener información sobre el estado de reacciones adversas del paciente. Para ello, utilizar el arquetipo EVALUATION.absence para documentar, mediante una declaración positiva, que no se ha podido obtener información, por ejemplo, cuando un paciente no cooperativo se niega a responder preguntas.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -477,6 +524,48 @@
           "code" : "ac0.7",
           "description" : ""
         }
+      },
+      "ca" : {
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
+        },
+        "ac0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.7",
+          "description" : ""
+        }
+      },
+      "es" : {
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
+        },
+        "ac0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.7",
+          "description" : ""
+        }
+      },
+      "el" : {
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
+        },
+        "ac0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.7",
+          "description" : ""
+        }
       }
     },
     "termBindings" : {
@@ -536,7 +625,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "859E3E1B5E2CC7F763194716F7A8660B"
+        "PARENT:MD5-CAM-1.0.1" : "EF2E88ACDF6FE3D05F990397A74EA636"
       },
       "details" : {
         "nb" : {
@@ -567,6 +656,36 @@
           "use" : "Use to record information about a specific adverse reaction event caused by exposure to a specific substance. The substance may be recorded in the 'Specific substance' element in this archetype, or in an appropriate element in the parent archetype in which this archetype is nested.\r\n\r\nThis archetype is designed to be nested within the EVALUATION.adverse_reaction_risk or the OBSERVATION.adverse_reaction_monitoring archetypes, to record details about a specific reaction event, but it could also be nested within other archetypes where clinically appropriate.\r\n\r\nThe scope of this archetype has deliberately focused on identifying a pragmatic data set that are used in most clinical systems or will be suitable for most common clinical scenarios; however, it permits extension of the model when additional detail is required, using the 'Reaction details', 'Exposure details', and 'Reporting details' slots. An extension may be required if a specialist allergist or immunologist needed to record a more detailed assessment as part of a report to regulatory bodies or within the context of a clinical trial.",
           "misuse" : "Not to be used to record adverse events, including failures of clinical process, interventions or products. For example: abnormal use or mistakes/errors made in maladministration of an agent or substance; incorrect dosage; mislabelling; harm or injury caused by an intervention or procedure; overdose/poisoning etc. Use a specific archetype for this purpose.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar informació relacionada amb un esdeveniment específic de reacció adversa provocat per l’exposició a una substància específica.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a registrar informació relacionada amb un esdeveniment específic de reacció adversa provocat per l’exposició a una substància específica. La substància s’ha de registrar en l’element de «Substància específica» en aquest arquetip o en un element adient de l’arquetip primari on està situat aquest arquetip. \r\n \r\nAquest arquetip està dissenyat per a situar-se dins de l’arquetip EVALUATION.adverse_reaction_risk o de l’arquetip OBSERVATION.adverse_reaction_monitoring amb l’objectiu de registrar dades sobre un esdeveniment específic de reacció adversa, però també es pot situar dins d’altres arquetips que s’adeqüen clínicament. \r\n\r\nL’abast d’aquest arquetip s’ha enfocat de manera deliberada en identificar un conjunt pragmàtic de dades que s’utilitzen a la majoria de sistemes clínics o que s’adeqüen a la majoria de situacions clíniques habituals; tanmateix, permet l’ampliació del model quan es requereixi informació suplementària usant les pestanyes «Dades de la reacció», «Dades de l’exposició» i «Dades de l’informe». Es podria requerir una ampliació si un al·lergòleg especialista o un immunòleg necessités registrar una avaluació més detallada com a part d’un informe destinat a organismes reguladors o dins del context d’un assaig clínic.",
+          "misuse" : "No utilitzar per a registrar esdeveniments adversos, com errades en els processos, intervencions i productes clínics. Per exemple: ús indegut o dosificació incorrecta o mala administració d’un agent o substància; errors d’etiquetatge; danys o ferides causades per una operació o procediment; sobredosi/enverinament, etc. Utilitzar un arquetip específic per aquesta finalitat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar información relacionada con un evento específico de reacción adversa provocado por la exposición a una sustancia específica.",
+          "keywords" : [ ],
+          "use" : "Usar para registrar información relacionada con un evento específico de reacción adversa provocado por la exposición a una sustancia específica. La sustancia debe registrarse en el elemento \"Sustancia específica\" de este arquetipo o en un elemento apropiado del arquetipo principal donde se encuentra este arquetipo.\r\n\r\nEste arquetipo está diseñado para ubicarse dentro del arquetipo EVALUATION.adverse_reaction_risk o del arquetipo OBSERVATION.adverse_reaction_monitoring, con el objetivo de registrar datos sobre un evento específico de reacción adversa. Sin embargo, también puede situarse dentro de otros arquetipos que sean clínicamente adecuados.\r\n\r\nEl alcance de este arquetipo ha sido deliberadamente enfocado en identificar un conjunto pragmático de datos que se utilizan en la mayoría de los sistemas clínicos o que se ajustan a la mayoría de situaciones clínicas habituales. No obstante, permite la ampliación del modelo cuando se requiere información adicional, mediante las pestañas \"Datos de la reacción\", \"Datos de la exposición\" y \"Datos del informe\". Esta ampliación podría ser necesaria, por ejemplo, si un alergólogo o un inmunólogo especialista necesita registrar una evaluación más detallada como parte de un informe destinado a organismos reguladores o en el contexto de un ensayo clínico.",
+          "misuse" : "No utilizar para registrar eventos adversos, como errores en el proceso clínico, intervenciones o productos. Por ejemplo: uso indebido o dosificación incorrecta o mala administración de un agente o sustancia; errores de etiquetaje; daños o heridas causadas por una operación o procedimiento; sobredosis/envenenamiento, etc. Utilizar un arquetipo específico para esta finalidad.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -769,6 +888,22 @@
             "code" : "ac0.1",
             "description" : ""
           }
+        },
+        "ca" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -805,6 +940,36 @@
         "name" : "Silje Ljosland Bakke",
         "organisation" : "Helse Vest IKT AS",
         "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -855,5 +1020,51 @@
     },
     "author" : { },
     "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "el"
+    },
+    "author" : {
+      "name" : "Christos Antoniadis",
+      "organisation" : "SigmaSoft",
+      "email" : "c.antoniadis@sigmasoft.gr"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Manuel José Zafra Doménech",
+      "organisation" : "TRADCREA, S.L.",
+      "email" : "mzafra@tradcrea.com"
+    },
+    "otherDetails" : {
+      "other_contributors" : "Servei Català de la Salut"
+    }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lauramoral@catsalut.cat"
+    },
+    "otherDetails" : {
+      "other_contributors" : "Tradcrea"
+    }
   } ]
 }
