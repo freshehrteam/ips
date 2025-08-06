@@ -24,8 +24,8 @@
       "custodian_namespace" : "org.openehr",
       "sem_ver" : "1.0.0-alpha.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b698fcf5df08d828fb01028e8f749e49",
-      "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
+      "MD5-CAM-1.0.1" : "72c2ccbda192ef8b46e9c7fd609e0ab1",
+      "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
       "de" : {
@@ -183,6 +183,50 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "zh-cn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh-cn"
+        },
+        "purpose" : "通用的容器类原始型，用于携带需要与他方共享的信息。",
+        "keywords" : [ "报告", "报告单" ],
+        "use" : "当不存在适用于具体报表类型的专用原始型时，作为通用的原始型，用于携带需要与他方共享的信息。\r\n\r\n常见的用例包括：记录对信息请求的响应、检测（检验/检查）结果、已经执行的活动或者已经发生的事件。\r\n\r\n在此故意对其总的章节/内容（Sections/Content）构成要素不加约束。这样，在模板当中，就可以利用任何适合相应临床目的的章节型（SECTION）或条目型（ENTRY）原始型来对其加以填充。",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Arquetipo contenedor genérico para contener información sobre el resultado de una prueba o evaluación.",
+        "keywords" : [ "informe", "prueba", "resultado", "diagnóstico" ],
+        "use" : "Se utiliza como arquetipo genérico para contener información sobre el resultado de una prueba o evaluación independiente, o de un grupo de resultados relacionados.\r\n\r\nSe prevé que cada arquetipo COMPOSITION.report-result contendrá al menos un arquetipo OBSERVATION que contendrá los resultados de la prueba, pero dependiendo de la complejidad de la prueba o evaluación también se pueden incluir otros arquetipos para proporcionar el contexto clínico completo.\r\n\r\nLos casos de uso más comunes son:\r\n- uno o varios resultados de pruebas de patología/laboratorio relacionados con muestras;\r\n- uno o varios resultados de pruebas de diagnóstico por imagen relacionados con el tiempo;\r\n- un resultado de ECG; o\r\n- una evaluación auditiva mediante audiograma.\r\n\r\nEl componente Secciones se ha dejado deliberadamente sin restricciones para maximizar la reutilización de este arquetipo.",
+        "misuse" : "No debe utilizarse para informes que no estén relacionados con el resultado de una prueba o evaluación. Utilícese el COMPOSITION.report genérico o COMPOSITIONs con fines específicos, según proceda.\r\n\r\nNo debe utilizarse para los resultados de pruebas o evaluaciones que se registran como parte de una nota de consulta, por ejemplo la escala de coma de Glasgow en el contexto de una consulta de urgencia; para ello, utilice el arquetipo OBSERVATION.glasgow_coma_scale como un componente dentro de COMPOSITION.encouter.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Arquetip contenidor genèric per transmetre informació sobre el resultat d'una prova o avaluació.",
+        "keywords" : [ "informe", "prova", "resultat", "diagnòstic" ],
+        "use" : "Utilitzar com a arquetip genèric per transmetre informació sobre el resultat d'una prova o d'avaluació o d'un grup de resultats relacionats.\r\n\r\nEs preveu que cada arquetip COMPOSITION.report-result contindrà almenys un arquetip de tipus OBSERVATION que contindrà els resultats de la prova, però depenent de la complexitat de la prova o avaluació també es poden incloure altres arquetips per proporcionar el context clínic complet.\r\n\r\nEls casos d'ús més comuns són els següents:\r\n- un o diversos resultats de proves de patologia/laboratori relacionats amb mostres;\r\n- un o diversos resultats de proves de diagnòstic per imatge relacionats amb el temps;\r\n- un resultat d'ECG; o\r\n- una avaluació auditiva mitjançant audiograma.\r\n\r\nEl component Seccions s'ha deixat sense restriccions deliberadament per maximitzar la reutilització d'aquest arquetip.",
+        "misuse" : "No s'ha d'utilitzar per a informes que no estiguin relacionats amb els resultats d'una prova o avaluació. Utilitzar el COMPOSITION.report genèric o COMPOSITIONs amb fins específics, segons escaigui.\r\n\r\nNo s'ha d'utilitzar per als resultats de proves o avaluacions que es registren com a part d'una nota de consulta, per exemple, l'escala de coma de Glasgow en el context d'una consulta d'urgències - utilitzeu l'arquetip OBSERVATION.glasgow_coma_scale com a component dins de COMPOSITION.encouter.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -257,13 +301,6 @@
         }
       },
       "es-ar" : {
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
@@ -272,19 +309,6 @@
         }
       },
       "nb" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
@@ -293,31 +317,6 @@
         }
       },
       "pt-br" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Relatório",
-          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Identificador do relatório",
-          "description" : "Informação de identificação sobre o relatório."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Estado",
-          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
@@ -326,30 +325,6 @@
         }
       },
       "de" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Bericht",
-          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
-        },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "Tree",
-          "description" : "@ internal @"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Bericht ID",
-          "description" : "Identifizierungsmerkmal des Berichts."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
@@ -366,198 +341,72 @@
         }
       },
       "fi" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Raportti",
-          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Raportti ID",
-          "description" : "Raportin tunnistetiedot"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Laajennus",
-          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
-          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "IPS - Diagnostic Results",
-          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Raportti",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
         }
       },
       "it" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapporto",
-          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "ID del rapporto",
-          "description" : "Informazioni di identificazione del rapporto"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Stato",
-          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Estensione",
-          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
-          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "IPS - Diagnostic Results",
-          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapporto",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
         }
       },
       "nl" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapportage",
-          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Rapportage ID",
-          "description" : "Identificerende informatie over deze rapportage."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Uitbreiding",
-          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
-          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "IPS - Diagnostic Results",
-          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapportage",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
         }
       },
       "sv" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Rapport-id",
-          "description" : "Information som identifierar rapporten.\r\n"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilläggsinformation",
-          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
-          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "IPS - Diagnostic Results",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
         }
       },
       "zh" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "报告ID",
-          "description" : "关于这份报告的标识信息。"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "状态",
-          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "IPS - Diagnostic Results",
           "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0000.1" : {
+        }
+      },
+      "ca" : { },
+      "zh-cn" : { },
+      "es" : {
+        "at0000" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+          "text" : "Informe",
+          "description" : "Documento para comunicar información con otros, generalmente en respuesta a una solicitud de otra parte."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificación del informe",
+          "description" : "Información identificativa sobre el informe."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "Estado del informe completo. Nota: Este no es el estado de cualquiera de los componentes del informe."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensión",
+          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
+          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
         }
       }
     },
@@ -699,5 +548,49 @@
     },
     "author" : { },
     "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh-cn"
+    },
+    "author" : {
+      "name" : "Lin Zhang",
+      "organisation" : "Freelancer",
+      "email" : "linforest@163.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : {
+      "other_contributors" : "TRADCREA"
+    }
   } ]
 }
