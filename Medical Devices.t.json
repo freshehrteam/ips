@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "985803c91ce4b4583268817202784216",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      "MD5-CAM-1.0.1" : "1793d0842e30bc3bc29794aba0c3497f",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -142,6 +144,36 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -255,7 +287,9 @@
           "text" : "Medical Devices",
           "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
         }
-      }
+      },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -537,7 +571,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "D1349AAD9444365B34B1BAFDE9F0BD4A"
+        "PARENT:MD5-CAM-1.0.1" : "B4AF4C8AA2F8BFB7EC593F747120036D"
       },
       "details" : {
         "de" : {
@@ -679,6 +713,36 @@
           "misuse" : "Niet gebruiken voor het vastleggen van gegevens over geneesmiddelen die een directe farmacologische, metabolische of immunologische werking hebben. Bijvoorbeeld: een met medicijnen geïmpregneerd verband waarvoor een recept nodig is, moet worden geregistreerd met behulp van het archetype INSTRUCTION.medication_order, gericht op de actieve ingrediënten, dosering etc.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar les dades d’un producte sanitari utilitzat per a proporcionar atenció sanitària.",
+          "keywords" : [ "producte", "màquina", "implant", "aparell", "catèter", "pròtesi", "ajuda", "biomèdic", "instrument", "equip", "metre", "monitor", "programari" ],
+          "use" : "Utilitzar per a registrar les dades d’un producte sanitari utilitzat per a proporcionar atenció sanitària.\r\n\r\nL’ús del terme «producte sanitari» varia depenent del context. Dins de l’àmbit Normatiu, el mot «producte» tendeix a referir-se a dispositius mecànics o electrònics que ajuden a l’atenció sanitària i que exigeixen documentació rigorosa pel que fa al rastreig de ubicació, manteniment, calibració, versions de programari, etc. Dins del context de la terminologia, l’ús de «producte» és molt general, incloent qualsevol producte sanitari que es pugui utilitzar per a proporcionar cuidats clínics directa o indirectament mentre no es comporti de forma que exerceixi un efecte farmacològic, metabòlic o immunològic directe.\r\n\r\nExemples de productes sanitaris oscil·len entre productes simples, com ara catèters urinaris, depressors linguals, lents de contacte, implants d’articulacions artificials, implants de mama i apòsits simples i productes avançats, com ara cors artificials, bombes d’infusió, espiròmetres, aplicacions de telèfon mòbil i dispositius informatitzats que capturin les mesures mèdiques al punt d’assistència sanitària.\r\n\r\nSi es donés la situació complexa que un producte implantat quirúrgicament s’usés com a mitjà per a subministrar agents terapèutics com ara quimioteràpia directament al cos, aquest arquetip s’utilitzarà per a registrar només les dades sobre el producte sanitari en si, i l’encàrrec de medicació i les dades sobre l’administració real de l’agent terapèutic es registraran utilitzant arquetips específics relacionats amb la medicació de tipus INSTRUCTION i ACTION.\r\n\r\nAquest arquetip està dissenyat per a proporcionar la infraestructura per a la representació estructurada de qualsevol producte sanitari, i els elements de dades que estan continguts ací no són específics per a cap tipus de producte. Productes d’un sol ús normalment exigiran elements de dades com Número de Lot i Data de Caducitat. Per contrast, aquests elements, per regla general, no seran rellevants per als productes duradors, els quals tindran sovint un conjunt d’identificadors, incloent un identificador d’usuari, Número de Sèrie, Model, etc.\r\n\r\nA més, diferents tipus de productes exigiran informació específica rellevant per a la seua finalitat. Aquestes dades es poden registrar utilitzant arquetips específics de tipus CLUSTER inserits dins del SLOT «Característiques específiques». Per exemple: l’ús d’un catèter urinari pot exigir dades addicionals sobre el diàmetre i la llargària del catèter, la composició del material, quantitat de lúmens, etc.\r\n\r\nSi el producte sanitari conté una quantitat de components que exigeixen que es registrin les seues dades, cada component concret s’haurà de registrar de forma explícita utilitzant un arquetip addicional CLUSTER.device inserit dins del SLOT «Components».\r\n\r\nEl camp de dades «Versió del Programari» només permet que es registri una única versió. Això és aplicable principalment per a un producte que sigui una aplicació de programari. Si el producte té múltiples components de programari o de maquinari que s’han d’especificar, això s’haurà de fer utilitzant un CLUSTER.device addicional inserit dins del SLOT «Components».\r\n\r\nPer a registrar dades addicionals per a productes duradors o persistents relacionats amb la propietat, el rastreig de ubicació física, horaris de manteniment, etc., utilitzar un arquetip CLUSTER.device_details inserit dins del SLOT «Gestió d’actius» d’aquest arquetip.\r\n\r\nAquest arquetip s’ha dissenyat per a l’ús genèric dins d’altres arquetips que han de descriure un producte. Exemples inclouen: OBSERVATION.blood_pressure per al tensiòmetre; OBSERVATION.ecg per a la màquina ECG; OBSERVATION.urinalysis per a les tires reactives i el producte utilitzat per a les proves; ACTION.procedure; i CLUSTER.exam_tympanic_membrane per a detallar l’otoscopi utilitzat.",
+          "misuse" : "No utilitzar per a registrar dades sobre medicaments que exerceixin un efecte farmacològic, metabòlic o immunològic directe. Per exemple: un apòsit impregnat de medicina que exigeixi una prescripció s’haurà de registrar utilitzant l’arquetip INSTRUCTION.medication_order, enfocat sobre les substàncies actives, dosificació, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar los datos de un dispositivo sanitario utilizado para proporcionar atención sanitaria.",
+          "keywords" : [ "dispositivo", "máquina", "implante", "aparato", "catéter", "prótesis", "ayuda", "biomédico", "instrumento", "equipo", "metro", "monitor", "software" ],
+          "use" : "Usar para registrar los datos de un dispositivo sanitario utilizado para proporcionar atención sanitaria.\r\n\r\nEl uso del término \"dispositivo sanitario\" varía según el contexto.\r\nEn el ámbito normativo, el término \"dispositivo\" suele referirse a dispositivos mecánicos o electrónicos que ayudan en la atención sanitaria y que requieren una documentación rigurosa respecto al seguimiento de ubicación, mantenimiento, calibración, versiones de software, etc.\r\nEn el contexto terminológico, el uso de \"dispositivo\" es mucho más amplio e incluye cualquier dispositivo sanitario que pueda utilizarse para proporcionar cuidados clínicos directa o indirectamente, siempre que no ejerza un efecto farmacológico, metabólico o inmunológico, directo.\r\n\r\nEjemplos de dispositivos sanitarios abarcan desde dispositivos simples como catéteres urinarios, depresores linguales, lentes de contacto, implantes de articulaciones artificiales, implantes mamarios y apósitos simples; hasta dispositivos avanzados como corazones artificiales, bombas de infusión, espirómetros, aplicaciones móviles y dispositivos informatizados que capturan mediciones médicas en el punto de atención.\r\n\r\nSi se diera una situación compleja, como que un dispositivo implantado quirúrgicamente se utilice como medio para administrar agentes terapéuticos (por ejemplo, quimioterapia directamente al cuerpo), este arquetipo se utilizará únicamente para registrar los datos del dispositivo sanitario en sí, mientras que la prescripción de la medicación y los datos sobre la administración del agente terapéutico se registrarán mediante arquetipos específicos relacionados con la medicación, como los de tipo INSTRUCTION y ACTION.\r\n\r\nEste arquetipo está diseñado para proporcionar la infraestructura para una representación estructurada de cualquier dispositivo sanitario, y los elementos de datos que contiene no son específicos de ningún tipo concreto de dispositivo.\r\nPor ejemplo: dispositivos de un solo uso requerirán normalmente datos como número de lote y fecha de caducidad.\r\n\r\nEn cambio, estos datos no suelen ser relevantes para dispositivos duraderos, los cuales suelen tener un conjunto diferente de identificadores, como número de serie, modelo, identificador de usuario, etc.\r\n\r\nAdemás, distintos tipos de dispositivos exigirán información específica relacionada con su finalidad clínica. Estos datos pueden registrarse utilizando arquetipos específicos de tipo CLUSTER, insertados dentro del SLOT «Características específicas». Por ejemplo: el uso de un catéter urinario puede requerir datos adicionales como el diámetro y longitud del catéter, material, cantidad de lúmenes, etc.\r\n\r\nSi el dispositivo sanitario contiene varios componentes que requieren un registro individualizado, cada componente debe registrarse explícitamente mediante un arquetipo adicional CLUSTER.device, insertado dentro del SLOT «Componentes».\r\n\r\nEl campo de datos \"Versión del software\" solo permite registrar una única versión, lo cual es aplicable principalmente si el dispositivo es una aplicación de software. Si el dispositivo incluye múltiples componentes de software o hardware que necesitan especificarse por separado, esto debe hacerse usando un CLUSTER.device adicional en el SLOT «Componentes».\r\n\r\nPara registrar información adicional relacionada con dispositivos sanitarios duraderos o persistentes, como datos de propiedad, ubicación física, cronograma de mantenimiento, etc., se debe utilizar un arquetipo CLUSTER.device_details insertado en el SLOT «Gestión de activos» de este arquetipo.\r\n\r\nEste arquetipo está diseñado para ser utilizado de manera genérica dentro de otros arquetipos que necesitan describir un dispositivo.\r\nEjemplos incluyen: OBSERVATION.blood_pressure, para el tensiómetro; OBSERVATION.ecg, para el electrocardiógrafo; OBSERVATION.urinalysis, para tiras reactivas y otros dispositivos usados en análisis de orina; ACTION.procedure y CLUSTER.exam_tympanic_membrane, para detallar el otoscopio utilizado.",
+          "misuse" : "No utilizar para registrar los datos sobre productos médicos que ejerzan un efecto farmacológico, metabólico o inmunológico directo. Por ejemplo: un apósito impregnado de medicina que requiera una prescripción se tendrá que registrar utilizando el arquetipo INSTRUCTION.medication_order, enfocado sobre substancias activas, dosificación, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -707,7 +771,9 @@
         "de" : { },
         "sv" : { },
         "nl" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -836,6 +902,36 @@
         "organisation" : "Nedap"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Tradcrea"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   } ],
   "originalLanguage" : {
@@ -933,6 +1029,34 @@
       "codeString" : "fr"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
     "otherDetails" : { }
   } ]
 }
