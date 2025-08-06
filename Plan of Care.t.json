@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "20408bb09acb9a6f888c9fe5f20b7f6b",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      "MD5-CAM-1.0.1" : "335aa4df4d2081e7b02791e509bbc469",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -142,6 +144,36 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -149,7 +181,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-SECTION.planof care.v1"
+    "value" : "openEHR-EHR-SECTION.planof_care.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -264,14 +296,16 @@
           "text" : "Plan of Care",
           "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
         }
-      }
+      },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "d696555d-a665-3fdf-90db-552c9a54c78c",
+  "buildUid" : "70cc0988-0079-3d9e-ad28-2099b6ec26fd",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -685,6 +719,34 @@
       "codeString" : "fr"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
     "otherDetails" : { }
   } ]
 }
