@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "66a1ee851302a669a4c7fa7b35495fcc",
+      "MD5-CAM-1.0.1" : "53cfa7edfa68b8fad5034c146ffc125f",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : ""
     },
     "details" : {
@@ -212,7 +212,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Past History of Illnesses",
+          "text" : "Past History of Illness",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
