@@ -11,7 +11,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0e932b77ebf39392d47e9f5664b9dc81",
+      "MD5-CAM-1.0.1" : "40feeb508a23bde0dd47f05f3527a0d6",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -142,7 +142,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "31a1cb98-fd9b-3b48-8064-579db7bed50c",
+  "buildUid" : "07868fdf-83c1-3074-97f5-9d13ae0ddf4a",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
