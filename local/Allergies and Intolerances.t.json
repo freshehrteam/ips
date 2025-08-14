@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6cabe558b74ec85cbf75fdb30d2ffa35",
+      "MD5-CAM-1.0.1" : "b2da77ce329b17d31c122fd37c5c8187",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "2.0.0-alpha.8",
+      "sem_ver" : "2.0.0-alpha.9",
       "build_uid" : ""
     },
     "details" : {
@@ -1290,7 +1290,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
+              "occurrences" : "0..*",
               "nodeId" : "at0129.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -1750,6 +1750,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -1875,6 +1876,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Reaction",
+            "description" : "Information about a specific adverse reaction event caused by exposure to a specific substance."
           }
         },
         "nb" : {
