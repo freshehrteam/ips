@@ -14,7 +14,7 @@ description
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"rejected">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -31,9 +31,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"B0C1C43A94047494FFAEE9C66ECD2619">
-		["build_uid"] = <"908b6b9d-80de-4633-b3da-013eedac62ec">
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"ABE303D105AD4BAAAC677AC5442438C2">
+		["build_uid"] = <"6d832a03-7395-4ef6-b4c7-fb344b2efca1">
+		["revision"] = <"0.0.1">
 	>
 
 definition
