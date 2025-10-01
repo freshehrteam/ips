@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "59860a13e47dd89206d72fb771c586e0",
+      "MD5-CAM-1.0.1" : "a91ebf0672c5170713c950ed70729634",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : ""
     },
     "details" : {
@@ -1113,7 +1113,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "73BD9C19CB9C80295C005CC16AD309AE"
+        "PARENT:MD5-CAM-1.0.1" : "2E2CD19F36E1E5C145E13B29447A92DA"
       },
       "details" : {
         "de" : {
@@ -1347,6 +1347,21 @@
           "keywords" : [ "arronsament, augment, disminució, pèrdua d’alçada, alçada, llargària, creixement" ],
           "use" : "Utilitzar per a registrar l’alçada o llargària del cos mesurada d'un pacient en un moment donat. Una declaració que indiqui que el cos no està complet es pot registrar en l’element protocol·lari «Factors de confusió» si fos necessari. Aquest es l'arquetip utilitzat normalment per a una mesura típica de l’alçada o llargària del cos, independentment dels entorns clínics.",
           "misuse" : "No utilitzar per a registrar una alçada ajustada, un càlcul de l’alçada completa d’un pacient a qui, per exemple, li manquen parts, o la totalitat de les extremitats inferiors, o té contractures. Un pes corporal calculat es pot basar en mesures d'altres parts del cos i en un algoritme. Utilitzar arquetips específics per aquesta finalitat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar la longitud del cuerpo de un paciente desde la coronilla hasta la planta de los pies, ya sea medida o aproximada, y en una posición de pie o reclinada.",
+          "keywords" : [ "encogimiento", "incremento", "decremento", "pérdida de altura", "altura", "crecimiento" ],
+          "use" : "Usar para registrar la altura o longitud corporal medida de un paciente en un momento determinado. Una declaración que indique que el cuerpo no está completo puede registrarse en el elemento del protocolo \"Factores de confusión\", si fuera necesario. Este es el arquetipo que se utiliza habitualmente para una medición típica de la altura o longitud corporal, independientemente del entorno clínico.\r\n\r\nTambién puede utilizarse para registrar una estimación de la altura o longitud corporal en un escenario clínico en el que no sea posible obtener una medición precisa. Por ejemplo, al medir a un niño que no coopera. Esto no se modela de forma explícita en el arquetipo, ya que el modelo de referencia de openEHR permite introducir valores aproximados en cualquier tipo de dato cuantitativo, estableciendo el atributo \"magnitude_status\" con el valor «~».\r\nEn la implementación práctica —por ejemplo, en la interfaz de usuario de una aplicación— se podría permitir a los profesionales de salud seleccionar una casilla debidamente etiquetada junto al campo de altura, para indicar que el valor registrado es una estimación, y no una altura exacta.\r\n\r\nEn general: se recomienda registrar longitud para niños menores de 2 años y para pacientes que no pueden mantenerse de pie; se utiliza altura para todos los demás casos.\r\n\r\nCuando se registre por primera vez la longitud de un recién nacido, debe utilizarse el evento \"Nacimiento\" y especificarse como \"longitud al nacer\".\r\n\r\nTambién puede usarse para registrar incrementos o pérdidas de altura. Actualmente, esto puede modelarse limitando el evento \"cualquier evento\" a un evento de intervalo dentro de una plantilla, con la función matemática de incremento o decremento asociada, según corresponda.",
+          "misuse" : "No utilizar para registrar una altura ajustada, un cálculo de altura completa de un paciente a quien, por ejemplo, le falten partes, o la totalidad de las extremidades inferiores, o tiene contracturas. Un peso corporal calculado se puede basar en medidas de otras partes del cuerpo y en un algoritmo. Utilizar arquetipos específicos para esta finalidad.\r\n\r\nNo utilizar para registrar la velocidad de crecimiento.\r\n\r\nNo utilizar para registrar la longitud de una parte del cuerpo u otro objeto.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1627,7 +1642,8 @@
         "nb" : { },
         "fr" : { },
         "ca" : { },
-        "es-co" : { }
+        "es-co" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1840,6 +1856,20 @@
       "author" : {
         "name" : "Laura Moral López",
         "organisation" : "Servei Català de Salut",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
         "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
@@ -2385,7 +2415,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "E84CB8D79AA6BE805AB9E12095A987B9"
+        "PARENT:MD5-CAM-1.0.1" : "BF1B676F47835EC57EA052498DF49042"
       },
       "details" : {
         "de" : {
@@ -2585,6 +2615,21 @@
           "keywords" : [ "速率", "率", "节律", "跳动", "脉搏", "搏动", "心脏", "生命", "体征", "生命体征" ],
           "use" : "旨在用于记录脉搏或心跳的存在情况或者说存在与否。\r\n\r\n在实践当中，术语“心率”和“脉搏[速]率”经常会互换使用，尽管用于测量二者的身体部位可能有所不同。本原始型旨在用于二者当中的任一术语，并且会利用测量部位元素对二者加以区分。\r\n\r\n旨在用于记录脉搏率或心率的测量结果、关于相关模式和特征/特点的观察结果以及对于结果/所见的临床解释。\r\n\r\n可以利用最大值事件“Maximum”来记录一段时间内或者说特定时间区间内最大的脉搏[速]率或心率等测量结果。可以在模板当中或运行时指定其他的时间点/时刻型或时间区间型事件。\r\n\r\n在开发编制本原始型的过程中，关于脉搏或心跳规律性的表示方法，存在着一些对立的意见。目前，本原始型会分别来表示相关的数据点：首先是确定 “规律”（Regular） 还是 “不规律”（Irregular）；然后，如果为 “不规律”，则进一步选择 “规律性不齐”（Regularly irregular） 还是 “不规律性不齐”（Irregularly irregular）。在实践中，临床系统可以为用户提供“规则性”与“不齐类型”取值的组合，如提取自这两个数据元的“规律”、“规律性不齐”和 “不规律性不齐”。可以同时针对两个数据元来记录数据，而前提则是，如果选择了其中的一种不齐类型，则 还会同时选定规律性数据元“Regularity”之中的取值 “不规律”。\r\n\r\n在某些情况下，重要的是要做到非常地具体或者说具有针对性，以便将末梢部位（如桡动脉）所观察到的心率与心脏部位所观察到的心率区别开来。要记录脉搏短绌（pulse deficit），请采用本原始型的两个实例来分别记录机械心率（mechanical heart rate）和外周脉搏率（peripheral pulse rate）的测量结果 - 这两个测量结果之间的差值就是脉搏短绌。实际脉搏短绌取值的记录则会采用单独的观察型原始型。",
           "misuse" : "并非旨在用于记录心电图报告上下文背景下的 R-R 间期心率/速率 - 对此，请采用观察型心电图原始型 OBSERVATION.ecg。\r\n\r\n并非旨在用于记录完整心血管检查或评估结果的其他详情。将会采用其他具有针对性的群簇型原始型莱记录种种的特性/特征，如心尖搏动、心跳杂音/异常音或听诊所见/结果。\r\n\r\n特别是，本原始型并非旨在用于记录外周血管疾病的评估结果（其中需要记录每次外周脉搏的存在情况和强度）。外周脉搏检查一般所见/发现/结果的记录将会采用具有针对性的群簇型原始型。\r\n\r\n并非旨在用于记录胎儿心率 - 对此，请采用观察型心电图胎儿心脏原始型 OBSERVATION.fetal_heart。\r\n\r\n并非旨在用于记录脉搏短绌（pulse deficit） - 对此，请采用具有针对性的观察型原始型。\r\n\r\n对于目标心率（Target Heart Rate）等概念，则应当采用单独的，与目标和运动评估相关的评估型原始型来加以记录。\r\n\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Per registrar detalls sobre la freqüència i els atributs associats per a un pols o batec cardíac.",
+          "keywords" : [ "freqüència", "ritme", "batec", "pols", "cor", "vital", "signe" ],
+          "use" : "S'utilitza per registrar la presència o absència d'un pols o batec cardíac.\r\n\r\nA la pràctica, els termes \"freqüència cardíaca\" i \"freqüència del pols\" sovint s'utilitzen indistintament, encara que es poden mesurar en diferents llocs corporals. Aquest arquetip està destinat a ser utilitzat per a qualsevol terme i l'element del lloc de mesura s'utilitza per diferenciar-los.\r\n\r\nS'utilitza per registrar la mesura de la freqüència de pols, o freqüència cardíaca, observacions sobre el patró i el caràcter associats, i la interpretació clínica dels resultats.\r\n\r\nMesures com el pols màxim o la freqüència cardíaca en un interval de temps es poden registrar utilitzant l'esdeveniment 'Màxim'. Altres esdeveniments puntuals o d'interval es poden especificar dins d'una plantilla o en temps d'execució.\r\n\r\nEn el desenvolupament d'aquest arquetip, hi ha hagut certa tensió al voltant de la representació de la regularitat del pols o batec cardíac. Aquest arquetip representa els punts de dades rellevants per separat: en primer lloc, estableix 'Regular' vs 'Irregular' i després, si 'Irregular', altres opcions de 'Regularment irregular' i 'Irregularment irregular'. A la pràctica, els sistemes clínics podrien oferir als usuaris una combinació dels valors de la 'Regularitat' i el 'tipus irregular' - per exemple, 'Regular', 'Regularitat irregular' i 'irregularitat irregular' extrets d'aquests dos elements de dades. Les dades es podrien registrar contra ambdós elements de dades amb la suposició que si se selecciona un dels tipus irregulars, llavors el valor 'irregular' en l'element de dades 'Regularitat' també se selecciona automàticament.\r\n\r\nEn determinades situacions és important ser molt específic perquè una freqüència observada en un lloc del cos perifèric, com l'artèria radial, es pugui diferenciar de la freqüència del cor. Per registrar un dèficit de pols, registrar les mesures de la freqüència cardíaca mecànica i una freqüència de pols perifèrica en dos casos d'aquest arquetip - la diferència entre aquests mesuraments és el dèficit de pols. El dèficit real de pols es registrarà en un arquetip OBSERVATION separat.",
+          "misuse" : "No s'ha d'utilitzar per registrar la freqüència R-R en el context d'un informe d'electrocardiograma - utilitzar l'arquetip OBSERVATION.ecg per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar altres detalls de l'examen o avaluació cardiovascular completa. Altres arquetips de CLUSTER específics s'utilitzaran per registrar característiques com el ritme de l'àpex, els murmuris i els frecs, o les troballes auscultatives.\r\n\r\nEn particular, aquest arquetip no pretén registrar l'avaluació de la malaltia vascular perifèrica, que requereix documentació de la presència i la força de cada pols perifèric. S'utilitzarà un arquetip de CLUSTER específic per registrar les troballes generals sobre l'examen dels polsos perifèrics. \r\n\r\nNo s'ha d'utilitzar per registrar la freqüència cardíaca fetal - utilitzeu l'arquetip OBSERVATION.fetal_heart per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar el dèficit de pols - utilitzar un arquetip OBSERVATION específic per a aquest propòsit.\r\n\r\nConceptes com 'freqüència cardíaca objectiu' s'han de registrar en arquetips EVALUATION separats relacionats amb objectius i avaluació d'exercicis.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3193,7 +3238,8 @@
         "nb" : { },
         "nl" : { },
         "el" : { },
-        "zh-cn" : { }
+        "zh-cn" : { },
+        "ca" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3376,6 +3422,20 @@
         "email" : "linforest@163.com"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -3388,7 +3448,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4392B7F4A6A83F88886A23854BE82BB7"
+        "PARENT:MD5-CAM-1.0.1" : "6621F0164CE48887DE4BE1C20B1CBAF2"
       },
       "details" : {
         "de" : {
@@ -3765,8 +3825,8 @@
                                 "lower" : 1,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "upperUnbounded" : true,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
                               } ]
                             } ]
                           } ],
@@ -4652,8 +4712,8 @@
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : true,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : true
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -4687,8 +4747,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -4703,8 +4763,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -4735,8 +4795,8 @@
                                 "upper" : 100.0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           }, {
@@ -4751,8 +4811,8 @@
                                 "upper" : 2,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : true,
-                                "upperUnbounded" : false,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -5045,7 +5105,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5ECFDCF3AE4416D246D07663DD016027"
+        "PARENT:MD5-CAM-1.0.1" : "45CDA8C2180DDA3CAB6EBB6AF603493D"
       },
       "details" : {
         "de" : {
@@ -5976,8 +6036,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -6030,8 +6090,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -6175,8 +6235,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -6237,8 +6297,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -6296,8 +6356,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -6350,8 +6410,8 @@
                                   "upper" : 1000.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
@@ -6495,8 +6555,8 @@
                                   "upper" : 90.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
-                                  "upperUnbounded" : false,
-                                  "lowerUnbounded" : false
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               }, {
                                 "@type" : "C_STRING",
