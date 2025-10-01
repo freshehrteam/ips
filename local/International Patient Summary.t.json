@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5f72abcf9f2250636c5a4c53f21c59a7",
+      "MD5-CAM-1.0.1" : "48aaff2f33f799d6e43bfcc62e93696e",
       "PARENT:MD5-CAM-1.0.1" : "B2D87AA57E3D01820E7DAE733A4644F7",
       "original_language" : "ISO_639-1::en",
-      "sem_ver" : "1.0.0-alpha.24",
+      "sem_ver" : "1.0.0-alpha.25",
       "build_uid" : ""
     },
     "details" : {
@@ -197,10 +197,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.8",
+        "nodeId" : "at0.66",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Vital Signs",
+        "archetypeRef" : "IPS Vital Signs",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -215,7 +215,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.10",
+        "nodeId" : "at0.68",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "Pregnancy",
@@ -224,7 +224,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.11",
+        "nodeId" : "at0.70",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "Social History",
