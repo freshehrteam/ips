@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "915dd22941ea84ad99c8530ccb894687",
+      "MD5-CAM-1.0.1" : "568a605475b02bf24991ed9e7b87ed57",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.2",
+      "sem_ver" : "1.0.0-alpha.3",
       "build_uid" : ""
     },
     "details" : {
@@ -284,7 +284,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Vital Signs",
+          "text" : "IPS Vital Signs",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
