@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "27f84a0701c7c0a26edb6e68175797a6",
+      "MD5-CAM-1.0.1" : "8be67bede6894f00ac97bab6875678cf",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.2",
+      "sem_ver" : "1.0.0-alpha.3",
       "build_uid" : ""
     },
     "details" : {
@@ -313,7 +313,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F80BCB20EB078F4EAEDC013AC8146509"
+        "PARENT:MD5-CAM-1.0.1" : "A4B07F5C96E527E2834C1225877B312E"
       },
       "details" : {
         "de" : {
@@ -344,6 +344,21 @@
           "use" : "Use to record a summary of medical devices that have been fitted or implanted including, but not limited to:\r\n- assisted hearing devices, such as hearing aids or auditory implants;\r\n- orthotics or artificial limbs; \r\n- dentures or dental implants; and\r\n- eyeglasses or contact lenses.\r\n\r\nThis archetype has been specifically designed to assist in providing an overview of management of medical devices over time. It may be used to share as a summary within messages or between clinical systems, where the detail is not required. If specific devices have been used in the past, as much detail as is available can be added in this archetype to create a context which may influence decisions about current or future devices of the same type.\r\n\r\nIn practice, some clinical systems will need to record specific and detailed INSTRUCTION and ACTION archetypes to reflect the request for an medical device and subseqent activities that need to be recorded as that request is carried out. It is inevitable that there will be some overlap in this summary and these detailed archetypes. All are neccessary in various situations. \r\n\r\nIf clinicians are recording the process of request and provision of medical devices, then this summary should be derived from those recordings, to ensure that there is no duplication of clinical input.",
           "misuse" : "Not to be used to request a medical device - use the INSTRUCTION.request family for this purpose.\r\n\r\nNot to be used to record the activities that occur in the planning and fitting of a device - use the ACTION.device_fitting archetype for this purpose.\r\n\r\nNot to be used to record the activities that occur in the planning and fitting of an implant - use the ACTION.procedure archetype for this purpose.",
           "copyright" : "© Northern Territory Department of Health, Australia, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en pågående og persistent oversikt over medisinsk utstyr som er tilpasset eller implantert.",
+          "keywords" : [ ],
+          "use" : "For å registrere en oversikt over medisinsk utstyr som er tilpasset eller implantert.\r\nFor eksempel:\r\n- ortoser eller kunstige lemmer.\r\n- tannpoteser eller tannimplantater.\r\n- briller eller kontaktlinser.\r\n\r\nDenne arketypen er spesifikt utviklet for å bidra til en administrert oversikt over medisinsk utstyr over tid. Den kan benyttes som et sammendrag i meldinger eller mellom ulike kliniske systemer hvor detaljer ikke er påkrevd. Har en benyttet høreapparat tidligere kan man registrere tilgjengelig informasjon om dette for å skape kontekst som kan ha betydning for valg av nåværende eller framtidig utstyr.\r\n\r\nI praksis vil noen kliniske systemer måtte registrere spesifikke og detaljerte INSTRUCTION og ACTION arketyper for å gjenspeile en forespørsel for et høreapparat og etterfølgende aktiviteter må registreres etter hvert som forespørselen er utført. Det er uunngåelig at det vil bli overlapp i dette sammendraget og i de detaljerte arketypene. Alle er nødvendige i ulike situasjoner.\r\n\r\nOm klinikere registrerer hele prosessen fra en forespørsel og fram til utstyret framskaffes, skal dette sammendraget avledes fra disse registreringene for å sikre at duplisering av kliniske registreringer ikke forekommer.",
+          "misuse" : "Brukes ikke for å rekvirere høreapparat - Bruk INSTRUCTION.request arketypene for dette formålet.\r\n\r\nBrukes ikke for å rekvirere aktiviteter som forekommer under planlegging og tilbassing av medisinsk utstyr - bruk passende ACTION arketype for dette formålet.\r\n\r\nBrukes ikke for å registrere aktiviteter som forekommer under planlegging og tilpassing av et implantat - bruk arketypen ACTION.procedure for dette formålet.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -526,7 +541,8 @@
             "description" : "Names des Medizinprodukttyps.",
             "comment" : "Zum Beispiel: Hörgeräte, Brillen, Kontaktlinsen, Zahnspangen, Zahnprothesen, Orthesen oder Prothesen."
           }
-        }
+        },
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -558,6 +574,20 @@
         "email" : "aljoscha.kindermann@med.uni-heidelberg.de"
       },
       "accreditation" : "Data Steward",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF",
+        "email" : "john.tore.valand@helse-bergen.no"
+      },
       "otherDetails" : { }
     } ]
   }, {
