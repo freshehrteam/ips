@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2185bf27e0adbae49a741a08ad7ca420",
+      "MD5-CAM-1.0.1" : "3f3a5794e655e6aa008584351562ba58",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : "d55cbb1f-8f2f-4817-8144-b68e6bca3a45"
     },
     "details" : {
@@ -221,7 +221,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Functional Status",
+          "text" : "Functional status",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
