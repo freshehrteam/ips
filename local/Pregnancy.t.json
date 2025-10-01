@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f17b43f8fc79f0c1009de230dadb5216",
+      "MD5-CAM-1.0.1" : "d40f8a75dfb727ed92abadeaf6cf7fd4",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : ""
     },
     "details" : {
@@ -331,7 +331,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0A5FFDCEDB7278325526690D4BEE1EA5"
+        "PARENT:MD5-CAM-1.0.1" : "3E03204F1560B046B7EF8A09A61D29A2"
       },
       "details" : {
         "nb" : {
@@ -394,6 +394,36 @@
           "misuse" : "No debe utilizarse para registrar información de eventos durante el embarazo, trabajo de parto y el período postnatal inmediato. Estos se registraran utilizando arquetipos de observación - por ejemplo, la información relacionada con la historia y examen durante las visitas prenatales o controles durante el parto.\r\n\r\nNo debe utilizarse para registrar la información de resumen sobre la historia obstétrica de la mujer - utilizar EVALUATION.obstetric_summary.\r\n\r\nNo debe utilizarse para registrar la información detallada sobre el ciclo menstrual de una mujer - OBSERVATION.menstrual_cycle uso.\r\n\r\nNo debe utilizarse para registrar información detallada acerca de la alimentación infantil - se utiliza un arquetipo diferente.\r\n\r\nNo debe utilizarse para registrar un resumen general de la historia menstrual o un diario - se utilizarán arquetipos distintos.\r\n",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para apoyar el registro de una visión general o un registro resumen de un determinado embarazo y resultado, incluido el período prenatal, el trabajo de parto, el nacimiento y el período posnatal inmediato.",
+          "keywords" : [ "embarazo", "feto", "niño", "recién nacido", "neonato", "alumbramiento", "concepción", "prevista", "fecha", "esperada", "trabajo de parto", "nacimiento", "parto", "bebé", "bebés", "FPP" ],
+          "use" : "Utilícelo para registrar una visión general o un registro resumen de un embarazo y resultado identificados, incluidos el período prenatal, el trabajo de parto, el nacimiento y el período postnatal inmediato.\r\n\r\nDurante un embarazo activo, este arquetipo apoya la evolución de un registro persistente del resumen de salud relacionado con el embarazo, con información acumulada o actualizada progresivamente, a lo largo de la duración del embarazo, trabajo de parto, parto y período postnatal inmediato. Puesto que los datos están comprometidos con la historia clínica persistente, la fecha de la actualización también se registra en el elemento de datos \"Última actualización\" del Protocolo, para garantizar que si este resumen del embarazo se saca fuera de contexto de la historia clínica para otros fines, tales como el intercambio de datos, la fecha de la última actualización se mantiene con los datos clínicos.\r\n\r\nDespués del parto, este registro resumen se puede utilizar para compartir información esencial con otros proveedores de atención médica sobre el embarazo, el trabajo de parto, el parto y el período postnatal inmediato.\r\n\r\nCada resumen del embarazo completado guardado en el registro de salud puede reutilizarse para llenar los detalles del historial de embarazo anterior a los registros de embarazo posteriores.\r\n\r\nEn situaciones en las que los resúmenes de embarazo completados no están disponibles para cada embarazo anterior, este arquetipo también puede utilizarse para registrar un subconjunto de información relevante que se puede utilizar para llenar los detalles del historial de embarazo anterior con registros de embarazo nuevos o activos.",
+          "misuse" : "No debe utilizarse para registrar información basada en eventos durante el embarazo, el trabajo de parto, el nacimiento y el período postnatal inmediato. Estos se registrarán mediante arquetipos de OBSERVATION, por ejemplo, la información relacionada con la historia y el examen durante las visitas prenatales o durante el parto.\r\n\r\nNo debe utilizarse para registrar información resumida sobre la historia obstétrica de una mujer - utilice EVALUATION.obstetric_summary.\r\n\r\nNo debe utilizarse para registrar información detallada sobre el ciclo menstrual de una mujer - utilice OBSERVATION.menstrual_cycle.\r\n\r\nNo se utilizará para registrar información detallada sobre la alimentación infantil – se utilizará un arquetipo separado.\r\n\r\nNo se utilizará para registrar un resumen o un diario general de la historia menstrual - se utilizarán arquetipos separados.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Per donar suport a l'enregistrament d'una visió general o un registre resum d'un determinat embaràs i resultat, inclòs el període prenatal, el treball de part, el naixementi el període postnatal immediat.",
+          "keywords" : [ "embaràs", "fetus", "fetus", "infant", "nounat", "deslliurament", "concepció", "previst", "data", "esperat", "treball de part", "part", "naixement", "nadó", "nadons", "DPP" ],
+          "use" : "Utilitzeu-lo per registrar una visió general o un registre resum d'un embaràs i resultat identificats, inclosos el període prenatal, el treball de part, el naixement i el període postnatal immediat.\r\n\r\nDurant un embaràs actiu, aquest arquetip dóna suport a l'evolució d'un registre persistent del resum de salut relacionat amb l'embaràs, amb informació acumulada o actualitzada progressivament, al llarg de la durada de l'embaràs, treball de part, part i postnatal immediat. Com que les dades estan compromeses amb la història clínica persistent, la data de l'actualització també es registra a l'element de dades \"Darrera actualització\" del Protocol, per garantir que si aquest resum de l'embaràs es treu fora de context de la història clínica per a altres finalitats, com ara l'intercanvi de dades, la data de l'última actualització es manté amb les dades clíniques.\r\n\r\nDesprés del part, aquest registre resum es pot utilitzar per compartir informació essencial amb altres proveïdors d'atenció mèdica sobre l'embaràs, el treball de part, el part i el període postnatal immediat.\r\n\r\nCada resum de l'embaràs completat desat al registre de salut es pot reutilitzar per omplir els detalls de l'historial d'embaràs anterior als registres d'embaràs posteriors.\r\n\r\nEn situacions en què els resums d'embaràs completats no estan disponibles per a cada embaràs anterior, aquest arquetip també es pot utilitzar per registrar un subconjunt d'informació rellevant que es pot utilitzar per omplir els detalls de l'historial d'embaràs anterior amb registres d'embaràs nous o actius.",
+          "misuse" : "No s'ha d'utilitzar per registrar informació basada en esdeveniments durant l'embaràs, el treball de part, el naixement i el període postnatal immediat. Aquests es registraran mitjançant arquetips d'OBSERVATION, per exemple, la informació relacionada amb la història i l'examen durant les visites prenatals o durant el part.\r\n\r\nNo s'ha d'utilitzar per registrar informació resumida sobre la història obstètrica d'una dona - utilitzeu EVALUATION.obstetric_summary.\r\n\r\nNo s'ha d'utilitzar per registrar informació detallada sobre el cicle menstrual d'una dona - utilitzeu OBSERVATION.menstrual_cycle.\r\n\r\nNo s'utilitzarà per registrar informació detallada sobre l'alimentació infantil - s'utilitzarà un arquetip separat.\r\n\r\nNo s'utilitzarà per registrar un resum o un diari general de la història menstrual - s'utilitzaran arquetips separats.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -408,283 +438,6 @@
       "rmTypeName" : "EVALUATION",
       "nodeId" : "at0000.1",
       "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0141.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "at0142" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0145",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0146.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0104.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_BOOLEAN",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_BOOLEAN",
-                          "rmTypeName" : "Boolean",
-                          "occurrences" : "1..1",
-                          "constraint" : [ true ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0105.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0007.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_COUNT",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "magnitude",
-                        "children" : [ {
-                          "@type" : "C_INTEGER",
-                          "rmTypeName" : "Integer",
-                          "occurrences" : "1..1",
-                          "constraint" : [ {
-                            "lower" : 0,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0008.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "at0112", "at0009", "at0010" ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0096.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0097.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0022.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0065.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0016.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DURATION",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_DURATION",
-                          "rmTypeName" : "DURATION",
-                          "occurrences" : "1..1",
-                          "patternedConstraint" : "PDTHM",
-                          "constraint" : [ {
-                            "lower" : "PT0H",
-                            "lowerIncluded" : true,
-                            "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0118.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "property",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "terminologyId" : {
-                            "value" : "openehr"
-                          },
-                          "constraint" : [ "129" ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ {
-                        "@type" : "C_ATTRIBUTE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "units",
-                          "children" : [ ]
-                        } ],
-                        "tuples" : [ {
-                          "@type" : "C_PRIMITIVE_TUPLE",
-                          "members" : [ {
-                            "@type" : "C_STRING",
-                            "constraint" : [ "ml" ]
-                          } ]
-                        } ]
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0028.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0109.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0083.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      }, {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "protocol",
         "children" : [ {
@@ -715,7 +468,9 @@
         "en" : { },
         "pt-br" : { },
         "es-co" : { },
-        "nb" : { }
+        "nb" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -777,6 +532,34 @@
       },
       "accreditation" : "Ingeniero de Sistemas",
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -789,7 +572,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5603F6C3A1BEFE2DCDA162BD004B4C54"
+        "PARENT:MD5-CAM-1.0.1" : "39D5E4F4F90A8DA9F19B0D15DE844600"
       },
       "details" : {
         "en" : {
@@ -911,7 +694,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "B0C1C43A94047494FFAEE9C66ECD2619"
+        "PARENT:MD5-CAM-1.0.1" : "ABE303D105AD4BAAAC677AC5442438C2"
       },
       "details" : {
         "en" : {
