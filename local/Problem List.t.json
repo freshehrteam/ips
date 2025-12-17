@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "94b75635c1cf1d080adbbd3ca7141426",
+      "MD5-CAM-1.0.1" : "7835f4c88342ea270fdf16abe425d1c1",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.10",
+      "sem_ver" : "1.0.0-alpha.11",
       "build_uid" : ""
     },
     "details" : {
@@ -2917,7 +2917,16 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0030.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2992,15 +3001,7 @@
             "comment" : "Unvollständige Datumsangaben sind zulässig. Wenn der Patient unter einem Jahr alt ist, dann ist das vollständige Datum oder ein Minimum von Monat und Jahr notwendig, um genaue Altersberechnungen zu ermöglichen - z.B. wenn es zur Entscheidungsunterstützung verwendet wird. Datumswerte, die als \"Alter zum Zeitpunkt der Genesung\" erfasst/importiert werden, sollten anhand des Geburtsdatums der Person in ein Datum umgewandelt werden."
           }
         },
-        "en" : {
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Date of abatement",
-            "description" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.",
-            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\r\n"
-          }
-        },
+        "en" : { },
         "ar-sy" : {
           "at0030.1" : {
             "@type" : "ARCHETYPE_TERM",
