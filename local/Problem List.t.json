@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "df9bb3b51b74b9487fc1754cc1397cd9",
+      "MD5-CAM-1.0.1" : "887ad94a82cfb9df23ea6e8dab30323d",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
       "sem_ver" : "1.0.0-alpha.19",
       "build_uid" : ""
@@ -3437,7 +3437,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Staging",
+            "text" : "Stage",
             "description" : "Details about findings that support a clinical assertion."
           }
         },
