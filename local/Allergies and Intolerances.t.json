@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9a447eaa0a20b3bae8daf30de73b4bc3",
+      "MD5-CAM-1.0.1" : "ca5dc28391018ecd1c004d3e887763e9",
       "PARENT:MD5-CAM-1.0.1" : "03778F98B6DF455040F12E3E2F1BF4A9",
-      "sem_ver" : "1.0.0-alpha.16",
+      "sem_ver" : "1.0.0-alpha.17",
       "build_uid" : ""
     },
     "details" : {
@@ -1075,11 +1075,7 @@
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
-        "en" : {
-          "" : {
-            "source" : "openEHR,FHIR"
-          }
-        },
+        "en" : { },
         "pt-br" : {
           "/data[at0001]/items[at0002.1]" : {
             "source" : "*openEHR,FHIR,DAM(en)"
