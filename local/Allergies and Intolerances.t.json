@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8d7bdbbac7033637d4d2bd5340e3dace",
+      "MD5-CAM-1.0.1" : "67626db56e3f900173fdc1030ba149ac",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.10",
+      "sem_ver" : "1.0.0-alpha.11",
       "build_uid" : ""
     },
     "details" : {
@@ -1143,7 +1143,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0130.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1161,7 +1160,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.7" ],
+                      "constraint" : [ "ac0.8" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -1379,10 +1378,10 @@
             "description" : "Identification of the underlying physiological mechanism for the adverse reaction.",
             "comment" : "Immune-mediated responses have been traditionally regarded as an indicator for escalation of significant future risk. Contemporary knowledge suggests that some reactions previously thought to be immune are actually non-immune and still carry life threatening risk. \r\n\r\nImmunological testing may provide supporting evidence for the mechanism and causative substance , but no tests are 100% sensitive or specific for a sensitivity. \r\n\r\nIt is acknowledged that most clinicians will NOT be able to distinguish the mechanism of any specific reaction. However this data element is included because many legacy systems have captured this attribute."
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.7",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1393,10 +1392,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1407,10 +1406,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1421,10 +1420,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1435,10 +1434,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1449,10 +1448,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1463,10 +1462,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -1477,10 +1476,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
             "description" : ""
           }
         }
@@ -1520,6 +1519,11 @@
         "ac0.7" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.7",
+          "members" : [ "at0131", "at0132" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
           "members" : [ "at0131", "at0132" ]
         }
       }
