@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f1d4deb626b9bd3f4a2d6007ab11c91e",
+      "MD5-CAM-1.0.1" : "ddf0732270ba2c50b4fd0d67a37a80c3",
       "PARENT:MD5-CAM-1.0.1" : "03778F98B6DF455040F12E3E2F1BF4A9",
-      "sem_ver" : "1.0.0-alpha.12",
+      "sem_ver" : "1.0.0-alpha.13",
       "build_uid" : ""
     },
     "details" : {
@@ -1084,7 +1084,7 @@
           }
         },
         "pt-br" : {
-          "/data[at0001]/items[at0002]" : {
+          "/data[at0001]/items[at0002.1]" : {
             "source" : "*openEHR,FHIR,DAM(en)"
           }
         },
@@ -1092,9 +1092,6 @@
         "de" : {
           "" : {
             "source" : "openEHR, FHIR"
-          },
-          "/data[at0001]/items[at0002]" : {
-            "source" : "openEHR, FHIR, DAM"
           },
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
@@ -1116,12 +1113,12 @@
           },
           "/protocol[at0042]/items[at0062.1]" : {
             "source" : "openEHR, FHIR, DAM"
+          },
+          "/data[at0001]/items[at0002.1]" : {
+            "source" : "openEHR, FHIR, DAM"
           }
         },
         "sv" : {
-          "/data[at0001]/items[at0002]" : {
-            "source" : "openEHR,FHIR,DAM"
-          },
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
           },
@@ -1139,6 +1136,9 @@
           },
           "/data[at0001]/items[at0101.1]" : {
             "source" : "DAM, openEHR"
+          },
+          "/data[at0001]/items[at0002.1]" : {
+            "source" : "openEHR,FHIR,DAM"
           }
         }
       }
@@ -1164,6 +1164,35 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "Allergies & Intolerances - IPS"
+                      },
+                      "constraint" : [ "ac0.15" ],
+                      "selectedTerminologies" : [ "Allergies & Intolerances - IPS" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0130.1",
@@ -1566,6 +1595,9 @@
       "termBindings" : {
         "AllergyIntoleranceCriticality" : {
           "ac0.3" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"
+        },
+        "Allergies & Intolerances - IPS" : {
+          "ac0.15" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergies-intolerances-uv-ips"
         }
       },
       "terminologyExtracts" : { },
