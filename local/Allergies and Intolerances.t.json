@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ddf0732270ba2c50b4fd0d67a37a80c3",
+      "MD5-CAM-1.0.1" : "a30b2171c11add141025156a80849b6f",
       "PARENT:MD5-CAM-1.0.1" : "03778F98B6DF455040F12E3E2F1BF4A9",
-      "sem_ver" : "1.0.0-alpha.13",
+      "sem_ver" : "1.0.0-alpha.14",
       "build_uid" : ""
     },
     "details" : {
@@ -1249,11 +1249,6 @@
                       "selectedTerminologies" : [ "AllergyIntoleranceCriticality" ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
