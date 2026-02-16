@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d6bed778875ba8950f5ddb3febf7a645",
+      "MD5-CAM-1.0.1" : "2cf8ea073ab7dc0ef6e01b3bd8b6ae62",
       "PARENT:MD5-CAM-1.0.1" : "03778F98B6DF455040F12E3E2F1BF4A9",
-      "sem_ver" : "1.0.0-alpha.19",
+      "sem_ver" : "1.0.0-alpha.20",
       "build_uid" : ""
     },
     "details" : {
@@ -1334,7 +1334,15 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Allergy", "Intolerance" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
