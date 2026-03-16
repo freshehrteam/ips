@@ -17,8 +17,8 @@
     "references" : { },
     "conversionDetails" : { },
     "otherDetails" : {
-      "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835",
-      "MD5-CAM-1.0.1" : "b78dc80a3ec2041bb3518a87bdf05c9a",
+      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6",
+      "MD5-CAM-1.0.1" : "c557b436e4f055b5ebc6735e3ac3a8d2",
       "sem_ver" : "2.0.0-alpha.1",
       "build_uid" : ""
     },
@@ -211,6 +211,50 @@
         "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "zh-cn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh-cn"
+        },
+        "purpose" : "通用的容器类原始型，用于携带需要与他方共享的信息。",
+        "keywords" : [ "报告", "报告单" ],
+        "use" : "当不存在适用于具体报表类型的专用原始型时，作为通用的原始型，用于携带需要与他方共享的信息。\r\n\r\n常见的用例包括：记录对信息请求的响应、检测（检验/检查）结果、已经执行的活动或者已经发生的事件。\r\n\r\n在此故意对其总的章节/内容（Sections/Content）构成要素不加约束。这样，在模板当中，就可以利用任何适合相应临床目的的章节型（SECTION）或条目型（ENTRY）原始型来对其加以填充。",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Arquetipo contenedor genérico para contener información sobre el resultado de una prueba o evaluación.",
+        "keywords" : [ "informe", "prueba", "resultado", "diagnóstico" ],
+        "use" : "Se utiliza como arquetipo genérico para contener información sobre el resultado de una prueba o evaluación independiente, o de un grupo de resultados relacionados.\r\n\r\nSe prevé que cada arquetipo COMPOSITION.report-result contendrá al menos un arquetipo OBSERVATION que contendrá los resultados de la prueba, pero dependiendo de la complejidad de la prueba o evaluación también se pueden incluir otros arquetipos para proporcionar el contexto clínico completo.\r\n\r\nLos casos de uso más comunes son:\r\n- uno o varios resultados de pruebas de patología/laboratorio relacionados con muestras;\r\n- uno o varios resultados de pruebas de diagnóstico por imagen relacionados con el tiempo;\r\n- un resultado de ECG; o\r\n- una evaluación auditiva mediante audiograma.\r\n\r\nEl componente Secciones se ha dejado deliberadamente sin restricciones para maximizar la reutilización de este arquetipo.",
+        "misuse" : "No debe utilizarse para informes que no estén relacionados con el resultado de una prueba o evaluación. Utilícese el COMPOSITION.report genérico o COMPOSITIONs con fines específicos, según proceda.\r\n\r\nNo debe utilizarse para los resultados de pruebas o evaluaciones que se registran como parte de una nota de consulta, por ejemplo la escala de coma de Glasgow en el contexto de una consulta de urgencia; para ello, utilice el arquetipo OBSERVATION.glasgow_coma_scale como un componente dentro de COMPOSITION.encouter.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Arquetip contenidor genèric per transmetre informació sobre el resultat d'una prova o avaluació.",
+        "keywords" : [ "informe", "prova", "resultat", "diagnòstic" ],
+        "use" : "Utilitzar com a arquetip genèric per transmetre informació sobre el resultat d'una prova o d'avaluació o d'un grup de resultats relacionats.\r\n\r\nEs preveu que cada arquetip COMPOSITION.report-result contindrà almenys un arquetip de tipus OBSERVATION que contindrà els resultats de la prova, però depenent de la complexitat de la prova o avaluació també es poden incloure altres arquetips per proporcionar el context clínic complet.\r\n\r\nEls casos d'ús més comuns són els següents:\r\n- un o diversos resultats de proves de patologia/laboratori relacionats amb mostres;\r\n- un o diversos resultats de proves de diagnòstic per imatge relacionats amb el temps;\r\n- un resultat d'ECG; o\r\n- una avaluació auditiva mitjançant audiograma.\r\n\r\nEl component Seccions s'ha deixat sense restriccions deliberadament per maximitzar la reutilització d'aquest arquetip.",
+        "misuse" : "No s'ha d'utilitzar per a informes que no estiguin relacionats amb els resultats d'una prova o avaluació. Utilitzar el COMPOSITION.report genèric o COMPOSITIONs amb fins específics, segons escaigui.\r\n\r\nNo s'ha d'utilitzar per als resultats de proves o avaluacions que es registren com a part d'una nota de consulta, per exemple, l'escala de coma de Glasgow en el context d'una consulta d'urgències - utilitzeu l'arquetip OBSERVATION.glasgow_coma_scale com a component dins de COMPOSITION.encouter.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -343,20 +387,116 @@
       "it" : { },
       "nl" : { },
       "sv" : {
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
           "text" : "Rapport",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0006.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
         }
       },
-      "zh" : { }
+      "zh" : { },
+      "ca" : { },
+      "zh-cn" : { },
+      "es" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Informe",
+          "description" : "Documento para comunicar información con otros, generalmente en respuesta a una solicitud de otra parte."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificación del informe",
+          "description" : "Información identificativa sobre el informe."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "Estado del informe completo. Nota: Este no es el estado de cualquiera de los componentes del informe."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensión",
+          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
+          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
+        },
+        "at0006.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensión",
+          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
+          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificación del informe",
+          "description" : "Información identificativa sobre el informe."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensión",
+          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
+          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "Estado del informe completo. Nota: Este no es el estado de cualquiera de los componentes del informe."
+        },
+        "at0006.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensión",
+          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
+          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -549,6 +689,21 @@
           "misuse" : "No s'ha d'utilitzar per registrar una autòpsia o informe forense, encara que les proves d'algunes mostres que es prenen en aquestes situacions es poden representar utilitzant aquest arquetip. En aquests casos, caldrà arquetips addicionals o especialitzats per representar les dades.\r\n\r\nAquest arquetip és adequat per a la representació de resultats generals de proves de laboratori, però no pretén abastar informes sinòptics complets. En aquests casos, caldrà arquetips especialitzats addicionals per representar les dades.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual.(en)",
+          "keywords" : [ "*lab(en)", "*pathology(en)", "*biochemistry(en)", "*haematology(en)", "*microbiology(en)", "*immunology(en)", "*laboratory(en)", "*anatomical(en)", "*chemical(en)", "*clinical(en)", "*immunopathology(en)", "*cytology(en)", "*histopathology(en)", "*test(en)", "*biopsy(en)", "*specimen(en)", "*forensic(en)", "*genetic(en)", "*laboratory medicine(en)", "*results(en)", "*analysis(en)" ],
+          "use" : "*Use to record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual. This is typically done in a laboratory, but may be done in other environments such as at the point of care.\r\n\r\nThis archetype is intended to cover the result of a single ordered investigation where the specimen(s) are collected as a single procedure, and may include multiple analyte results or other components. Examples of this could include 'Full blood count', which would yield a separate analyte result for the count of each type of blood cell, or 'kidney biopsy non-neoplastic', which would yield findings from microscopy, immunohistochemistry and electron microscopy.\r\n\r\nThis archetype has been designed to be a framework that will usually be extended with CLUSTER archetypes to enable appropriate recording of specific laboratory test result patterns. This includes, but is not limited to, tests for biochemistry, haematology, immunology and transfusion services etc and specific patterns for the unique requirements for microbiology and anatomical pathology. If the ordered tests or investigations do not commonly belong together in a named group or panel, each test result would normally be represented using separate instances of this archetype. There is, however, considerable variation in actual reporting/messaging practice and this archetype/related archetypes are designed to handle such variation.\r\n\r\nThis archetype supports multiple approaches to recording of specimen, reflecting current practice which varies enormously. A Laboratory test result has a high degree of alignment to an HL7 FHIR Diagnostic Report resource.\r\n\r\nIt is anticipated that one or more instances of this archetype, or archetype family, will be sent back to a requesting clinician within a laboratory report document comprising COMPOSITION.report_result archetype, or similar, and other relevant ENTRY archetypes.\r\n\r\nThe recording of confounding factors may be inconsistent, often depending on the analysing laboratory and on clinical information sent by the requester. In the State section of the archetype there is a simple 'Confounding factors' data element that is optional and can be repeated as one way to record a variety of simple factors that need to be made explicit as they may influence interpretation of the results. If the confounding factors are more complex, it may be appropriate to create a local/shared CLUSTER archetype that can be nested in the 'Confounding factors details' SLOT. \r\nNote 1: Known or required pre-conditions, such as 'fasting' or 'Day 1 of menstrual cycle', should be reported in the 'Sampling conditions' data element in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\r\nNote 2: Known issues with specimen collection or handling, such as 'sample haemolysed' or 'prolonged use of tourniquet' should be reported within 'Specimen quality' in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\r\n\r\nWhere 'reflex tests' are performed by the laboratory, these may be handled as per US/FHIR guidance (see https://www.hl7.org/fhir/2015may/uslabreport-guide.html) or other local policy. For example, one of the following ...\r\n1. Record the reflex test results additional 'Test findings' within the same 'openEHR-EHR-OBSERVATION.laboratory_test_result'\r\n2. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but refer to the original lab test request via 'Test request details'.\r\n3. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but reference a new lab test request as well as the original lab test request via 'Test request details'.(en)",
+          "misuse" : "*Not to be used to record an Autopsy or a Forensic report, although tests on some specimens that are taken in such situations may be represented using this archetype. For these, additional or specialised archetypes will be required to represent the data.\r\n\r\nThis archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -631,24 +786,6 @@
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..*",
-                      "nodeId" : "at0065.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen-001.v1",
-                      "referenceType" : "archetypeOverlay"
-                    }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..*",
-                      "nodeId" : "at0097.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_analyte-001.v1",
-                      "referenceType" : "archetypeOverlay"
-                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0057.1",
@@ -668,6 +805,24 @@
                       "nodeId" : "at0101.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..*",
+                      "nodeId" : "at0065.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen-001.v1",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..*",
+                      "nodeId" : "at0097.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_analyte-001.v1",
+                      "referenceType" : "archetypeOverlay"
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
@@ -719,15 +874,6 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0017.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1",
-              "referenceType" : "archetypeOverlay"
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -980,6 +1126,15 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
+              "nodeId" : "at0017.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0110.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -1031,216 +1186,6 @@
         },
         "nb" : { },
         "zh-cn" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Laboratory test result(en)",
-            "description" : "*The result, including findings and interpretation, of a laboratory investigation performed on specimens from individuals or related materials(en)"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "*Test name(en)",
-            "description" : "*Name of the laboratory investigation performed on the specimen(s). (en)",
-            "comment" : "*A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'. (en)"
-          },
-          "at0017" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0017",
-            "text" : "*Receiving laboratory(en)",
-            "description" : "*Details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects.(en)",
-            "comment" : "*This slot is intended to carry details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects.\r\n\r\nThe receiving laboratory may either perform the test or refer it to another laboratory. Where a different laboratory is responsible for performing the testing on specific analytes, it would be expected that these details would be carried in the 'Analyte result detail' SLOT within the CLUSTER.laboratory_test_analyte archetype.\r\n\r\n (en)"
-          },
-          "at0035" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0035",
-            "text" : "*Distribution list(en)",
-            "description" : "*Details of additional clinicians or organisations who require a copy of the test result.(en)",
-            "comment" : "*The 'Distribution list' is for information-only, and that the primary recipient of the report is the person intended to act on the information.(en)"
-          },
-          "at0037" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0037",
-            "text" : "部分",
-            "description" : "当前属于部分的（比如，初步的、暂时的或初级的）检验结果：检验结果之中的数据可能不完整或者未经核对。"
-          },
-          "at0040" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0040",
-            "text" : "*Amended(en)",
-            "description" : "*The result has been modified subsequent to being Final, and is complete and verified by the responsible pathologist, and result data has been changed.(en)"
-          },
-          "at0057" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057",
-            "text" : "*Conclusion(en)",
-            "description" : "*Narrative description of the key findings. (en)",
-            "comment" : "*For example: 'Pattern suggests significant renal impairment'. The content of the conclusion will vary, depending on the investigation performed. This conclusion should be aligned with the coded 'Test diagnosis'. (en)",
-            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
-          },
-          "at0062" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062",
-            "text" : "申请方医嘱标识符",
-            "description" : "医嘱申请方赋予当前检验项目医嘱的本地标识符。",
-            "comment" : "等价于HL7申请方医嘱标识符（ Placer Order Identifier）。"
-          },
-          "at0063" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "接收方医嘱标识符",
-            "description" : "医嘱执行方赋予当前检验项目医嘱的本地标识符。其中，医嘱执行方通常为实验室信息系统（ Laboratory Information System，LIS）。",
-            "comment" : "实验室信息系统（ Laboratory Information System，LIS）为申请赋予标识符，便于实现对于申请进展情况的跟踪以及结果与相应申请的链接。同时，这也是有助于查询的一种参考信息，且通常等价于HL7执行方医嘱标识符（Filler Order Identifier）。"
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "*Specimen detail(en)",
-            "description" : "*Details about the physical substance that has been analysed, in the situation where all results in this test are derived from the same specimen.(en)",
-            "comment" : "*If the specimen type is sufficiently specified with a code in the Test name, then this additional data is not required. If there are multiple specimens, these may be represented per 'Result group'.(en)"
-          },
-          "at0068" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068",
-            "text" : "*Laboratory internal identifier(en)",
-            "description" : "*A local identifier assigned by the receiving Laboratory Information System (LIS) to track the test process. (en)",
-            "comment" : "*This identifier is an internal tracking number assigned by the LIS, and it not intended to be the name of the test. (en)"
-          },
-          "at0073" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "*Overall test status(en)",
-            "description" : "*The status of the laboratory test result as a whole.(en)",
-            "comment" : "*The values have been specifically chosen to match those in the HL7 FHIR Diagnostic report, historically derived from HL7v2 practice. Other local codes/terms can be used via the Text 'choice'.\r\n\r\nThis element is multiple occurrence to cater for the use cases where statuses for different aspects of the result have been split into several elements. (en)"
-          },
-          "at0075" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0075",
-            "text" : "*Overall test status timestamp(en)",
-            "description" : "*The date and/or time that ‘Overall test status’ was issued.(en)"
-          },
-          "at0077" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "*Diagnostic service category(en)",
-            "description" : "*The diagnostic service or discipline that is responsible for the laboratory test result. (en)",
-            "comment" : "*This is intended to be a general categorisation and not to capture the organisational name of the laboratory. For example: anatomical pathology, immunology and transfusion medicine, medical microbiology, clinical pharmacology, medical genetics, medical biochemistry. Alternatively more granular sub categories or sub disciplines, such as endocrinology, haematology, and allergology services, may be used. This may assist clinicians in filtering between categories of results. Coding with a terminology is desirable, where possible.  (en)"
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "*Test request details(en)",
-            "description" : "*Details about the test request.(en)",
-            "comment" : "*In most situations there is one test request and a single corresponding test result, however this repeating cluster allows for the situation where there may be multiple test requests reported using a single test result. As an example: 'a clinician asks for blood glucose in one request and Urea/electrolytes in a second request, but the lab analyser does both and the lab wishes to report these together'.(en)"
-          },
-          "at0098" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0098",
-            "text" : "*Test diagnosis(en)",
-            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result. (en)",
-            "comment" : "*For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'. (en)"
-          },
-          "at0100" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0100",
-            "text" : "*Clinical information provided(en)",
-            "description" : "*Description of clinical information available at the time of interpretation of results.(en)",
-            "comment" : "*This data element may include a link to the original clinical information provided in the test request.(en)",
-            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
-          },
-          "at0101" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0101",
-            "text" : "*Comment(en)",
-            "description" : "*Additional narrative about the test result not captured in other fields.(en)"
-          },
-          "at0106" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0106",
-            "text" : "*Original test requested name(en)",
-            "description" : "*Name of the original laboratory test requested. (en)",
-            "comment" : "*This data element is to be used when the test requested differs from the test actually performed by the laboratory. (en)"
-          },
-          "at0107" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0107",
-            "text" : "已登记",
-            "description" : "表示当前检验项目的存在情况已在实验室信息系统之中进行了登记，但目前尚无任何可用信息。"
-          },
-          "at0110" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0110",
-            "text" : "*Testing details (en)",
-            "description" : "*Structured details about the method of analysis, device or interpretation used.(en)",
-            "comment" : "*For example: 'details of ELISA/nephelometry'.(en)"
-          },
-          "at0111" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0111",
-            "text" : "*Point-of-care test(en)",
-            "description" : "*This indicates whether the test was performed directly at Point-of-Care (POCT) as opposed to a formal result from a laboratory or other service delivery organisation.(en)",
-            "comment" : "*True if the test was performed directly at Point-of-Care (POCT).(en)"
-          },
-          "at0113" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0113",
-            "text" : "*Confounding factors(en)",
-            "description" : "*Issues or circumstances that impact on the accurate interpretation of the measurement or test result.(en)",
-            "comment" : "*'Confounding factors' should be reserved for uncontrolled/unplanned issues of patient state/physiology that might affect interpretation, for example 'recent exercise' or 'recent tobacco smoking'.\r\n\r\nKnown or required preconditions, such as 'fasting' should be carried in the 'Sampling conditions' element within the CLUSTER.specimen archetype . In some cases preconditions are captured as part of the test name, for example 'Fasting blood glucose'.\r\n\r\nKnown issues with specimen collection or handling, such as 'prolonged use of tourniquet' or 'sample haemolysed', should be carried in the 'Specimen quality' elements within CLUSTER.specimen archetype.\r\n\r\nCoding with a terminology is desirable, where possible.  (en)"
-          },
-          "at0114" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0114",
-            "text" : "*Structured confounding factors (en)",
-            "description" : "可能会改变对于当前实验室检验项目的解释的，关于当前患者状态的详情。",
-            "comment" : "*For example: Last Normal Menstrual Period (LNMP). (en)"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "*Corrected(en)",
-            "description" : "*The result has been modified subsequent to being Final, and is complete and verified by the responsible pathologist. This is a sub-category of 'Amended'.(en)"
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "扩展",
-            "description" : "允许进行扩展的槽位，用于支持本地化或与其他标准/参考模型之间进行协调统一。"
-          },
-          "at0118" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0118",
-            "text" : "*Multimedia representation(en)",
-            "description" : "*Digital image, video or diagram representing the test result.(en)",
-            "comment" : "*Multiple formats are allowed but they should represent equivalent clinical content.(en)",
-            "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
-          },
-          "at0119" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0119",
-            "text" : "*Appended(en)",
-            "description" : "*Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged. This is a sub-category of 'Amended'.(en)"
-          },
-          "at0120" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0120",
-            "text" : "*Preliminary(en)",
-            "description" : "*Verified early results are available, but not all results are final. This is a sub-category of 'Partial'.(en)"
-          },
-          "at0121" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0121",
-            "text" : "*Test method (en)",
-            "description" : "*",
-            "comment" : "*Coding with a terminology is desirable, where possible.  (en)"
-          },
-          "at0122" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0122",
-            "text" : "*Structured test diagnosis (en)",
-            "description" : "*A structured or complex diagnosis for the laboratory test. (en)",
-            "comment" : "*For example: Anatomical pathology diagnoses consisting of several different axes such as morphology, etiology and function. (en)"
-          },
           "at0110.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0110",
@@ -1381,7 +1326,8 @@
         "sv" : { },
         "pt-br" : { },
         "es" : { },
-        "ca" : { }
+        "ca" : { },
+        "fi" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1538,6 +1484,22 @@
         "email" : "juliodesosa@catsalut.cat"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : {
+        "name" : "Riikka Lahtela",
+        "organisation" : "Istekki",
+        "email" : "riikka.lahtela@istekki.fi"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Henri Huttunen, UNA Oy, Finland; Heidi Koikkalainen, FreshEHR"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1550,7 +1512,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -1753,7 +1715,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "10166B307F40817B5B3E2D3720F6AC03"
+        "PARENT:MD5-CAM-1.0.1" : "DA9FD834B9864E87235D863A313D152B"
       },
       "details" : {
         "de" : {
@@ -1861,6 +1823,21 @@
           "misuse" : "Não deve ser utilizado para representar ou substituir a gestão formal de identificação ou para efeitos de manutenção de um registo ou índice demográfico oficial. Utilize um Master Patient Index formal ou Health Provider Index para este fim, ou arquétipos baseados no Demographic Information Model do openEHR.\r\n\r\nNão deve ser utilizado para representar o sujeito do cuidado, participantes ou autor do registo e elementos de dados semelhantes que devem ser representados formalmente no registo de saúde utilizando os atributos do Reference Model.\r\n\r\nNão deve ser utilizado para registar a data de nascimento de um indivíduo - utilize o elemento de dados 'Date of birth' dentro do EVALUATION.birth_summary para este fim.\r\n\r\nNão deve ser utilizado para registar detalhes biométricos ou biomarcadores sobre um indivíduo - utilize um arquétipo ENTRY específico para este fim.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "*To record details about a person as they are known or understood in the course of clinical documentation.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details of a person as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype;\r\n- the role and contact details of a named contact person within an organisation, using the 'Contact person' SLOT within the CLUSTER.organisation archetype;\r\n- details about a relative in a family history record, using the 'Family member details' SLOT within the openEHR-EHR-EVALUATION.family_history archetype; \r\n- the name of the person who collected a laboratory specimen from a patient, using the 'Specimen collector details' within the CLUSTER.specimen archetype; or\r\n- a witness to a fall or accident, using the 'Witness' SLOT within the CLUSTER.health_event archetype.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of a person as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the data elements can be combined together as a text string and represented in the 'Name' element, as long as they are consistent.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see a person's details at the top of the assessment form.(en)",
+          "misuse" : "*Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.\r\n\r\nNot to be used to record the date of birth of an individual - use the 'Date of birth' data element within the EVALUATION.birth_summary for this purpose\r\n\r\nNot to be used to record biometric detail or biomarkers about an individual - use a specific ENTRY archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -1892,15 +1869,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0002.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-structured_name-001.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..1",
@@ -1927,6 +1895,22 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-structured_name-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -1935,13 +1919,6 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-002.v1",
           "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0010.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -1963,7 +1940,8 @@
         "zh" : { },
         "sv" : { },
         "es" : { },
-        "pt-pt" : { }
+        "pt-pt" : { },
+        "el" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2069,6 +2047,20 @@
       "otherDetails" : {
         "other_contributors" : "Alex Anguelov, Promptly Health, Portugal\r\nDiogo Neto, Promptly Health, Portugal"
       }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "el"
+      },
+      "author" : {
+        "name" : "Erasmia Partafylla",
+        "organisation" : "Sigmasoft",
+        "email" : "c.partafylla@sigmasoft.gr"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -2934,144 +2926,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Resultat de laboratori de l'analit",
-            "description" : "Resultat d'una prova de laboratori per a un valor d'analit únic."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Resultat de l'analit",
-            "description" : "Valor del resultat de l'analit.",
-            "comment" : "Per exemple, '7,3 mmol/l', 'Elevat'. El tipus de dades \"Qualsevol\" s'haurà de limitar a un tipus de dades apropiat en una especialització, una plantilla o en temps d'execució per reflectir el resultat de l'anàlisi real. El tipus de dades \"Quantitat\" té atributs de model de referència que inclouen indicadors per a normal/anormal, rangs de referència i aproximacions; vegeu https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class per obtenir-ne més detalls.",
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Comentaris",
-            "description" : "Narració addicional sobre el resultat de l'analit, no registrada a altres camps.",
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Rangs de referència",
-            "description" : "Consells addicionals sobre l'aplicabilitat del rang de referència a aquest resultat, o bé es pot incloure un text o una guia textual codificada sobre si el resultat és dins del rang normal.",
-            "comment" : "Per exemple, \"dins els límits normals per a l'edat i el sexe\"."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Estat del resultat",
-            "description" : "Estat del valor del resultat de l'analit.",
-            "comment" : "Els valors han estat escollits específicament perquè coincideixin amb els de l'Informe de Diagnòstic HL7 FHIR, històricament derivat de la pràctica HL7v2. Es poden utilitzar altres codis/termes locals a través del Text 'Elecció'.\r\n\r\nAquest element permet múltiples ocurrències per admetre casos dús en què cal implementar més dun tipus destat.",
-            "hl7v2_mapping" : "OBX.11",
-            "fhir_mapping" : "Observation.status"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Data/Hora de l'estat del resultat",
-            "description" : "Data i hora en què es va emetre el resultat de l'analit per a l'estat més recent.",
-            "hl7v2_mapping" : "OBX.19",
-            "fhir_mapping" : "Observation.issued"
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "Registrat",
-            "description" : "La prova està registrada al Sistema d'Informació del Laboratori, però encara no hi ha res disponible."
-          },
-          "at0016" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016",
-            "text" : "Parcial",
-            "description" : "Resultat de prova parcial (per exemple, inicial, provisional o preliminar): les dades del resultat de la prova poden estar incompletes i/o no verificades."
-          },
-          "at0017" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0017",
-            "text" : "Preliminar",
-            "description" : "Els primers resultats verificats estan disponibles però no són definitius. Aquesta és una subcategoria de “Parcial”."
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Final",
-            "description" : "El resultat de la prova és complet i verificat per una persona autoritzada."
-          },
-          "at0019" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0019",
-            "text" : "Corregit",
-            "description" : "El resultat ha estat modificat després de passar a estat \"Final\". Ha estat completat i verificat per una persona autoritzada. Aquesta és una subcategoria de 'Modificat'."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Modificat",
-            "description" : "El resultat ha estat modificat després de passar a estat \"Final\". Està complet i verificat per una persona autoritzada i les dades del resultat han estat canviades."
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Adjunt",
-            "description" : "Després d'haver passat a estat Final, l'informe ha estat modificat afegint nous continguts. El contingut existent no ha canviat. Aquesta és una subcategoria de 'Modificat'."
-          },
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Registrat per error",
-            "description" : "El resultat de la prova ha estat retirat després d'haver-se publicat."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Cancel·lat",
-            "description" : "El resultat no està disponible perquè la prova no es va iniciar o no es va completar (de vegades també s'anomena “anul·lada”)."
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Nom de l'analit",
-            "description" : "Nom del resultat de l'analit.",
-            "comment" : "El valor d‟aquest element se sol aportar en una especialització, en una plantilla o en temps d'execució per reflectir l'analit pròpiament dit. Per exemple: 'Sodi sèric', 'Hemoglobina'. Es recomana encaridament codificar amb terminologia externa, com ara LOINC, NPU, SNOMED CT o terminologies de laboratori locals.",
-            "hl7v2_mapping" : "OBX.3",
-            "fhir_mapping" : "Observation.code"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Temps de validació",
-            "description" : "Data i hora en què un professional sanitari va validar el resultat de l'analit al laboratori.",
-            "comment" : "En moltes jurisdiccions se suposa que l'Estat del resultat inclou la validació mèdica, és a dir, s'assumirà que un resultat final està validat mèdicament, però en d'altres això es registrarà i reportarà per separat utilitzant aquest element de dades."
-          },
-          "at0026" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026",
-            "text" : "Mostra",
-            "description" : "Identificació de la mostra utilitzada per al resultat de l‟analit.",
-            "comment" : "En algunes situacions, un únic arquetip de resultat de proves de laboratori podria contenir diversos arquetips de mostra i diversos arquetips de resultats de l'analit. En aquestes situacions, l'element de dades 'Mostra' és necessari per poder connectar els resultats amb les mostres correctes."
-          },
-          "at0027" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027",
-            "text" : "Seqüència de resultats de l'analit",
-            "description" : "Posició prevista del resultat de l'analit dins de la seqüència general de resultats de l'analit.",
-            "comment" : "Per exemple: '1' '2', '3'. Quan s'informen diversos resultats d'analits, la 'Seqüència de resultats de l'analito' fa explícit l'ordre en què es van informar."
-          },
-          "at0028" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0028",
-            "text" : "Mètode de prova",
-            "description" : "Descripció sobre el mètode utilitzat per fer la prova únicament amb aquest analit.",
-            "comment" : "Si el mètode de prova s'aplica a un panell complet, el mètode de prova es pot registrar usant l'element de dades 'Mètode de prova' dins OBSERVATION.laboratory_test_result"
-          },
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025",
@@ -3672,8 +3526,8 @@
                     "lower" : 0,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -3996,7 +3850,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "10166B307F40817B5B3E2D3720F6AC03"
+        "PARENT:MD5-CAM-1.0.1" : "DA9FD834B9864E87235D863A313D152B"
       },
       "details" : {
         "de" : {
@@ -4104,6 +3958,21 @@
           "misuse" : "Não deve ser utilizado para representar ou substituir a gestão formal de identificação ou para efeitos de manutenção de um registo ou índice demográfico oficial. Utilize um Master Patient Index formal ou Health Provider Index para este fim, ou arquétipos baseados no Demographic Information Model do openEHR.\r\n\r\nNão deve ser utilizado para representar o sujeito do cuidado, participantes ou autor do registo e elementos de dados semelhantes que devem ser representados formalmente no registo de saúde utilizando os atributos do Reference Model.\r\n\r\nNão deve ser utilizado para registar a data de nascimento de um indivíduo - utilize o elemento de dados 'Date of birth' dentro do EVALUATION.birth_summary para este fim.\r\n\r\nNão deve ser utilizado para registar detalhes biométricos ou biomarcadores sobre um indivíduo - utilize um arquétipo ENTRY específico para este fim.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "*To record details about a person as they are known or understood in the course of clinical documentation.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details of a person as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype;\r\n- the role and contact details of a named contact person within an organisation, using the 'Contact person' SLOT within the CLUSTER.organisation archetype;\r\n- details about a relative in a family history record, using the 'Family member details' SLOT within the openEHR-EHR-EVALUATION.family_history archetype; \r\n- the name of the person who collected a laboratory specimen from a patient, using the 'Specimen collector details' within the CLUSTER.specimen archetype; or\r\n- a witness to a fall or accident, using the 'Witness' SLOT within the CLUSTER.health_event archetype.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of a person as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the data elements can be combined together as a text string and represented in the 'Name' element, as long as they are consistent.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see a person's details at the top of the assessment form.(en)",
+          "misuse" : "*Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.\r\n\r\nNot to be used to record the date of birth of an individual - use the 'Date of birth' data element within the EVALUATION.birth_summary for this purpose\r\n\r\nNot to be used to record biometric detail or biomarkers about an individual - use a specific ENTRY archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -4154,6 +4023,13 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -4162,13 +4038,6 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-003.v1",
           "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0010.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -4190,7 +4059,8 @@
         "zh" : { },
         "sv" : { },
         "es" : { },
-        "pt-pt" : { }
+        "pt-pt" : { },
+        "el" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4296,6 +4166,20 @@
       "otherDetails" : {
         "other_contributors" : "Alex Anguelov, Promptly Health, Portugal\r\nDiogo Neto, Promptly Health, Portugal"
       }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "el"
+      },
+      "author" : {
+        "name" : "Erasmia Partafylla",
+        "organisation" : "Sigmasoft",
+        "email" : "c.partafylla@sigmasoft.gr"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4308,7 +4192,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -4495,7 +4379,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -4937,15 +4821,6 @@
                   } ],
                   "attributeTuples" : [ ]
                 }, {
-                  "@type" : "C_ARCHETYPE_ROOT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..1",
-                  "nodeId" : "at0132.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ],
-                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen-002.v1",
-                  "referenceType" : "archetypeOverlay"
-                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
@@ -4984,6 +4859,15 @@
                   "nodeId" : "at0150.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0132.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen-002.v1",
+                  "referenceType" : "archetypeOverlay"
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -5024,15 +4908,6 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0141.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-person-005.v1",
-              "referenceType" : "archetypeOverlay"
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -5077,6 +4952,15 @@
               "nodeId" : "at0156.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0141.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-person-005.v1",
+              "referenceType" : "archetypeOverlay"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -5645,15 +5529,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0013.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0015.1",
@@ -5730,8 +5605,8 @@
                     "lower" : 0,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -5739,15 +5614,6 @@
             } ]
           } ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0085.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_container-001.v1",
-          "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -5842,6 +5708,24 @@
           "nodeId" : "at0045.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0013.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0085.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_container-001.v1",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -5955,7 +5839,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2BBA400F930720D50812FC0ACA8F86D7"
+        "PARENT:MD5-CAM-1.0.1" : "235D9CDE069C2AEF58B46A00190C05F8"
       },
       "details" : {
         "de" : {
@@ -6094,6 +5978,36 @@
           "misuse" : "Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Identificar i registrar detalls estructurats sobre una sola part del cos humà utilitzant termes anatòmics macroscòpics.",
+          "keywords" : [ "ubicació", "lloc", "anatòmica", "regió anatòmica", "anatomia topogràfica", "macroscòpica", "anatòmica" ],
+          "use" : "*Use to record structured details about a single identified physical site on or within the human body.\r\n\r\nIn many situations, a simple data element such as ‘Location of measurement’ or ‘Body site’ will be sufficient and practical when the value set is straightforward. This archetype is intended for cases where a more detailed or structured representation of an anatomical site is required, including precise or compound descriptions. It can be nested within relevant ENTRY or CLUSTER archetypes such as those for symptoms, findings, or interventions to support multiaxial or postcoordinated anatomical expressions. Examples include documenting pain in the lower limb, tenderness at McBurney’s point, or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nThe ‘Laterality' data element may be used to qualify whether a paired structure or region is affected on the left, right, or both sides. When involvement is symmetrical and equivalent on both sides, for example the same cancer in both lungs or similar pain in both legs, record 'Left and right’. However, when the clinical characteristics differ between sides, two separate instances should be used:\r\n\r\n- Two parallel instances of this archetype within the same SLOT, each with its own laterality and specific details. For example, documenting equal tumours in the lower left lung lobe and the upper right lung lobe.\r\n- Two parallel instances of the parent archetype, each containing an instance of this archetype, when there are clinically significant differences such as tumour type, size, or severity in each lung.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In situations where this archetype is used to name a large or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location, for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below the right costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in utero, then the anatomical location will be identifying a body site on or within the fetus. (en)",
+          "misuse" : "*Not to be used to describe involvement of both sides of a paired structure when the clinical findings differ significantly between sides. In such cases, each side should be documented using a separate instance of this archetype with side-specific detail. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Identificar y registrar detalles estructurados sobre una única zona corporal del cuerpo humano, o dentro de él, utilizando términos anatómicos macroscópicos.",
+          "keywords" : [ "localización", "lugar", "anatómico", "región", "anatómica", "anatomía", "topográfica", "macroscópica", "anatómica", "anatomía" ],
+          "use" : "*Use to record structured details about a single identified physical site on or within the human body.\r\n\r\nIn many situations, a simple data element such as ‘Location of measurement’ or ‘Body site’ will be sufficient and practical when the value set is straightforward. This archetype is intended for cases where a more detailed or structured representation of an anatomical site is required, including precise or compound descriptions. It can be nested within relevant ENTRY or CLUSTER archetypes such as those for symptoms, findings, or interventions to support multiaxial or postcoordinated anatomical expressions. Examples include documenting pain in the lower limb, tenderness at McBurney’s point, or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nThe ‘Laterality' data element may be used to qualify whether a paired structure or region is affected on the left, right, or both sides. When involvement is symmetrical and equivalent on both sides, for example the same cancer in both lungs or similar pain in both legs, record 'Left and right’. However, when the clinical characteristics differ between sides, two separate instances should be used:\r\n\r\n- Two parallel instances of this archetype within the same SLOT, each with its own laterality and specific details. For example, documenting equal tumours in the lower left lung lobe and the upper right lung lobe.\r\n- Two parallel instances of the parent archetype, each containing an instance of this archetype, when there are clinically significant differences such as tumour type, size, or severity in each lung.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In situations where this archetype is used to name a large or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location, for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below the right costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in utero, then the anatomical location will be identifying a body site on or within the fetus. (en)",
+          "misuse" : "*Not to be used to describe involvement of both sides of a paired structure when the clinical findings differ significantly between sides. In such cases, each side should be documented using a separate instance of this archetype with side-specific detail. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -6218,76 +6132,6 @@
           "nodeId" : "at0023.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0053",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\\.v1/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0054",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.multimedia(-[a-zA-Z0-9_]+)*\\.v1/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.multimedia(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -6297,20 +6141,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "*Body site name(en)",
-            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
-            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "*Specific site(en)",
-            "description" : "*Additional detail using a specific region or a point on, or within, the identified body site.(en)",
-            "comment" : "*Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant.(en)"
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6320,20 +6150,6 @@
           }
         },
         "sl" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "*Body site name(en)",
-            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
-            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "*Specific site(en)",
-            "description" : "*Additional detail using a specific region or a point on, or within, the identified body site.(en)",
-            "comment" : "*Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant.(en)"
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6343,20 +6159,6 @@
           }
         },
         "en" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Body site name",
-            "description" : "Identification of a single physical site either on, or within, the human body.",
-            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specific site",
-            "description" : "Additional detail using a specific region or a point on, or within, the identified body site.",
-            "comment" : "Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6366,20 +6168,6 @@
           }
         },
         "nb" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Navn på kroppssted",
-            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at \"Navn på kroppssted\" registreres så anatomisk spesifikt som mulig. For eksempel; registrer \"øvre øyelokk\" heller enn \"øyelokk\" med \"øvre\" som kvalifikator; \"femte ribben\" heller enn \"ribben\" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer.\r\n\r\nDette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte når mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi.\r\n\r\nDersom navn på kroppssted er oppgitt i foreldrearketypen kan dette dataelementet være redundant. Imidlertid er det identifisert bruksområder der dataverdien kan kopieres inn i dette elementet for å understøtte semantiske spørringer basert på denne arketypen heller enn på foreldrearketypen."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Spesifikt sted",
-            "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
-            "comment" : "Brukes til å øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet \"Navn på kroppssted\" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6389,20 +6177,6 @@
           }
         },
         "pt-br" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "*Body site name(en)",
-            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
-            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Local específico",
-            "description" : "Detalhes adicionais utilizando uma região específica ou um ponto, ou dentro, o local do corpo identificado.",
-            "comment" : "Use para aumentar a precisão da identificação do local do corpo, se necessário. Por exemplo, o quadrante superior direito ou ponto de McBurney na parede abdominal ou região inter falângica dos dedos do pé. Se o elemento de dados do nome do local do corpo usa termos predefinidos que incluem o local específico, então este elemento de dados é redundante."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6412,20 +6186,6 @@
           }
         },
         "de" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Name der Körperstelle",
-            "description" : "Identifikation einer einzelnen physischen Stelle entweder am oder innerhalb des menschlichen Körpers.",
-            "comment" : "Dieses Datenelement ist der einzige vorgeschriebene Datenpunkt in diesem Archetyp und sollte als primärer Datenpunkt verwendet werden, um eine anatomische Stelle mit einem allgemein verwendeten Namen aufzuzeichnen. Es wird dringend empfohlen, „Name der Körperstelle“ so spezifisch wie anatomisch möglich aufzuzeichnen. Beispiel: Erfassen Sie „oberes Augenlid“ statt „Augenlid“ mit „oberes“ als Qualifizierer; „fünfte Rippe“ statt „Rippe“ mit einem numerischen Qualifizierer. Verwenden Sie die anderen Datenelemente für Lateralität, Aspekt, Region und anatomische Linie, um weitere Details bereitzustellen.\r\n\r\nDieses Datenelement sollte nach Möglichkeit mit einer Terminologie codiert werden, die Entscheidungsunterstützung auslösen kann – ein geeigneter Begriffssatz für die Verwendung hier könnte einzelne Konzepte oder eine Liste vorab abgestimmter Begriffe umfassen. Freitext sollte nur verwendet werden, wenn keine geeignete Terminologie verfügbar ist.\r\n\r\nWenn der Name der Körperstelle bereits im übergeordneten Archetyp identifiziert wurde, ist dieses Datenelement möglicherweise redundant. Alternativ wurde ein Anwendungsfall identifiziert, bei dem der Wert in dieses Element dupliziert werden kann, um semantische Abfragen mit diesem Archetyp statt mit dem Datenelement innerhalb des übergeordneten Elements zu unterstützen."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Spezifische Körperstelle",
-            "description" : "Zusätzliches Detail unter Verwendung eines bestimmten Bereiches oder eines Punktes auf oder innerhalb der spezifischen Körperstelle.",
-            "comment" : "Zur Erhöhung der Erkennungsgenauigkeit der Körperstelle, falls dies erforderlich ist. Zum Beispiel der obere rechte Quadrant oder McBurney's Punkt auf der Bauchdecke oder das Zwischengelenk der Großzehe. Wenn das Datenelement \"Name der Körperstelle\" präkoordinierte Bezeichnungen für die jeweilige Stelle enthält, dann ist dieses Datenelement redundant."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6435,18 +6195,6 @@
           }
         },
         "nl" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Lichaamslocatie",
-            "description" : "Identificatie van een enkele fysieke regio op of in het menselijk lichaam."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifieke locatie",
-            "description" : "Extra details met behulp van een specifieke regio of een punt op of binnen de geïdentificeerde lichaamslocatie."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6455,20 +6203,6 @@
           }
         },
         "sv" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Namn på kroppsställe",
-            "description" : "Identifiering av enskilt fysiskt ställe på eller i människokroppen.",
-            "comment" : "Det här är det enda obligatoriska fältet i denna arketyp och ska användas som det primära stället att registrera en anatomisk lokalisation med ett vedertaget namn. Det rekommenderas starkt att \"Namn på kroppsställe\" anges så specifikt som det är anatomiskt möjligt. Till exempel; registrera \"övre ögonlock\" snarare än \"ögonlock\" med \"övre\" som bestämningsvärde; \"femte revbenet\" snarare än \"revben\" med ett numeriskt bestämningsvärde. Använd de andra dataelement för lateralitet, aspekt, region och anatomisk linje för att ge mer information.\r\n\r\nDetta dataelement bör kodas med en terminologi som kan starta beslutsstödsfunktionalitet när så är möjligt - en lämplig terminologi för användning här kan innehålla enskilda begrepp eller listor med prekoordinerade termer. Fritext bör endast användas om det inte finns någon lämplig terminologi.\r\n\r\nOm kroppsställets namn anges i den överordnade arketypen kan detta dataelement vara överflödigt. Emellertid har användningsfall identifierats där datavärdet kan kopieras till detta element för att stödja semantiska utsökningsfrågor baserat på denna arketyp snarare än den överordnade arketypen.\r\n\r\n\r\n"
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifikt ställe",
-            "description" : "Ytterligare detalj angiven som ett specifikt område eller en punkt på eller i det identifierade kroppsstället.",
-            "comment" : "Används för att öka precisionen i identifieringen av kroppsstället. Till exempel McBurneys punkt på bukväggen eller interfalangealled i stortå. Om dataelementet 'Kroppsställets namn' använder prekoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6478,20 +6212,6 @@
           }
         },
         "fr" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Nom du site corporel",
-            "description" : "Identification d'un site physique unique sur ou dans le corps humain.",
-            "comment" : "Cet élément de données est le seul point de données obligatoire dans cet archétype et doit être utilisé comme point de données principal pour enregistrer une localisation anatomique avec un nom couramment utilisé. Il est fortement recommandé d'enregistrer le \"nom du site corporel\" de la manière la plus précise possible sur le plan anatomique. Par exemple : enregistrer \"paupière supérieure\" plutôt que \"paupière\" avec \"supérieure\" comme qualificatif ; \"cinquième côte\" plutôt que \"côte\" avec un qualificatif numérique. Utilisez les autres éléments de données pour la latéralité, l'aspect, la région et la ligne anatomique pour fournir plus de détails.\r\n\r\nCet élément de données doit être codé avec une terminologie capable de déclencher une aide à la décision, si possible - un ensemble de termes approprié à utiliser ici pourrait comprendre des concepts individuels ou une liste de termes pré-coordonnés. Le texte libre ne doit être utilisé que si aucune terminologie appropriée n'est disponible.\r\n\r\nSi le nom du site du corps est déjà identifié dans l'archétype parent, cet élément de données peut être redondant. Par ailleurs, un cas d'utilisation a été identifié dans lequel la valeur peut être dupliquée dans cet élément afin de permettre une interrogation sémantique à l'aide de cet archétype, plutôt qu'à l'aide de l'élément de données de l'archétype parent."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Site spécifique",
-            "description" : "Détails supplémentaires utilisant une région spécifique ou un point sur, ou à l'intérieur, du site corporel identifié.",
-            "comment" : "À utiliser pour augmenter la précision de l'identification du site corporel, si nécessaire. Par exemple, le quadrant supérieur droit ou le point de McBurney sur la paroi abdominale ou l'articulation interphalangienne du gros orteil. Si l'élément de données \"Nom du site corporel\" utilise des termes pré-coordonnés qui incluent le site spécifique, cet élément de données est redondant."
-          },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065",
@@ -6499,7 +6219,9 @@
             "description" : "Détails supplémentaires utilisant une région spécifique ou un point sur, ou à l'intérieur, du site corporel identifié.",
             "comment" : "À utiliser pour augmenter la précision de l'identification du site corporel, si nécessaire. Par exemple, le quadrant supérieur droit ou le point de McBurney sur la paroi abdominale ou l'articulation interphalangienne du gros orteil. Si l'élément de données \"Nom du site corporel\" utilise des termes pré-coordonnés qui incluent le site spécifique, cet élément de données est redondant."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : {
         "SNOMED-CT" : {
@@ -6627,6 +6349,36 @@
         "name" : "Michiel Klitsie",
         "organisation" : "Nedap Healthcare",
         "email" : "michiel.klitsie@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "TRADCREA"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -6928,7 +6680,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -7115,7 +6867,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "10166B307F40817B5B3E2D3720F6AC03"
+        "PARENT:MD5-CAM-1.0.1" : "DA9FD834B9864E87235D863A313D152B"
       },
       "details" : {
         "de" : {
@@ -7223,6 +6975,21 @@
           "misuse" : "Não deve ser utilizado para representar ou substituir a gestão formal de identificação ou para efeitos de manutenção de um registo ou índice demográfico oficial. Utilize um Master Patient Index formal ou Health Provider Index para este fim, ou arquétipos baseados no Demographic Information Model do openEHR.\r\n\r\nNão deve ser utilizado para representar o sujeito do cuidado, participantes ou autor do registo e elementos de dados semelhantes que devem ser representados formalmente no registo de saúde utilizando os atributos do Reference Model.\r\n\r\nNão deve ser utilizado para registar a data de nascimento de um indivíduo - utilize o elemento de dados 'Date of birth' dentro do EVALUATION.birth_summary para este fim.\r\n\r\nNão deve ser utilizado para registar detalhes biométricos ou biomarcadores sobre um indivíduo - utilize um arquétipo ENTRY específico para este fim.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "*To record details about a person as they are known or understood in the course of clinical documentation.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details of a person as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype;\r\n- the role and contact details of a named contact person within an organisation, using the 'Contact person' SLOT within the CLUSTER.organisation archetype;\r\n- details about a relative in a family history record, using the 'Family member details' SLOT within the openEHR-EHR-EVALUATION.family_history archetype; \r\n- the name of the person who collected a laboratory specimen from a patient, using the 'Specimen collector details' within the CLUSTER.specimen archetype; or\r\n- a witness to a fall or accident, using the 'Witness' SLOT within the CLUSTER.health_event archetype.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of a person as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the data elements can be combined together as a text string and represented in the 'Name' element, as long as they are consistent.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see a person's details at the top of the assessment form.(en)",
+          "misuse" : "*Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.\r\n\r\nNot to be used to record the date of birth of an individual - use the 'Date of birth' data element within the EVALUATION.birth_summary for this purpose\r\n\r\nNot to be used to record biometric detail or biomarkers about an individual - use a specific ENTRY archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -7273,6 +7040,13 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -7281,13 +7055,6 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-004.v1",
           "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0010.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -7351,7 +7118,8 @@
             "text" : "Pessoa (2)",
             "description" : "Um ser humano individual."
           }
-        }
+        },
+        "el" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7457,6 +7225,20 @@
       "otherDetails" : {
         "other_contributors" : "Alex Anguelov, Promptly Health, Portugal\r\nDiogo Neto, Promptly Health, Portugal"
       }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "el"
+      },
+      "author" : {
+        "name" : "Erasmia Partafylla",
+        "organisation" : "Sigmasoft",
+        "email" : "c.partafylla@sigmasoft.gr"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7562,6 +7344,21 @@
           "misuse" : "Niet te gebruiken om informatie, instructie- of educatief materiaal weer te geven dat aan een persoon of hun verzorger wordt verstrekt, bijvoorbeeld folders voor patiënteneducatie. Gebruik hiervoor de CLUSTER.information_resource.\r\n\r\nNiet te gebruiken om een verwijzing naar een kennisbank op te nemen - gebruik hiervoor CLUSTER.knowledge_base_reference.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Para registar um ficheiro de media adquirido ou utilizado como parte do processo médico e detalhes sobre os metadados associados.",
+          "keywords" : [ "imagem", "áudio", "texto", "vídeo", "aplicação", "ficheiro", "multimédia", "áudio", "DICOM", "digital", "documento", "fotografia", "voz" ],
+          "use" : "Utilize para registar um ficheiro de media adquirido ou utilizado como parte do processo médico e detalhes sobre os metadados associados.\r\n\r\nA intenção deste arquétipo é apenas armazenar o ficheiro de media e os metadados que descrevem a sua captura. Este arquétipo estará aninhado dentro de outro arquétipo, geralmente uma OBSERVATION ou ACTION que conterá o contexto e as circunstâncias relacionadas com a captura do ficheiro de media. Por exemplo, os detalhes sobre a modalidade, visualização ou aspeto de uma imagem radiográfica e detalhes DICOM serão captados no arquétipo OBSERVATION.imaging_exam_result.\r\n\r\nOs exemplos incluem, mas não estão limitados a:\r\n- Uma foto de uma lesão;\r\n- Um diagrama da localização de um achado clínico específico;\r\n- Uma imagem radiológica;\r\n- Uma gravação áudio ou vídeo de uma entrevista;\r\n- Lâmina de patologia digitalizada;\r\n- Saída de dados de um dispositivo clínico, como por exemplo uma máquina de ECG; ou\r\n- Uma imagem digitalizada de documentação em papel ou notas clínicas manuscritas.\r\n\r\nO elemento de dados 'Conteúdo' permite que o ficheiro de media seja capturado e armazenado no registo de saúde utilizando o tipo de dados Multimedia. O tipo de dados Multimedia tem muitos atributos, como o tamanho do ficheiro e URI para uma fonte externa. Consulte https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class.\r\n\r\nSe tiver sido capturado mais do que um ficheiro de media, como imagens “antes” e “depois” de uma ferida, utilize uma instância separada deste arquétipo para representar cada ficheiro de media.\r\n\r\nSe uma série de ficheiros de media for representada como um único item, como uma tomografia computorizada, uma instância desse arquétipo pode ser utilizada para representar um caminho URI para o grupo.",
+          "misuse" : "Não deve ser utilizado para representar informações, materiais instrucionais ou educativos fornecidos a um indivíduo ou ao seu cuidador, por exemplo, folhetos educativos para doentes. Utilize o CLUSTER.information_resource para este fim.\r\n\r\nNão deve ser utilizado para registar uma referência para uma base de conhecimento - utilize CLUSTER.knowledge_base_reference para este fim.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -7585,41 +7382,6 @@
           "nodeId" : "at0005.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0012",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v0/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v0/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -7634,36 +7396,9 @@
             "code" : "at0000.1",
             "text" : "Presented form",
             "description" : "A media file that is acquired or used as part of the healthcare process, and associated metadata."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Content",
-            "description" : "Digital representation of the media file.",
-            "comment" : "If the file is stored locally, the actual content will be captured and stored using the Multimedia data type. For example: RTF or PDF for a document; JPG for an image; MP4 for a video; or WAV for an audio file. If the file is stored at a location outside of the health record, the detailed path to the file is captured using the URI attribute in the Multimedia data type. The Multimedia data type has many RM attributes such as the size of file and URI to an external source - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class."
           }
         },
         "sv" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Mediefil",
-            "description" : "En mediefil och dess metadata som förvärvats eller använts som del av en vårdprocess."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Innehåll",
-            "description" : "Digital representation av mediefilen.",
-            "comment" : "Om filen lagras lokalt kommer det faktiska innehållet förvärvas och sparas i Multimedia datatypen. Till exempel: RTF eller PDF för ett dokument, JPG för en bild, MP4 för en video, eller WAV för en ljudfil. Om filen sparas på en plats utanför journalen, används URI-attributet i Multimedia datatypen för att identifiera sökvägen. Multimedia datatypen har många RM attribut, såsom filstorlek och URI till en extern källa - se https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Innehållets namn",
-            "description" : "Deskriptivt namn eller titel för mediefilen.",
-            "comment" : "En beskrivning av innehållet i mediefilen. Om tillgängligt, använd ett standardiserat sätt för att namnge filen. Till exempel: \"Höger hand brännskada #1\" eller \"Kardiologi video konsultation 2/5\"."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -7671,42 +7406,11 @@
             "description" : "En mediefil och dess metadata som förvärvats eller använts som del av en vårdprocess."
           }
         },
-        "de" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Inhalt",
-            "description" : "Digitale Repräsentation der Mediendatei.",
-            "comment" : "Wenn die Datei lokal gespeichert wird, wird der eigentliche Inhalt erfasst und mit dem Datentyp Multimedia gespeichert. Beispiel: RTF oder PDF für ein Dokument, JPG für ein Bild, MP4 für ein Video oder WAV für eine Audiodatei. Wenn die Datei an einem Ort außerhalb der Gesundheitsakte gespeichert ist, wird der detaillierte Pfad zur Datei mithilfe des URI-Attributs im Multimedia-Datentyp erfasst. Der Multimedia-Datentyp hat viele RM-Attribute wie die Größe der Datei und URI zu einer externen Quelle - siehe https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class."
-          }
-        },
-        "nb" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Innhold",
-            "description" : "Digital representasjon av mediafilen.",
-            "comment" : "Hvis filen lagres lokalt, blir det faktiske innholdet lagret ved hjelp av datatypen Multimedia. For eksempel: RTF eller PDF for et dokument; JPG for et bilde; MP4 for en video; eller WAV for en lydfil. Hvis filen lagres et sted utenfor den elektroniske journalen, kan adressen til filen bli lagret ved hjelp av URI-attributtet i multimediedatatypen. Multimedia-datatypen har mange RM-attributter, for eksempel filstørrelse og URI til en ekstern kilde - se https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class. \r\n\r\n"
-          }
-        },
-        "nl" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Inhoud",
-            "description" : "Digitale representatie van het mediabestand.",
-            "comment" : "Als het bestand lokaal wordt opgeslagen, wordt de daadwerkelijke inhoud vastgelegd en opgeslagen met behulp van het gegevenstype Multimedia. Bijvoorbeeld: RTF of PDF voor een document; JPG voor een afbeelding; MP4 voor een video; of WAV voor een audiobestand. Als het bestand wordt opgeslagen op een locatie buiten het medische dossier, wordt het gedetailleerde pad naar het bestand vastgelegd met behulp van het URI-attribuut in het gegevenstype Multimedia. Het gegevenstype Multimedia heeft veel RM-attributen, zoals de grootte van het bestand en de URI naar een externe bron - zie https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class."
-          }
-        },
-        "sk" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Obsah",
-            "description" : "Digitálna reprezentácia mediálneho súboru.",
-            "comment" : "Ak je súbor uložený lokálne, skutočný obsah sa zachytí a uloží pomocou dátového typu Multimedia. Napríklad: RTF alebo PDF pre dokument; JPG pre obrázok; MP4 pre video; alebo WAV pre zvukový súbor. Ak je súbor uložený mimo zdravotného záznamu, podrobná cesta k súboru sa zaznamená pomocou atribútu URI v d8tovom type Multimedia. Dátový typ Multimedia má veľa atribútov RM, ako je veľkosť súboru a URI k externému zdroju – pozri https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_multimedia_class."
-          }
-        }
+        "de" : { },
+        "nb" : { },
+        "nl" : { },
+        "sk" : { },
+        "pt-pt" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7793,6 +7497,20 @@
         "organisation" : "Nedap"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : {
+        "name" : "Hugo Silva",
+        "organisation" : "University of Minho",
+        "email" : "pg50416@uminho.pt"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7805,7 +7523,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -7992,7 +7710,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "10166B307F40817B5B3E2D3720F6AC03"
+        "PARENT:MD5-CAM-1.0.1" : "DA9FD834B9864E87235D863A313D152B"
       },
       "details" : {
         "de" : {
@@ -8100,6 +7818,21 @@
           "misuse" : "Não deve ser utilizado para representar ou substituir a gestão formal de identificação ou para efeitos de manutenção de um registo ou índice demográfico oficial. Utilize um Master Patient Index formal ou Health Provider Index para este fim, ou arquétipos baseados no Demographic Information Model do openEHR.\r\n\r\nNão deve ser utilizado para representar o sujeito do cuidado, participantes ou autor do registo e elementos de dados semelhantes que devem ser representados formalmente no registo de saúde utilizando os atributos do Reference Model.\r\n\r\nNão deve ser utilizado para registar a data de nascimento de um indivíduo - utilize o elemento de dados 'Date of birth' dentro do EVALUATION.birth_summary para este fim.\r\n\r\nNão deve ser utilizado para registar detalhes biométricos ou biomarcadores sobre um indivíduo - utilize um arquétipo ENTRY específico para este fim.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "*To record details about a person as they are known or understood in the course of clinical documentation.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details of a person as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype;\r\n- the role and contact details of a named contact person within an organisation, using the 'Contact person' SLOT within the CLUSTER.organisation archetype;\r\n- details about a relative in a family history record, using the 'Family member details' SLOT within the openEHR-EHR-EVALUATION.family_history archetype; \r\n- the name of the person who collected a laboratory specimen from a patient, using the 'Specimen collector details' within the CLUSTER.specimen archetype; or\r\n- a witness to a fall or accident, using the 'Witness' SLOT within the CLUSTER.health_event archetype.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of a person as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the data elements can be combined together as a text string and represented in the 'Name' element, as long as they are consistent.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see a person's details at the top of the assessment form.(en)",
+          "misuse" : "*Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.\r\n\r\nNot to be used to record the date of birth of an individual - use the 'Date of birth' data element within the EVALUATION.birth_summary for this purpose\r\n\r\nNot to be used to record biometric detail or biomarkers about an individual - use a specific ENTRY archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -8150,6 +7883,13 @@
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -8158,13 +7898,6 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-005.v1",
           "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0010.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -8228,7 +7961,8 @@
             "text" : "Pessoa (3)",
             "description" : "Um ser humano individual."
           }
-        }
+        },
+        "el" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8334,6 +8068,20 @@
       "otherDetails" : {
         "other_contributors" : "Alex Anguelov, Promptly Health, Portugal\r\nDiogo Neto, Promptly Health, Portugal"
       }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "el"
+      },
+      "author" : {
+        "name" : "Erasmia Partafylla",
+        "organisation" : "Sigmasoft",
+        "email" : "c.partafylla@sigmasoft.gr"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -8486,6 +8234,36 @@
           "keywords" : [ "apparaat", "hulpmiddel", "machine", "implantaat", "toestel", "katheter", "prothese", "hulp", "biomedisch", "instrument", "apparatuur", "meter", "monitor", "software" ],
           "use" : "Gebruiken om de details vast te leggen van een medisch hulpmiddel dat wordt gebruikt bij het verlenen van gezondheidszorg.\r\n\r\nHet gebruik van de term 'medisch hulpmiddel' varieert afhankelijk van de context. Binnen de normenwereld verwijst de term hulpmiddel meestal naar mechanische of elektronische hulpmiddel die de gezondheidszorg ondersteunen en die strikte documentatie vereisen met betrekking tot locatietracering, onderhoud, kalibratie, softwareversies enz. Binnen de terminologiecontext is het gebruik van hulpmiddel erg breed, inclusief elk medisch hulpmiddel dat direct of indirect kan worden gebruikt bij het verlenen van klinische zorg, zolang het niet werkt op een manier die een direct farmacologisch, metabolisch of immunologisch effect uitoefent.\r\n\r\nVoorbeelden van medische hulpmiddelen variëren van eenvoudige hulpmiddelen zoals urinekatheters, tongspatels, contactlenzen, kunstmatige gewrichtsimplantaten, borstimplantaten en gewone verbandmiddelen tot geavanceerde hulpmiddelen zoals kunstharten, spuitpompen, spirometers, apps voor mobiele telefoons en geautomatiseerde hulpmiddelen die medische metingen op het zorgpunt.\r\n\r\nIn de complexe situatie waarin een chirurgisch geïmplanteerd hulpmiddel wordt gebruikt als middel om therapeutische middelen zoals chemotherapie rechtstreeks in het lichaam af te geven, zal dit archetype worden gebruikt om alleen de details vast te leggen over het medische hulpmiddel zelf en het voorschrijven van medicatie en details over de daadwerkelijke toediening van het therapeutische middel zal worden geregistreerd met behulp van specifieke medicatiegerelateerde INSTRUCTION- en ACTION-archetypen.\r\n\r\nDit archetype is ontworpen om het raamwerk te bieden voor een gestructureerde beschrijving van elk medisch hulpmiddel en de gegevenselementen die hier zijn opgenomen, zijn niet specifiek voor een bepaald type hulpmiddel. Hulpmiddelen voor eenmalig gebruik vereisen gewoonlijk gegevenselementen zoals het partijnummer en de vervaldatum. Deze zijn daarentegen meestal niet relevant voor duurzame hulpmiddelen die vaak een reeks identificatiegegevens hebben, waaronder een UID, serienummer, model enz.\r\n\r\nVerder zullen verschillende soorten hulpmiddelen specifieke informatie nodig hebben die relevant is voor hun doel. Deze gegevens kunnen worden vastgelegd met behulp van specifieke CLUSTER-archetypen die zijn ingevoegd in het SLOT 'Eigenschappen'. Bijvoorbeeld: het gebruik van een urinekatheter kan aanvullende details vereisen over de diameter en lengte van de katheter, materiaalsamenstelling, aantal lumen etc.\r\n\r\nAls het medische hulpmiddel een aantal componenten heeft waarvoor details moeten worden vastgelegd, moet elk afzonderlijk component expliciet worden geregistreerd door een extra CLUSTER.device-archetype te gebruiken dat is ingevoegd in het 'Componenten'-slot.\r\n\r\nIn het gegevensveld 'Softwareversie' kan slechts één versie worden vastgelegd. Dit is in de eerste plaats van toepassing op een hulpmiddel dat een softwareapplicatie is. Als het hulpmiddel meerdere software- of hardwarecomponenten heeft die moeten worden gespecificeerd, moet dit worden gedaan door een toevoeging CLUSTER.device te gebruiken die is ingevoegd in de 'Componenten'-slot.\r\n\r\nGebruik het archetype CLUSTER.device_details ingevoegd in de slot 'Assetmanagement' in dit archetype om aanvullende details vast te leggen voor duurzame of blijvende hulpmiddelen die betrekking hebben op eigendom, het volgen van fysieke locaties, onderhoudsschema's, enzovoort.\r\n\r\nDit archetype is ontworpen voor generiek gebruik binnen andere archetypen die een hulpmiddel moeten beschrijven. Voorbeelden zijn: OBSERVATION.blood_pressure voor de bloeddrukmeter; OBSERVATION.ecg voor het ECG-apparaat; OBSERVATION.urinalysis voor de reagensstrips en het apparaat waarmee getest wordt; ACTION.procedure; en CLUSTER.exam_tympanic_membrane om de gebruikte otoscoop te beschrijven.",
           "misuse" : "Niet gebruiken voor het vastleggen van gegevens over geneesmiddelen die een directe farmacologische, metabolische of immunologische werking hebben. Bijvoorbeeld: een met medicijnen geïmpregneerd verband waarvoor een recept nodig is, moet worden geregistreerd met behulp van het archetype INSTRUCTION.medication_order, gericht op de actieve ingrediënten, dosering etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar les dades d’un producte sanitari utilitzat per a proporcionar atenció sanitària.",
+          "keywords" : [ "producte", "màquina", "implant", "aparell", "catèter", "pròtesi", "ajuda", "biomèdic", "instrument", "equip", "metre", "monitor", "programari" ],
+          "use" : "Utilitzar per a registrar les dades d’un producte sanitari utilitzat per a proporcionar atenció sanitària.\r\n\r\nL’ús del terme «producte sanitari» varia depenent del context. Dins de l’àmbit Normatiu, el mot «producte» tendeix a referir-se a dispositius mecànics o electrònics que ajuden a l’atenció sanitària i que exigeixen documentació rigorosa pel que fa al rastreig de ubicació, manteniment, calibració, versions de programari, etc. Dins del context de la terminologia, l’ús de «producte» és molt general, incloent qualsevol producte sanitari que es pugui utilitzar per a proporcionar cuidats clínics directa o indirectament mentre no es comporti de forma que exerceixi un efecte farmacològic, metabòlic o immunològic directe.\r\n\r\nExemples de productes sanitaris oscil·len entre productes simples, com ara catèters urinaris, depressors linguals, lents de contacte, implants d’articulacions artificials, implants de mama i apòsits simples i productes avançats, com ara cors artificials, bombes d’infusió, espiròmetres, aplicacions de telèfon mòbil i dispositius informatitzats que capturin les mesures mèdiques al punt d’assistència sanitària.\r\n\r\nSi es donés la situació complexa que un producte implantat quirúrgicament s’usés com a mitjà per a subministrar agents terapèutics com ara quimioteràpia directament al cos, aquest arquetip s’utilitzarà per a registrar només les dades sobre el producte sanitari en si, i l’encàrrec de medicació i les dades sobre l’administració real de l’agent terapèutic es registraran utilitzant arquetips específics relacionats amb la medicació de tipus INSTRUCTION i ACTION.\r\n\r\nAquest arquetip està dissenyat per a proporcionar la infraestructura per a la representació estructurada de qualsevol producte sanitari, i els elements de dades que estan continguts ací no són específics per a cap tipus de producte. Productes d’un sol ús normalment exigiran elements de dades com Número de Lot i Data de Caducitat. Per contrast, aquests elements, per regla general, no seran rellevants per als productes duradors, els quals tindran sovint un conjunt d’identificadors, incloent un identificador d’usuari, Número de Sèrie, Model, etc.\r\n\r\nA més, diferents tipus de productes exigiran informació específica rellevant per a la seua finalitat. Aquestes dades es poden registrar utilitzant arquetips específics de tipus CLUSTER inserits dins del SLOT «Característiques específiques». Per exemple: l’ús d’un catèter urinari pot exigir dades addicionals sobre el diàmetre i la llargària del catèter, la composició del material, quantitat de lúmens, etc.\r\n\r\nSi el producte sanitari conté una quantitat de components que exigeixen que es registrin les seues dades, cada component concret s’haurà de registrar de forma explícita utilitzant un arquetip addicional CLUSTER.device inserit dins del SLOT «Components».\r\n\r\nEl camp de dades «Versió del Programari» només permet que es registri una única versió. Això és aplicable principalment per a un producte que sigui una aplicació de programari. Si el producte té múltiples components de programari o de maquinari que s’han d’especificar, això s’haurà de fer utilitzant un CLUSTER.device addicional inserit dins del SLOT «Components».\r\n\r\nPer a registrar dades addicionals per a productes duradors o persistents relacionats amb la propietat, el rastreig de ubicació física, horaris de manteniment, etc., utilitzar un arquetip CLUSTER.device_details inserit dins del SLOT «Gestió d’actius» d’aquest arquetip.\r\n\r\nAquest arquetip s’ha dissenyat per a l’ús genèric dins d’altres arquetips que han de descriure un producte. Exemples inclouen: OBSERVATION.blood_pressure per al tensiòmetre; OBSERVATION.ecg per a la màquina ECG; OBSERVATION.urinalysis per a les tires reactives i el producte utilitzat per a les proves; ACTION.procedure; i CLUSTER.exam_tympanic_membrane per a detallar l’otoscopi utilitzat.",
+          "misuse" : "No utilitzar per a registrar dades sobre medicaments que exerceixin un efecte farmacològic, metabòlic o immunològic directe. Per exemple: un apòsit impregnat de medicina que exigeixi una prescripció s’haurà de registrar utilitzant l’arquetip INSTRUCTION.medication_order, enfocat sobre les substàncies actives, dosificació, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar los datos de un dispositivo sanitario utilizado para proporcionar atención sanitaria.",
+          "keywords" : [ "dispositivo", "máquina", "implante", "aparato", "catéter", "prótesis", "ayuda", "biomédico", "instrumento", "equipo", "metro", "monitor", "software" ],
+          "use" : "Usar para registrar los datos de un dispositivo sanitario utilizado para proporcionar atención sanitaria.\r\n\r\nEl uso del término \"dispositivo sanitario\" varía según el contexto.\r\nEn el ámbito normativo, el término \"dispositivo\" suele referirse a dispositivos mecánicos o electrónicos que ayudan en la atención sanitaria y que requieren una documentación rigurosa respecto al seguimiento de ubicación, mantenimiento, calibración, versiones de software, etc.\r\nEn el contexto terminológico, el uso de \"dispositivo\" es mucho más amplio e incluye cualquier dispositivo sanitario que pueda utilizarse para proporcionar cuidados clínicos directa o indirectamente, siempre que no ejerza un efecto farmacológico, metabólico o inmunológico, directo.\r\n\r\nEjemplos de dispositivos sanitarios abarcan desde dispositivos simples como catéteres urinarios, depresores linguales, lentes de contacto, implantes de articulaciones artificiales, implantes mamarios y apósitos simples; hasta dispositivos avanzados como corazones artificiales, bombas de infusión, espirómetros, aplicaciones móviles y dispositivos informatizados que capturan mediciones médicas en el punto de atención.\r\n\r\nSi se diera una situación compleja, como que un dispositivo implantado quirúrgicamente se utilice como medio para administrar agentes terapéuticos (por ejemplo, quimioterapia directamente al cuerpo), este arquetipo se utilizará únicamente para registrar los datos del dispositivo sanitario en sí, mientras que la prescripción de la medicación y los datos sobre la administración del agente terapéutico se registrarán mediante arquetipos específicos relacionados con la medicación, como los de tipo INSTRUCTION y ACTION.\r\n\r\nEste arquetipo está diseñado para proporcionar la infraestructura para una representación estructurada de cualquier dispositivo sanitario, y los elementos de datos que contiene no son específicos de ningún tipo concreto de dispositivo.\r\nPor ejemplo: dispositivos de un solo uso requerirán normalmente datos como número de lote y fecha de caducidad.\r\n\r\nEn cambio, estos datos no suelen ser relevantes para dispositivos duraderos, los cuales suelen tener un conjunto diferente de identificadores, como número de serie, modelo, identificador de usuario, etc.\r\n\r\nAdemás, distintos tipos de dispositivos exigirán información específica relacionada con su finalidad clínica. Estos datos pueden registrarse utilizando arquetipos específicos de tipo CLUSTER, insertados dentro del SLOT «Características específicas». Por ejemplo: el uso de un catéter urinario puede requerir datos adicionales como el diámetro y longitud del catéter, material, cantidad de lúmenes, etc.\r\n\r\nSi el dispositivo sanitario contiene varios componentes que requieren un registro individualizado, cada componente debe registrarse explícitamente mediante un arquetipo adicional CLUSTER.device, insertado dentro del SLOT «Componentes».\r\n\r\nEl campo de datos \"Versión del software\" solo permite registrar una única versión, lo cual es aplicable principalmente si el dispositivo es una aplicación de software. Si el dispositivo incluye múltiples componentes de software o hardware que necesitan especificarse por separado, esto debe hacerse usando un CLUSTER.device adicional en el SLOT «Componentes».\r\n\r\nPara registrar información adicional relacionada con dispositivos sanitarios duraderos o persistentes, como datos de propiedad, ubicación física, cronograma de mantenimiento, etc., se debe utilizar un arquetipo CLUSTER.device_details insertado en el SLOT «Gestión de activos» de este arquetipo.\r\n\r\nEste arquetipo está diseñado para ser utilizado de manera genérica dentro de otros arquetipos que necesitan describir un dispositivo.\r\nEjemplos incluyen: OBSERVATION.blood_pressure, para el tensiómetro; OBSERVATION.ecg, para el electrocardiógrafo; OBSERVATION.urinalysis, para tiras reactivas y otros dispositivos usados en análisis de orina; ACTION.procedure y CLUSTER.exam_tympanic_membrane, para detallar el otoscopio utilizado.",
+          "misuse" : "No utilizar para registrar los datos sobre productos médicos que ejerzan un efecto farmacológico, metabólico o inmunológico directo. Por ejemplo: un apósito impregnado de medicina que requiera una prescripción se tendrá que registrar utilizando el arquetipo INSTRUCTION.medication_order, enfocado sobre substancias activas, dosificación, etc.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -8627,7 +8405,9 @@
         "de" : { },
         "sv" : { },
         "nl" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8754,6 +8534,36 @@
       "author" : {
         "name" : "Pieter Bos, Jelte Zeilstra",
         "organisation" : "Nedap"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Tradcrea"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -8908,6 +8718,36 @@
           "keywords" : [ "apparaat", "hulpmiddel", "machine", "implantaat", "toestel", "katheter", "prothese", "hulp", "biomedisch", "instrument", "apparatuur", "meter", "monitor", "software" ],
           "use" : "Gebruiken om de details vast te leggen van een medisch hulpmiddel dat wordt gebruikt bij het verlenen van gezondheidszorg.\r\n\r\nHet gebruik van de term 'medisch hulpmiddel' varieert afhankelijk van de context. Binnen de normenwereld verwijst de term hulpmiddel meestal naar mechanische of elektronische hulpmiddel die de gezondheidszorg ondersteunen en die strikte documentatie vereisen met betrekking tot locatietracering, onderhoud, kalibratie, softwareversies enz. Binnen de terminologiecontext is het gebruik van hulpmiddel erg breed, inclusief elk medisch hulpmiddel dat direct of indirect kan worden gebruikt bij het verlenen van klinische zorg, zolang het niet werkt op een manier die een direct farmacologisch, metabolisch of immunologisch effect uitoefent.\r\n\r\nVoorbeelden van medische hulpmiddelen variëren van eenvoudige hulpmiddelen zoals urinekatheters, tongspatels, contactlenzen, kunstmatige gewrichtsimplantaten, borstimplantaten en gewone verbandmiddelen tot geavanceerde hulpmiddelen zoals kunstharten, spuitpompen, spirometers, apps voor mobiele telefoons en geautomatiseerde hulpmiddelen die medische metingen op het zorgpunt.\r\n\r\nIn de complexe situatie waarin een chirurgisch geïmplanteerd hulpmiddel wordt gebruikt als middel om therapeutische middelen zoals chemotherapie rechtstreeks in het lichaam af te geven, zal dit archetype worden gebruikt om alleen de details vast te leggen over het medische hulpmiddel zelf en het voorschrijven van medicatie en details over de daadwerkelijke toediening van het therapeutische middel zal worden geregistreerd met behulp van specifieke medicatiegerelateerde INSTRUCTION- en ACTION-archetypen.\r\n\r\nDit archetype is ontworpen om het raamwerk te bieden voor een gestructureerde beschrijving van elk medisch hulpmiddel en de gegevenselementen die hier zijn opgenomen, zijn niet specifiek voor een bepaald type hulpmiddel. Hulpmiddelen voor eenmalig gebruik vereisen gewoonlijk gegevenselementen zoals het partijnummer en de vervaldatum. Deze zijn daarentegen meestal niet relevant voor duurzame hulpmiddelen die vaak een reeks identificatiegegevens hebben, waaronder een UID, serienummer, model enz.\r\n\r\nVerder zullen verschillende soorten hulpmiddelen specifieke informatie nodig hebben die relevant is voor hun doel. Deze gegevens kunnen worden vastgelegd met behulp van specifieke CLUSTER-archetypen die zijn ingevoegd in het SLOT 'Eigenschappen'. Bijvoorbeeld: het gebruik van een urinekatheter kan aanvullende details vereisen over de diameter en lengte van de katheter, materiaalsamenstelling, aantal lumen etc.\r\n\r\nAls het medische hulpmiddel een aantal componenten heeft waarvoor details moeten worden vastgelegd, moet elk afzonderlijk component expliciet worden geregistreerd door een extra CLUSTER.device-archetype te gebruiken dat is ingevoegd in het 'Componenten'-slot.\r\n\r\nIn het gegevensveld 'Softwareversie' kan slechts één versie worden vastgelegd. Dit is in de eerste plaats van toepassing op een hulpmiddel dat een softwareapplicatie is. Als het hulpmiddel meerdere software- of hardwarecomponenten heeft die moeten worden gespecificeerd, moet dit worden gedaan door een toevoeging CLUSTER.device te gebruiken die is ingevoegd in de 'Componenten'-slot.\r\n\r\nGebruik het archetype CLUSTER.device_details ingevoegd in de slot 'Assetmanagement' in dit archetype om aanvullende details vast te leggen voor duurzame of blijvende hulpmiddelen die betrekking hebben op eigendom, het volgen van fysieke locaties, onderhoudsschema's, enzovoort.\r\n\r\nDit archetype is ontworpen voor generiek gebruik binnen andere archetypen die een hulpmiddel moeten beschrijven. Voorbeelden zijn: OBSERVATION.blood_pressure voor de bloeddrukmeter; OBSERVATION.ecg voor het ECG-apparaat; OBSERVATION.urinalysis voor de reagensstrips en het apparaat waarmee getest wordt; ACTION.procedure; en CLUSTER.exam_tympanic_membrane om de gebruikte otoscoop te beschrijven.",
           "misuse" : "Niet gebruiken voor het vastleggen van gegevens over geneesmiddelen die een directe farmacologische, metabolische of immunologische werking hebben. Bijvoorbeeld: een met medicijnen geïmpregneerd verband waarvoor een recept nodig is, moet worden geregistreerd met behulp van het archetype INSTRUCTION.medication_order, gericht op de actieve ingrediënten, dosering etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar les dades d’un producte sanitari utilitzat per a proporcionar atenció sanitària.",
+          "keywords" : [ "producte", "màquina", "implant", "aparell", "catèter", "pròtesi", "ajuda", "biomèdic", "instrument", "equip", "metre", "monitor", "programari" ],
+          "use" : "Utilitzar per a registrar les dades d’un producte sanitari utilitzat per a proporcionar atenció sanitària.\r\n\r\nL’ús del terme «producte sanitari» varia depenent del context. Dins de l’àmbit Normatiu, el mot «producte» tendeix a referir-se a dispositius mecànics o electrònics que ajuden a l’atenció sanitària i que exigeixen documentació rigorosa pel que fa al rastreig de ubicació, manteniment, calibració, versions de programari, etc. Dins del context de la terminologia, l’ús de «producte» és molt general, incloent qualsevol producte sanitari que es pugui utilitzar per a proporcionar cuidats clínics directa o indirectament mentre no es comporti de forma que exerceixi un efecte farmacològic, metabòlic o immunològic directe.\r\n\r\nExemples de productes sanitaris oscil·len entre productes simples, com ara catèters urinaris, depressors linguals, lents de contacte, implants d’articulacions artificials, implants de mama i apòsits simples i productes avançats, com ara cors artificials, bombes d’infusió, espiròmetres, aplicacions de telèfon mòbil i dispositius informatitzats que capturin les mesures mèdiques al punt d’assistència sanitària.\r\n\r\nSi es donés la situació complexa que un producte implantat quirúrgicament s’usés com a mitjà per a subministrar agents terapèutics com ara quimioteràpia directament al cos, aquest arquetip s’utilitzarà per a registrar només les dades sobre el producte sanitari en si, i l’encàrrec de medicació i les dades sobre l’administració real de l’agent terapèutic es registraran utilitzant arquetips específics relacionats amb la medicació de tipus INSTRUCTION i ACTION.\r\n\r\nAquest arquetip està dissenyat per a proporcionar la infraestructura per a la representació estructurada de qualsevol producte sanitari, i els elements de dades que estan continguts ací no són específics per a cap tipus de producte. Productes d’un sol ús normalment exigiran elements de dades com Número de Lot i Data de Caducitat. Per contrast, aquests elements, per regla general, no seran rellevants per als productes duradors, els quals tindran sovint un conjunt d’identificadors, incloent un identificador d’usuari, Número de Sèrie, Model, etc.\r\n\r\nA més, diferents tipus de productes exigiran informació específica rellevant per a la seua finalitat. Aquestes dades es poden registrar utilitzant arquetips específics de tipus CLUSTER inserits dins del SLOT «Característiques específiques». Per exemple: l’ús d’un catèter urinari pot exigir dades addicionals sobre el diàmetre i la llargària del catèter, la composició del material, quantitat de lúmens, etc.\r\n\r\nSi el producte sanitari conté una quantitat de components que exigeixen que es registrin les seues dades, cada component concret s’haurà de registrar de forma explícita utilitzant un arquetip addicional CLUSTER.device inserit dins del SLOT «Components».\r\n\r\nEl camp de dades «Versió del Programari» només permet que es registri una única versió. Això és aplicable principalment per a un producte que sigui una aplicació de programari. Si el producte té múltiples components de programari o de maquinari que s’han d’especificar, això s’haurà de fer utilitzant un CLUSTER.device addicional inserit dins del SLOT «Components».\r\n\r\nPer a registrar dades addicionals per a productes duradors o persistents relacionats amb la propietat, el rastreig de ubicació física, horaris de manteniment, etc., utilitzar un arquetip CLUSTER.device_details inserit dins del SLOT «Gestió d’actius» d’aquest arquetip.\r\n\r\nAquest arquetip s’ha dissenyat per a l’ús genèric dins d’altres arquetips que han de descriure un producte. Exemples inclouen: OBSERVATION.blood_pressure per al tensiòmetre; OBSERVATION.ecg per a la màquina ECG; OBSERVATION.urinalysis per a les tires reactives i el producte utilitzat per a les proves; ACTION.procedure; i CLUSTER.exam_tympanic_membrane per a detallar l’otoscopi utilitzat.",
+          "misuse" : "No utilitzar per a registrar dades sobre medicaments que exerceixin un efecte farmacològic, metabòlic o immunològic directe. Per exemple: un apòsit impregnat de medicina que exigeixi una prescripció s’haurà de registrar utilitzant l’arquetip INSTRUCTION.medication_order, enfocat sobre les substàncies actives, dosificació, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar los datos de un dispositivo sanitario utilizado para proporcionar atención sanitaria.",
+          "keywords" : [ "dispositivo", "máquina", "implante", "aparato", "catéter", "prótesis", "ayuda", "biomédico", "instrumento", "equipo", "metro", "monitor", "software" ],
+          "use" : "Usar para registrar los datos de un dispositivo sanitario utilizado para proporcionar atención sanitaria.\r\n\r\nEl uso del término \"dispositivo sanitario\" varía según el contexto.\r\nEn el ámbito normativo, el término \"dispositivo\" suele referirse a dispositivos mecánicos o electrónicos que ayudan en la atención sanitaria y que requieren una documentación rigurosa respecto al seguimiento de ubicación, mantenimiento, calibración, versiones de software, etc.\r\nEn el contexto terminológico, el uso de \"dispositivo\" es mucho más amplio e incluye cualquier dispositivo sanitario que pueda utilizarse para proporcionar cuidados clínicos directa o indirectamente, siempre que no ejerza un efecto farmacológico, metabólico o inmunológico, directo.\r\n\r\nEjemplos de dispositivos sanitarios abarcan desde dispositivos simples como catéteres urinarios, depresores linguales, lentes de contacto, implantes de articulaciones artificiales, implantes mamarios y apósitos simples; hasta dispositivos avanzados como corazones artificiales, bombas de infusión, espirómetros, aplicaciones móviles y dispositivos informatizados que capturan mediciones médicas en el punto de atención.\r\n\r\nSi se diera una situación compleja, como que un dispositivo implantado quirúrgicamente se utilice como medio para administrar agentes terapéuticos (por ejemplo, quimioterapia directamente al cuerpo), este arquetipo se utilizará únicamente para registrar los datos del dispositivo sanitario en sí, mientras que la prescripción de la medicación y los datos sobre la administración del agente terapéutico se registrarán mediante arquetipos específicos relacionados con la medicación, como los de tipo INSTRUCTION y ACTION.\r\n\r\nEste arquetipo está diseñado para proporcionar la infraestructura para una representación estructurada de cualquier dispositivo sanitario, y los elementos de datos que contiene no son específicos de ningún tipo concreto de dispositivo.\r\nPor ejemplo: dispositivos de un solo uso requerirán normalmente datos como número de lote y fecha de caducidad.\r\n\r\nEn cambio, estos datos no suelen ser relevantes para dispositivos duraderos, los cuales suelen tener un conjunto diferente de identificadores, como número de serie, modelo, identificador de usuario, etc.\r\n\r\nAdemás, distintos tipos de dispositivos exigirán información específica relacionada con su finalidad clínica. Estos datos pueden registrarse utilizando arquetipos específicos de tipo CLUSTER, insertados dentro del SLOT «Características específicas». Por ejemplo: el uso de un catéter urinario puede requerir datos adicionales como el diámetro y longitud del catéter, material, cantidad de lúmenes, etc.\r\n\r\nSi el dispositivo sanitario contiene varios componentes que requieren un registro individualizado, cada componente debe registrarse explícitamente mediante un arquetipo adicional CLUSTER.device, insertado dentro del SLOT «Componentes».\r\n\r\nEl campo de datos \"Versión del software\" solo permite registrar una única versión, lo cual es aplicable principalmente si el dispositivo es una aplicación de software. Si el dispositivo incluye múltiples componentes de software o hardware que necesitan especificarse por separado, esto debe hacerse usando un CLUSTER.device adicional en el SLOT «Componentes».\r\n\r\nPara registrar información adicional relacionada con dispositivos sanitarios duraderos o persistentes, como datos de propiedad, ubicación física, cronograma de mantenimiento, etc., se debe utilizar un arquetipo CLUSTER.device_details insertado en el SLOT «Gestión de activos» de este arquetipo.\r\n\r\nEste arquetipo está diseñado para ser utilizado de manera genérica dentro de otros arquetipos que necesitan describir un dispositivo.\r\nEjemplos incluyen: OBSERVATION.blood_pressure, para el tensiómetro; OBSERVATION.ecg, para el electrocardiógrafo; OBSERVATION.urinalysis, para tiras reactivas y otros dispositivos usados en análisis de orina; ACTION.procedure y CLUSTER.exam_tympanic_membrane, para detallar el otoscopio utilizado.",
+          "misuse" : "No utilizar para registrar los datos sobre productos médicos que ejerzan un efecto farmacológico, metabólico o inmunológico directo. Por ejemplo: un apósito impregnado de medicina que requiera una prescripción se tendrá que registrar utilizando el arquetipo INSTRUCTION.medication_order, enfocado sobre substancias activas, dosificación, etc.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -9105,7 +8945,9 @@
             "text" : "Dispositif médical (2)",
             "description" : "Un instrument, un appareil, un implant, un matériau ou similaire, utilisé dans la prestation de soins de santé. Dans ce contexte, un dispositif médical comprend un large éventail de dispositifs qui agissent par divers moyens physiques, mécaniques, thermiques ou similaires, mais exclut spécifiquement les dispositifs qui agissent par des moyens médicinaux tels que les méthodes pharmacologiques, métaboliques ou immunologiques. Le champ d'application comprend les dispositifs jetables ainsi que les dispositifs durables ou persistants qui nécessitent un suivi, des activités de maintenance ou un étalonnage régulier, en reconnaissant que chaque type de dispositif a des exigences spécifiques en matière d'enregistrement des données."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9232,6 +9074,36 @@
       "author" : {
         "name" : "Pieter Bos, Jelte Zeilstra",
         "organisation" : "Nedap"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Tradcrea"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -9973,150 +9845,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Resultat de laboratori de l'analit",
-            "description" : "Resultat d'una prova de laboratori per a un valor d'analit únic."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Resultat de l'analit",
-            "description" : "Valor del resultat de l'analit.",
-            "comment" : "Per exemple, '7,3 mmol/l', 'Elevat'. El tipus de dades \"Qualsevol\" s'haurà de limitar a un tipus de dades apropiat en una especialització, una plantilla o en temps d'execució per reflectir el resultat de l'anàlisi real. El tipus de dades \"Quantitat\" té atributs de model de referència que inclouen indicadors per a normal/anormal, rangs de referència i aproximacions; vegeu https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class per obtenir-ne més detalls.",
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Comentaris",
-            "description" : "Narració addicional sobre el resultat de l'analit, no registrada a altres camps.",
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Rangs de referència",
-            "description" : "Consells addicionals sobre l'aplicabilitat del rang de referència a aquest resultat, o bé es pot incloure un text o una guia textual codificada sobre si el resultat és dins del rang normal.",
-            "comment" : "Per exemple, \"dins els límits normals per a l'edat i el sexe\"."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Estat del resultat",
-            "description" : "Estat del valor del resultat de l'analit.",
-            "comment" : "Els valors han estat escollits específicament perquè coincideixin amb els de l'Informe de Diagnòstic HL7 FHIR, històricament derivat de la pràctica HL7v2. Es poden utilitzar altres codis/termes locals a través del Text 'Elecció'.\r\n\r\nAquest element permet múltiples ocurrències per admetre casos dús en què cal implementar més dun tipus destat.",
-            "hl7v2_mapping" : "OBX.11",
-            "fhir_mapping" : "Observation.status"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Data/Hora de l'estat del resultat",
-            "description" : "Data i hora en què es va emetre el resultat de l'analit per a l'estat més recent.",
-            "hl7v2_mapping" : "OBX.19",
-            "fhir_mapping" : "Observation.issued"
-          },
-          "at0014" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0014",
-            "text" : "Detall del resultat de l'analit",
-            "description" : "Més detalls sobre un resultat individual."
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "Registrat",
-            "description" : "La prova està registrada al Sistema d'Informació del Laboratori, però encara no hi ha res disponible."
-          },
-          "at0016" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016",
-            "text" : "Parcial",
-            "description" : "Resultat de prova parcial (per exemple, inicial, provisional o preliminar): les dades del resultat de la prova poden estar incompletes i/o no verificades."
-          },
-          "at0017" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0017",
-            "text" : "Preliminar",
-            "description" : "Els primers resultats verificats estan disponibles però no són definitius. Aquesta és una subcategoria de “Parcial”."
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Final",
-            "description" : "El resultat de la prova és complet i verificat per una persona autoritzada."
-          },
-          "at0019" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0019",
-            "text" : "Corregit",
-            "description" : "El resultat ha estat modificat després de passar a estat \"Final\". Ha estat completat i verificat per una persona autoritzada. Aquesta és una subcategoria de 'Modificat'."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Modificat",
-            "description" : "El resultat ha estat modificat després de passar a estat \"Final\". Està complet i verificat per una persona autoritzada i les dades del resultat han estat canviades."
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Adjunt",
-            "description" : "Després d'haver passat a estat Final, l'informe ha estat modificat afegint nous continguts. El contingut existent no ha canviat. Aquesta és una subcategoria de 'Modificat'."
-          },
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Registrat per error",
-            "description" : "El resultat de la prova ha estat retirat després d'haver-se publicat."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Cancel·lat",
-            "description" : "El resultat no està disponible perquè la prova no es va iniciar o no es va completar (de vegades també s'anomena “anul·lada”)."
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Nom de l'analit",
-            "description" : "Nom del resultat de l'analit.",
-            "comment" : "El valor d‟aquest element se sol aportar en una especialització, en una plantilla o en temps d'execució per reflectir l'analit pròpiament dit. Per exemple: 'Sodi sèric', 'Hemoglobina'. Es recomana encaridament codificar amb terminologia externa, com ara LOINC, NPU, SNOMED CT o terminologies de laboratori locals.",
-            "hl7v2_mapping" : "OBX.3",
-            "fhir_mapping" : "Observation.code"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Temps de validació",
-            "description" : "Data i hora en què un professional sanitari va validar el resultat de l'analit al laboratori.",
-            "comment" : "En moltes jurisdiccions se suposa que l'Estat del resultat inclou la validació mèdica, és a dir, s'assumirà que un resultat final està validat mèdicament, però en d'altres això es registrarà i reportarà per separat utilitzant aquest element de dades."
-          },
-          "at0026" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026",
-            "text" : "Mostra",
-            "description" : "Identificació de la mostra utilitzada per al resultat de l‟analit.",
-            "comment" : "En algunes situacions, un únic arquetip de resultat de proves de laboratori podria contenir diversos arquetips de mostra i diversos arquetips de resultats de l'analit. En aquestes situacions, l'element de dades 'Mostra' és necessari per poder connectar els resultats amb les mostres correctes."
-          },
-          "at0027" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027",
-            "text" : "Seqüència de resultats de l'analit",
-            "description" : "Posició prevista del resultat de l'analit dins de la seqüència general de resultats de l'analit.",
-            "comment" : "Per exemple: '1' '2', '3'. Quan s'informen diversos resultats d'analits, la 'Seqüència de resultats de l'analito' fa explícit l'ordre en què es van informar."
-          },
-          "at0028" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0028",
-            "text" : "Mètode de prova",
-            "description" : "Descripció sobre el mètode utilitzat per fer la prova únicament amb aquest analit.",
-            "comment" : "Si el mètode de prova s'aplica a un panell complet, el mètode de prova es pot registrar usant l'element de dades 'Mètode de prova' dins OBSERVATION.laboratory_test_result"
           },
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -11033,150 +10761,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Resultat de laboratori de l'analit",
-            "description" : "Resultat d'una prova de laboratori per a un valor d'analit únic."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Resultat de l'analit",
-            "description" : "Valor del resultat de l'analit.",
-            "comment" : "Per exemple, '7,3 mmol/l', 'Elevat'. El tipus de dades \"Qualsevol\" s'haurà de limitar a un tipus de dades apropiat en una especialització, una plantilla o en temps d'execució per reflectir el resultat de l'anàlisi real. El tipus de dades \"Quantitat\" té atributs de model de referència que inclouen indicadors per a normal/anormal, rangs de referència i aproximacions; vegeu https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class per obtenir-ne més detalls.",
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Comentaris",
-            "description" : "Narració addicional sobre el resultat de l'analit, no registrada a altres camps.",
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Rangs de referència",
-            "description" : "Consells addicionals sobre l'aplicabilitat del rang de referència a aquest resultat, o bé es pot incloure un text o una guia textual codificada sobre si el resultat és dins del rang normal.",
-            "comment" : "Per exemple, \"dins els límits normals per a l'edat i el sexe\"."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Estat del resultat",
-            "description" : "Estat del valor del resultat de l'analit.",
-            "comment" : "Els valors han estat escollits específicament perquè coincideixin amb els de l'Informe de Diagnòstic HL7 FHIR, històricament derivat de la pràctica HL7v2. Es poden utilitzar altres codis/termes locals a través del Text 'Elecció'.\r\n\r\nAquest element permet múltiples ocurrències per admetre casos dús en què cal implementar més dun tipus destat.",
-            "hl7v2_mapping" : "OBX.11",
-            "fhir_mapping" : "Observation.status"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Data/Hora de l'estat del resultat",
-            "description" : "Data i hora en què es va emetre el resultat de l'analit per a l'estat més recent.",
-            "hl7v2_mapping" : "OBX.19",
-            "fhir_mapping" : "Observation.issued"
-          },
-          "at0014" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0014",
-            "text" : "Detall del resultat de l'analit",
-            "description" : "Més detalls sobre un resultat individual."
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "Registrat",
-            "description" : "La prova està registrada al Sistema d'Informació del Laboratori, però encara no hi ha res disponible."
-          },
-          "at0016" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016",
-            "text" : "Parcial",
-            "description" : "Resultat de prova parcial (per exemple, inicial, provisional o preliminar): les dades del resultat de la prova poden estar incompletes i/o no verificades."
-          },
-          "at0017" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0017",
-            "text" : "Preliminar",
-            "description" : "Els primers resultats verificats estan disponibles però no són definitius. Aquesta és una subcategoria de “Parcial”."
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Final",
-            "description" : "El resultat de la prova és complet i verificat per una persona autoritzada."
-          },
-          "at0019" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0019",
-            "text" : "Corregit",
-            "description" : "El resultat ha estat modificat després de passar a estat \"Final\". Ha estat completat i verificat per una persona autoritzada. Aquesta és una subcategoria de 'Modificat'."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Modificat",
-            "description" : "El resultat ha estat modificat després de passar a estat \"Final\". Està complet i verificat per una persona autoritzada i les dades del resultat han estat canviades."
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Adjunt",
-            "description" : "Després d'haver passat a estat Final, l'informe ha estat modificat afegint nous continguts. El contingut existent no ha canviat. Aquesta és una subcategoria de 'Modificat'."
-          },
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Registrat per error",
-            "description" : "El resultat de la prova ha estat retirat després d'haver-se publicat."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Cancel·lat",
-            "description" : "El resultat no està disponible perquè la prova no es va iniciar o no es va completar (de vegades també s'anomena “anul·lada”)."
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Nom de l'analit",
-            "description" : "Nom del resultat de l'analit.",
-            "comment" : "El valor d‟aquest element se sol aportar en una especialització, en una plantilla o en temps d'execució per reflectir l'analit pròpiament dit. Per exemple: 'Sodi sèric', 'Hemoglobina'. Es recomana encaridament codificar amb terminologia externa, com ara LOINC, NPU, SNOMED CT o terminologies de laboratori locals.",
-            "hl7v2_mapping" : "OBX.3",
-            "fhir_mapping" : "Observation.code"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Temps de validació",
-            "description" : "Data i hora en què un professional sanitari va validar el resultat de l'analit al laboratori.",
-            "comment" : "En moltes jurisdiccions se suposa que l'Estat del resultat inclou la validació mèdica, és a dir, s'assumirà que un resultat final està validat mèdicament, però en d'altres això es registrarà i reportarà per separat utilitzant aquest element de dades."
-          },
-          "at0026" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026",
-            "text" : "Mostra",
-            "description" : "Identificació de la mostra utilitzada per al resultat de l‟analit.",
-            "comment" : "En algunes situacions, un únic arquetip de resultat de proves de laboratori podria contenir diversos arquetips de mostra i diversos arquetips de resultats de l'analit. En aquestes situacions, l'element de dades 'Mostra' és necessari per poder connectar els resultats amb les mostres correctes."
-          },
-          "at0027" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027",
-            "text" : "Seqüència de resultats de l'analit",
-            "description" : "Posició prevista del resultat de l'analit dins de la seqüència general de resultats de l'analit.",
-            "comment" : "Per exemple: '1' '2', '3'. Quan s'informen diversos resultats d'analits, la 'Seqüència de resultats de l'analito' fa explícit l'ordre en què es van informar."
-          },
-          "at0028" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0028",
-            "text" : "Mètode de prova",
-            "description" : "Descripció sobre el mètode utilitzat per fer la prova únicament amb aquest analit.",
-            "comment" : "Si el mètode de prova s'aplica a un panell complet, el mètode de prova es pot registrar usant l'element de dades 'Mètode de prova' dins OBSERVATION.laboratory_test_result"
-          },
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025",
@@ -11561,5 +11145,49 @@
       "email" : "3160100913@zju.edu.cn"
     },
     "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh-cn"
+    },
+    "author" : {
+      "name" : "Lin Zhang",
+      "organisation" : "Freelancer",
+      "email" : "linforest@163.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : {
+      "other_contributors" : "TRADCREA"
+    }
   } ]
 }
