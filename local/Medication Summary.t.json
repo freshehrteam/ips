@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a0a94298618f50b6e5436905ed683e83",
+      "MD5-CAM-1.0.1" : "92131b0e0c6de97ff475ddf0bf08b599",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.0.0-alpha.14",
+      "sem_ver" : "1.0.0-alpha.15",
       "build_uid" : ""
     },
     "details" : {
@@ -284,7 +284,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Medication Summary",
+          "text" : "IPS Medication Summary",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
@@ -1330,8 +1330,8 @@
                                     "lower" : "PT0S",
                                     "lowerIncluded" : true,
                                     "upperIncluded" : false,
-                                    "upperUnbounded" : true,
-                                    "lowerUnbounded" : false
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : true
                                   } ]
                                 } ]
                               } ],
@@ -1468,8 +1468,8 @@
                                 "lower" : 0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "upperUnbounded" : true,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
                               } ]
                             } ]
                           } ],
@@ -1500,8 +1500,8 @@
                                 "lower" : "PT0H",
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "upperUnbounded" : true,
-                                "lowerUnbounded" : false
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
                               } ]
                             } ]
                           } ],
@@ -1570,31 +1570,13 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0155.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0161.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
@@ -2172,7 +2154,121 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7642B7C6FD3E445EA35DA32279728164"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der Kombination von Medikamentendosis und Verabreichungszeit an einem Tag im Kontext einer Medikamentenverordnung oder der Arzneimittelverwaltung oder gegebenenfalls für andere therapeutische/verschreibungspflichtige Produkte.",
+          "keywords" : [ "Medikation", "Verordnung", "verschreiben", "verordnen", "Therapie", "Substanz", "Wirkstoff", "Arzneimittel", "Medikament", "therapeutisch", "therapeutisches Erzeugnis", "Pharmazeutikum", "Produkt", "Posologie", "Dosierung", "Behandlung", "Fluid", "Flüssigkeit", "Ernährung", "Timing", "Zeitplan", "Verabreichung", "Applikation", "Dosis" ],
+          "use" : "Wird verwendet, um die Kombination einer Medikamentendosis und der Verabreichungszeiten innerhalb eines Tages, als Teil einer Medikamentenverordnung oder der Arzneimittelverwaltung oder gegebenenfalls für andere verschriebene therapeutische Produkte darzustellen.\r\nDas Zeitmuster für einen einzelnen Tag kann einfach eine einzelne Verabreichungszeit oder mehrere Verabreichungszeiten mit unterschiedlichem Komplexitätsgrad sein.\r\n\r\nTiming-Details, die nicht innerhalb eines Tages liegen, z. B. wöchentlicher oder monatlicher Rhythmus, werden im CLUSTER-Archetyp \"Verabreichungszeitpunkte - nicht täglich\" aufgeführt, der im CLUSTER-Archetyp \"Therapeutische Anweisungen\" (CLUSTER.therapeutic_direction) enthalten ist.\r\n\r\nIm Kontext einer therapeutischen INSTRUCTION kann dieser Archetyp in den SLOT \"Strukturierte Dosis- und Zeitangaben\" im CLUSTER \"Therapeutische Anweisung\" (CLUSTER.therapeutic_direction) eingefügt werden, um die Dosis und Details zum Zeitmuster der einzelnen beabsichtigten Verabreichungen eines therapeutischen Produktes darzustellen.\r\n\r\nIm Kontext eines ACTION-Archetyps fügen Sie diesen Archetyp direkt in den SLOT \"Dosis\" ein, um die Dosis und den Zeitpunkt der tatsächlichen Verabreichung eines therapeutischen Produktes darzustellen.\r\n\r\nSpezifische Start- / Stoppzeiten der Verabreichung sollten in einem CLUSTER-Archetyp \"Verabreichungszeitpunkte - täglich\" angegeben werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera kombinationen av läkemedelsmängd och administrationstid för en enda dag, som en del av en läkemedelsorder eller läkemedelshantering eller för andra lämpliga terapeutiska / förskrivningsbara föremål.",
+          "keywords" : [ "medicinering", "beställa", "ordinera", "terapi", "ämne", "läkemedel", "terapeutisk", "terapeutiskt bra", "läkemedel", "produkt", "dosering", "behandling", "vätska", "näring", "timing", "administration", "dos" ],
+          "use" : "Används för att registrera kombinationen av läkemedelsmängd och administreringstid för en enda dag, som en del av en läkemedelsorder eller läkemedelshantering eller för andra lämpliga terapeutiska / förskrivningsbara föremål.\r\nTidmönstret för en dag kan vara så enkelt som en enda administreringstid eller flera administreringstider med varierande nivåer av komplexitet.\r\n\r\nTidsuppgifter som inte ligger inom en enda dag, t.ex. vecko- eller månatliga tider, tas i CLUSTER 'Timing - non-daily' arketypen, inom CLUSTER 'Therapeutic direction' arketypen.\r\n\r\nI samband med en terapeutisk INSTRUCTION kan den här arketypen införas i 'Strukturerad dos och tidsriktning' SLOT i 'Therapeutic direction' CLUSTER för att registrera dos- och tidsdetaljer för mönstret för enstaka avsedda administrationer av en terapeutisk artikel.\r\n\r\nI samband med en ACTION-arketyp, sätt in den här arketypen direkt i 'Amount' SLOT för att registrera dosen och tidpunkten för den faktiska administreringen av ett terapeutisk objekt\r\n\r\nSpecifika administrationsstart / stopptider bör anges inom en innesluten CLUSTER 'Timing - daily' arketyp.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende.",
+          "keywords" : [ "legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "terapeutisk", "farmasøytisk", "produkt", "behandling", "væske", "ernæring", "timing", "administrering", "administrasjon", "dose" ],
+          "use" : "Brukes for å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende. Mønsteret for administrasjonstidspunkter innenfor en dag kan være så enkelt som ett administrasjonstidspunkt, eller flere administrasjonstidspunkter med forskjellige nivåer av kompleksitet.\r\n\r\nTimingdetaljer som ikke er innenfor én dag, f.eks. ukentlig eller månedlige timinger, håndteres av CLUSTER-arketypen \"Timing - repetering\" som benyttes i CLUSTER-arketypen \"Terapeutisk anvisning\".\r\n\r\nInnenfor en INSTRUCTION og i den igjen innenfor CLUSTER-arketypen \"Terapeutisk anvisning\" (CLUSTER.therapeutic_direction) for å registrere dose og timing av et ordinert produkt, som f.eks. et legemiddel.\r\n\r\nInnenfor en ACTION-arketype kan denne arketypen brukes for å registrere dosen og timing for den faktiske administreringen av det ordinerte produktet.\r\n\r\nSpesifikke tidspunkter for administrering og start/stopp-tidspunkter spesifiseres i CLUSTER-arketypen \"Timing - daglig\".",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\n",
+          "keywords" : [ "medicamento", "solicitação", "prescrever", "terapia", "substância", "fármaco", "terapêutico", "item terapêutico", "farmacêutico", "produto", "posologia", "tratamento", "fluido", "nutrição", "tempo", "administração", "dose" ],
+          "use" : "Usado para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\nO padrão de tempo diário pode ser simples como uma administração única ou múltiplas administrações com níveis variados de complexidade.\r\n\r\nOs detalhes de tempo que não estão dentro de um mesmo dia p.e. semanalmente ou mensalmente são incluídos dentro do arquétipo CLUSTER \"Timing repetition\" carregado dentro do arquétipo CLUSTER \"Therapeutic direction\".\r\n\r\nNo contexto de uma INSTRUÇÃO terapêutica este arquétipo pode ser inserido dentro do SLOT \"Dosage administration\" no CLUSTER \"Therapeutic direction\" para gravar a dose e detalhes de tempo do padrão de uma administração única de um item terapêutico.\r\n\r\nNo contexto de um arquétipo tipo ACTION insira este arquétipo diretamente no SLOT \"Amount\" para gravar a dose e tempo da administração de um item terapêutico.\r\n\r\nTempos específicos de início e parada de administração devem ser especificados dentro do arquétipo CLUSTER \"Timing - daily\".\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sk" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sk"
+          },
+          "purpose" : "Slúži pre záznam množstva dávky a časov podania za jeden deň - ako časť preskripcie alebo medikácie alebo pre iné terapeutické/preskribovateľné položky.",
+          "keywords" : [ "medikácia", "objendávka", "preskricpia", "terapia", "účinná látka", "liek", "terapeutický", "farmaceutický", "produkt", "liečba", "tekutina", "výživa", "časový rozpis", "podanie", "dávka" ],
+          "use" : "Slúži pre záznam množstva dávky a časov podania za jeden deň - ako časť preskripcie alebo medikácie alebo pre iné terapeutické/preskribovateľné položky.\r\nČasový rozpis pre jeden deň môže byť jednoduchý - ako napr. jeden konkrétny čas podania alebo viacej časov podania - v závislosti od úrovne komplexity\r\nČasový rozpis, ktorý sa netýka iba jedného dňa napr. týždenný alebo mesačný rozpis, je potrebné zadať v CLUSTER 'Timing - non-daily' archetype , ktorý má byť vnorený v rámci CLUSTER 'Therapeutic direction' archetype.\r\n\r\nV kontexte INSTRUCTION tento archetyp má byť vložený v SLOTe \"Štrukturované dávkovanie a časy podania\" v rámci CLUSTER 'Therapeutic direction' archetypu - aby bolo možné zadať dávku a časový rozpis pre jednotlivé požadované podanie preskribovanej položky\r\nV kontexte ACTION tento archetyp má byť vložený priamo do SLOTu \"Množstvo\" - aby bolo možné zadať dávku a čas pre aktuálne podanie položky\r\n\r\nŠpecifické časy pre začiatok podávania a koniec podávania majú byť špecifikované vo vloženom CLUSTER 'Timing - daily' archetype.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the combination of a medication amount and the administration timing within a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "fluid", "nutrition", "timing", "administration", "dose" ],
+          "use" : "Use to record the combination of a medication amount and the administration timing for a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items. \r\nThe timing pattern for a single day can be as simple as a single administration time, or multiple administration times with varying levels of complexity.\r\n\r\nTiming details which are not within a single day, for example, weekly or monthly timings, are carried in the CLUSTER 'Timing - non-daily' archetype carried within the CLUSTER 'Therapeutic direction' archetype.\r\n\r\nIn the context of a therapeutic INSTRUCTION, this archetype may be inserted into the 'Structured dose and timing directions' SLOT in the 'Therapeutic direction' CLUSTER to record the dose and timing details of the pattern of single intended administrations of a therapeutic item. \r\n\r\nIn the context of an ACTION archetype insert this archetype directly into the 'Amount' SLOT to record the dose and timing of the actual administration of a therapeutic item.\r\n\r\nSpecific administration start/stop times should be specified within a contained CLUSTER 'Timing - daily' archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar la combinación de una cantidad de medicación y el momento de administración en un mismo día, como parte de una prescripción o gestión de medicación, o para otros elementos terapéuticos/prescribibles apropiados.",
+          "keywords" : [ "medicación", "orden", "prescribir", "terapia", "sustancia", "medicamento", "terapéutico", "bien terapéutico", "farmacéutico", "producto", "posología", "tratamiento", "fluido", "nutrición", "timing", "administración", "dosis" ],
+          "use" : "Se utiliza para registrar la combinación de una cantidad de medicación y el momento de administración para un solo día, como parte de una prescripción o gestión de medicación, o para otros elementos terapéuticos/prescribibles apropiados. \r\n\r\nLa pauta temporal de un único día puede ser tan simple como una sola hora de administración, o varias horas de administración con distintos niveles de complejidad.\r\n\r\nLos detalles de temporización que no correspondan a un único día, por ejemplo, temporizaciones semanales o mensuales, han de llevarse a cabo en el arquetipo de tipo CLUSTER 'Temporización - no diaria', dentro del arquetipo CLUSTER 'Dirección terapéutica'.\r\n\r\nEn el contexto de una INSTRUCTION terapéutica, este arquetipo puede insertarse en el SLOT \"Direcciones estructuradas de dosis y timing\", dentro del CLUSTER \"Dirección terapéutica\", para registrar los detalles de dosis y timing del patrón de administraciones únicas previstas de un elemento terapéutico. \r\n\r\nEn el contexto de un arquetipo de tipo ACTION, inserte este arquetipo directamente en el SLOT \"Cantidad\" para registrar la dosis y el momento de la administración real de un elemento terapéutico.\r\n\r\nLas horas específicas de inicio y finalización de la administración deben especificarse dentro de un arquetipo CLUSTER \"Timing - diario\".\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar la combinació d’una quantitat de medicació i el moment d’administració en un mateix dia, com a part d’una prescripció o gestió de medicació o per a altres elements terapèutics/prescriptibles apropiats.",
+          "keywords" : [ "medicació", "encàrrec", "prescriure", "teràpia", "substància", "medicament", "terapèutic", "producte terapèutic", "fàrmac", "producte", "posologia", "tractament", "fluid", "nutrició", "temporització", "administració", "dosi" ],
+          "use" : "Utilitzar per a registrar la combinació d’una quantitat de medicació i el moment d’administració en un mateix dia, com a part d’una prescripció o gestió de medicació o per a altres elements terapèutics/prescriptibles apropiats.\r\nLa pauta horària d’un únic dia pot ser tan simple com una sola hora d’administració o diverses hores d’administració amb diversos nivells de complexitat.\r\n\r\nLes dades de temporització que no corresponguin a un únic dia; per exemple, temporitzacions setmanals o mensuals, estan contingudes en l’arquetip de tipus CLUSTER «Temporització – no diària», que es troba dins de l’arquetip de tipus CLUSTER «Instruccions terapèutiques».\r\n\r\nEn el context d’una INSTRUCTION terapèutica, aquest arquetip es pot inserir al SLOT «Instruccions estructurals de dosi i temporització» dins del CLUSTER «Instruccions terapèutiques» per a registrar les dades de dosi i temporalització de les pautes d’administracions úniques previstes d’un element terapèutic.\r\n\r\nEn el context d’un arquetip de tipus ACTION, aquest arquetip s’ha d’inserir directament al SLOT «Quantitat» per a registrar la dosi i el moment d’una administració concreta d’un element terapèutic.\r\n\r\nEls moments específics d’inici i de finalització s’han d’especificar dins d’un arquetip «Temporització – diària» de tipus CLUSTER.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dosage.v2",
     "differential" : true,
@@ -2208,8 +2304,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -2310,8 +2406,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 }, {
@@ -2327,8 +2423,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 }, {
@@ -2344,8 +2440,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 }, {
@@ -2361,8 +2457,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 } ]
@@ -2398,8 +2494,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -2425,8 +2521,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -2450,8 +2546,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -2640,7 +2736,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "EE0C097D86C864115F3C4480B21599C4"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Erfassung der Menge eines Arzneimittels, eines Impfstoffs oder eines anderen therapeutischen Mittels, das dem Patienten im Rahmen einer Zulassung, Abgabe oder Verabreichung zur Verfügung gestellt oder verabreicht wurde, und zwar sowohl im Rahmen der ursprünglichen Arzneimittelverschreibung als auch in einem Folgevorgang.",
+          "keywords" : [ ],
+          "use" : "Soll zur Erfassung der Menge eines Arzneimittels, eines Impfstoffs oder eines anderen therapeutischen Mittels, das dem Patienten im Rahmen einer Zulassung, Abgabe oder Verabreichung zur Verfügung gestellt oder verabreicht wurde, und zwar sowohl im Rahmen der ursprünglichen Arzneimittelverschreibung als auch in einem Folgevorgang, verwendet werden.",
+          "misuse" : "Dieser Archetyp sollte nicht dazu verwendet werden, die ursprüngliche Dosismenge als Teil einer Dosisanweisung oder der Wirkstärke eines Präparats zu erfassen. Diese werden als Teil der INSTRUCTION Verordnung von Arzneimitteln oder des CLUSTERs Arzneimittel erfasst.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere mengden legemiddel, vaksine, eller annen terapeutisk vare som skal leveres eller utleveres til pasienten, som del av en autorisering, utlevering eller administrering, både i legemiddelforordningen og i en påfølgende legemiddelhandling.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere mengden legemiddel, vaksine, eller annen terapeutisk vare som skal leveres eller utleveres til pasienten, som del av en autorisering, utlevering eller administrering, både i legemiddelforordningen og i en påfølgende legemiddelhandling.",
+          "misuse" : "Brukes ikke for å registre en dose eller styrke som del av en anvisning. Disse registreres som en del av arketypene INSTRUCTION.medication_order eller CLUSTER.medication_substance.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "*To record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action. (en)",
+          "keywords" : [ "Suprimento de medicamentos" ],
+          "use" : "*Use to record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action. (en)",
+          "misuse" : "Este arquétipo não deve ser usado para registrar a quantidade da dose, concentração, forma farmacêutica de uma preparação de medicamento. Estes são registrados como parte da INSTRUCTION de medicamentos, ou CLUSTER de Substâncias Medicamentosas.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action.",
+          "keywords" : [ ],
+          "use" : "Use to record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action.",
+          "misuse" : "This archetype should not be used to record the original dose amount as part of a dose direction or the strength of a preparation. These are recorded as part of the Medication Order INSTRUCTION, or Medication Substance CLUSTER.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_supply_amount.v0",
     "differential" : true,
@@ -2684,8 +2842,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -2722,8 +2880,8 @@
                     "lower" : "P0D",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -2817,7 +2975,98 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "23070EF3E7FB47E48F7450559058538D"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation strukturierter Informationen über den geplanten Zeitablauf einer therapeutischen oder diagnostischen Aktivität innerhalb von 24 Stunden.",
+          "keywords" : [ "Zeitablauf", "Zeitpunkt", "Applikation", "Verabreichung", "Dosierung", "Frequenz", "Intervall", "Rezept", "Empfehlung", "Zeitplan", "pro Tag" ],
+          "use" : "Zur Repräsentation strukturierter Informationen über über den geplanten Zeitablauf einer therapeutischen oder diagnostischen Aktivität innerhalb eines Zeitraums von 24 Stunden.\r\n\r\nDieser Archetyp ist so konzipiert, dass er innerhalb des SLOTs \"Tägliche Verabreichungszeiten\" des Archetyps CLUSTER.dosage verwendet werden kann. Er kann aber auch in anderen CLUSTER- und ENTRY-Klassen-Archetypen verwendet werden, wenn dies klinisch sinnvoll ist.",
+          "misuse" : "Nicht zur Repräsentation von Informationen zum Zeitablauf, der innerhalb längeren Zeitraums als 24-Stunden liegt, verwenden. Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.timing_nondaily.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet innenfor ett døgn.",
+          "keywords" : [ "timing", "administrering", "dosering", "frekvens", "intervall", "ordinering", "anbefaling", "plan", "per dag", "dssn", "tidspunkt", "tidsskjema", "tidsplan", "tidfesting", "tidsberegning", "tidsplanlegging", "planlegging" ],
+          "use" : "Strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet innenfor ett døgn.\r\n\r\nArketypen er laget for å brukes i SLOTet \"Administreringstidspunkt\" i arketypen CLUSTER.dosage (Dosering), men kan også brukes i andre CLUSTER- og ENTRY-arketyper der det er klinisk passende.",
+          "misuse" : "Skal ikke brukes til å registrere detaljer om timing over lengre tidsperioder enn et døgn. Bruk arketypen CLUSTER.timing_repetition for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sk" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sk"
+          },
+          "purpose" : "Pre záznam štruktúrovaných informácií o požadovanom časovom rozpise terapeutickej alebo diagnostickej aktivity v rámci 24h intervalu",
+          "keywords" : [ "čas", "časový rozpis", "podanie", "dávkovanie", "frekvencia", "interval", "objednávka", "odporúčanie", "rozpis", "za deň", "denne", "denný" ],
+          "use" : "Použite pre záznam štruktúrovaných informácií o požadovanom časovom rozpise terapeutickej alebo diagnostickej aktivity v rámci 24h intervalu",
+          "misuse" : "Nepoužívajte pre záznam časového rozpisu pre periódy dlhšie ako 24h. V takom prípade použite CLUSTER.timing_repetition archetyp",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period.",
+          "keywords" : [ "timing", "administration", "dosing", "frequency", "interval", "order", "recommendation", "schedule", "per day" ],
+          "use" : "Use to record structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period.\r\n\r\nThis archetype is designed to be used within the 'Timing' SLOT within the CLUSTER.dosage archetype, but can also be used in other CLUSTER and ENTRY class archetypes where clinically appropriate.",
+          "misuse" : "Not to be used for recording timing details over periods longer than a single 24 hour period. Use the CLUSTER.timing_repetition archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide structured information on time schedules within a single day that is suitable for computation and display for human interpretation.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Enregistrer des informations structurées sur le moment prévu pour une activité thérapeutique ou diagnostique au cours d'une période de 24 heures.",
+          "keywords" : [ "timming", "l'administration", "dosage", "fréquence", "intervalle", "ordre", "recommandation", "horaire", "par jour" ],
+          "use" : "A utiliser pour enregistrer des informations structurées sur le moment prévu pour une activité thérapeutique ou diagnostique au cours d'une période de 24 heures.\r\n\r\nCet archétype est conçu pour être utilisé dans le SLOT 'Timing' de l'archétype CLUSTER.dosage, mais peut également être utilisé dans d'autres archétypes de classe CLUSTER et ENTRY lorsque cela est cliniquement approprié.",
+          "misuse" : "Ne doit pas être utilisé pour enregistrer les détails du chronométrage sur des périodes plus longues qu'une seule période de 24 heures. Utilisez l'archétype CLUSTER.timing_repetition à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_daily.v1",
     "differential" : true,
@@ -2877,8 +3126,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2890,8 +3139,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -2902,8 +3151,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2915,8 +3164,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -2927,8 +3176,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2940,8 +3189,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -2952,8 +3201,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2965,8 +3214,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -3014,8 +3263,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3027,8 +3276,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -3039,8 +3288,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3052,8 +3301,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -3064,8 +3313,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3077,8 +3326,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -3089,8 +3338,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3102,8 +3351,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -3149,8 +3398,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3162,8 +3411,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -3174,8 +3423,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3187,8 +3436,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -3199,8 +3448,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3212,8 +3461,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -3224,8 +3473,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -3237,8 +3486,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -3273,8 +3522,8 @@
                     "upper" : "PT24H",
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "upperUnbounded" : false,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -3397,8 +3646,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -3441,8 +3690,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -3474,8 +3723,8 @@
                         "upper" : "PT24H",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -3505,8 +3754,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3629,7 +3878,65 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8E48FD73FBF88E927DD20879DB2D9775"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur strukturierten Darstellung einer therapeutischen Anweisung für ein angefordertes therapeutisches / verordnungsfähiges Präparat.\r\n\r\nJede Anweisung gilt in der Regel für eine bestimmte Dauer oder eine bestimmte Anzahl von Verabreichungen.",
+          "keywords" : [ "Medikation", "Verordnung", "verschreiben", "verordnen", "Therapie", "Substanz", "Wirkstoff", "Arzneimittel", "Medikament", "therapeutisch", "therapeutisches Erzeugnis", "Therapeutisches Produkt", "Pharmazeutikum", "Produkt", "Posologie", "Dosierung", "Behandlung", "Transfusion" ],
+          "use" : "Eine Anweisung beschreibt ein oder mehrere aufeinanderfolgende therapeutische Verabreichungsmuster. Sie fasst eine Gesamtdauer der Anweisung und Details eines sich wiederholenden Musters einer beabsichtigten Verabreichung außerhalb eines einzelnen Tages zusammen.\r\n\r\nZum Beispiel: „1 Tablette morgens, 1 Tablette abends, für 3 Wochen, montags, mittwochs und freitags“. Dieser Cluster kann wiederholt werden, um einen vollständigen Satz von Anweisungen zur Dosierung für eine einzelne Medikamentenverordnung darzustellen. Der Cluster kann im Template oder zur Laufzeit der Anwendung umbenannt werden, um eine bestimmte Dosisgabe darzustellen, z. B. \"Anfangsdosis\", \"Bolus\".\r\n\r\nIm Allgemeinen wird dieser Archetyp im Kontext eines übergeordneten INSTRUCTION-Archetyps verwendet. Er wurde speziell für die Verwendung im Rahmen einer komplexen Verordnung von Medikamenten, einschließlich intravenöser Medikation, aber auch für die Verordnung von Flüssigkeiten im Zusammenhang mit Transfusionen oder Dialyse entwickelt.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere strukturerte detaljer om en enkelt anvisning for en ordinert terapeutisk vare.\r\n\r\nHver anvisning er generelt gyldig i et gitt tidsintervall eller antall administreringer.",
+          "keywords" : [ "legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "medikament", "terapeutisk", "farmasøytisk", "produkt", "posologi", "behandling", "transfusjon" ],
+          "use" : "En anvisning beskriver en eller flere sekvensielle terapeutiske administreringsmønstre, sammen med en overordnet anvisningsvarighet og detaljer om repetisjonsmønstre for administrering utover en gitt dag.\r\n\r\nFor eksempel \"1 tablett om morgenen og en tablett om kvelden i tre uker, på mandager, onsdager og fredager\". Clusteret kan repeteres for å kunne representere et fullstendig sett av anvisninger for en enkelt legemiddelordinering. Clusteret kan gis nytt navn i et templat eller i applikasjonen for å representere en spesifikk dosering som for eksempel: \"Bolus\" eller \"Startdose\".\r\n\r\nArketypen vil generelt bli brukt innenfor en overordnet INSTRUCTION-arketype. Den er spesielt designer for bruk innenfor en kompleks legemiddelordinering inkludert intravenøse legemidler, eller for ordinert væske i sammenheng med transfusjon eller dialyse.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar detalhes estruturados de uma única instrução terapêutica para um item terapêutico prescrito.\r\n\r\nCada instrução geralmente se aplica por uma determinado período de tempo, ou por um número fixo de administrações.",
+          "keywords" : [ "medicamento", "prescrição", "prescrever", "terapia", "substância", "droga", "terapêutico", "etc", "produto terapêutico", "farmacêutico", "produtos", "posologia", "tratamento", "transfusão" ],
+          "use" : "*A direction describes one or more sequential therapeutic administration patterns, coupled with an overall direction duration and details of any repetitive pattern of intended administration outside a single day.\r\n\r\nFor example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.\r\n\r\nThis archetype will generally be used in the context of a parent INSTRUCTION archetype. It has been specifically designed for use within a complex Medication order including IV medication, or for fluid orders in the context of transfusion or dialysis. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured details of a single therapeutic direction for an ordered therapeutic/prescribable item.\r\n\r\nEach direction generally applies for a given duration, or fixed number of administrations.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "transfusion" ],
+          "use" : "A direction describes one or more sequential therapeutic administration patterns, coupled with an overall direction duration and details of any repetitive pattern of intended administration outside a single day.\r\n\r\nFor example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.\r\n\r\nThis archetype will generally be used in the context of a parent INSTRUCTION archetype. It has been specifically designed for use within a complex Medication order including IV medication, or for fluid orders in the context of transfusion or dialysis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.therapeutic_direction.v1",
     "differential" : true,
@@ -3666,8 +3973,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -3715,8 +4022,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -3746,8 +4053,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3770,8 +4077,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3804,8 +4111,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -3830,8 +4137,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3854,8 +4161,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3897,32 +4204,14 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0178.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0179.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -4062,7 +4351,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "95309E1587F2F9A3D1845B07B1011799"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation strukturierter Informationen über das geplante Zeitablaufmuster einer therapeutischen oder diagnostischen Aktivität, die über Tage, Wochen, Monate oder Jahre erfolgt.",
+          "keywords" : [ "Zeitablauf,", "Zeitpunkt,", "Verabreichung,", "Applikation,", "Dosierung,", "Häufigkeit,", "Frequenz,", "Intervall,", "Verordnung,", "Rezept,", "Empfehlung,", "Zeitplan,", "Plan,", "Wiederholung" ],
+          "use" : "Zur Repräsentation strukturierter Informationen über das geplante Zeitablaufmuster einer therapeutischen oder diagnostischen Aktivität, die sich über Tage, Wochen, Monate oder Jahre erstreckt. \r\n\r\nDieser Archetyp ist für die Verwendung innerhalb des SLOTs \"Wiederholungszeitpunkte\" innerhalb des Archetyps CLUSTER.therapeutic_direction vorgesehen, kann aber auch in anderen CLUSTER- und ENTRY-Archetypen verwendet werden, wenn dies klinisch sinnvoll ist.\r\n\r\nIn Anwendungsfällen, in denen es sinnvoll ist, ausdrücklich festzulegen, dass eine Aktivität jeden Tag stattfinden soll, kann das Element \"Wiederholungsintervall\" auf \"1 Tag\" gesetzt werden.\r\n",
+          "misuse" : "Nicht zur Darstellung von Angaben zum Zeitablauf innerhalb eines Zeitraums von 24 Stunden verwenden. Verwenden Sie dazu den Archetyp CLUSTER.timing_daily. \r\n\r\nIn Anwendungsfällen, in denen davon ausgegangen werden kann, dass eine Aktivität jeden Tag ausgeführt werden sollte, ist dieser Archetyp überflüssig.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet som forekommer over dager, uker, måneder eller år.",
+          "keywords" : [ "timing, administrering, administrasjon, dosering, frekvens, intervall, ordinering, forskriving, foreskriving, anbefaling, plan, behandlingsintervall" ],
+          "use" : "Brukes for å registrere strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet som forekommer over dager, uker, måneder eller år.\r\n\r\nArketypen er laget for å brukes i SLOTet \"Anvisningsrepetisjon\" i arketypen CLUSTER.therapeutic_direction (Terapeutisk anvisning), men kan også brukes i andre CLUSTER- og ENTRY-arketyper der det er klinisk passende.\r\n\r\nI brukstilfeller der det er nødvendig å eksplisitt spesifisere at en aktivitet skal forekomme hver dag, kan elementet \"Repetisjonsintervall\" settes til \"1 dag\".",
+          "misuse" : "Skal ikke brukes til å registrere detaljer om timing innenfor et døgn. Bruk arketypen CLUSTER.timing_daily for dette formålet.\r\n\r\nI tilfeller der det trygt kan antas at en aktivitet skal utføres hver eneste dag, er denne arketypen overflødig.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "*To record structured information about the intended timing of a therapeutic activity over a time period longer than 24 hours.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record structured information about the intended timing of a therapeutic activity over a time period longer than 24 hours.\r\n\r\nThis archetype is designed to be used within the 'Direction repetition' SLOT within the CLUSTER.therapeutic_direction archetype, but can also be used in other CLUSTER and ENTRY class archetypes where clinically appropriate.(en)",
+          "misuse" : "*Not to be used for recording timing details within a single 24 hour time period. Use the CLUSTER.timing_daily archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years.",
+          "keywords" : [ "timing, administration, dosing, frequency, interval, order, recommendation, schedule, plan, repetition" ],
+          "use" : "Use to record structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years.\r\n\r\nThis archetype is designed to be used within the 'Direction repetition' SLOT within the CLUSTER.therapeutic_direction archetype, but can also be used in other CLUSTER and ENTRY class archetypes where clinically appropriate.\r\n\r\nIn use cases where it's necessary to specify explicitly that an activity is to take place every day, the \"Repetition interval\" element can be set to \"1 day\".",
+          "misuse" : "Not to be used to record timing details within a single 24 hour time period. Use the CLUSTER.timing_daily archetype for this purpose.\r\n\r\nIn use cases where it can be safely assumed that an activity should be carried out every single day, this archetype is redundant.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_nondaily.v1",
     "differential" : true,
@@ -4100,8 +4451,8 @@
                     "lower" : "P0D",
                     "lowerIncluded" : false,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -4145,8 +4496,8 @@
                       "upper" : 7.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4158,8 +4509,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -4171,8 +4522,8 @@
                       "upper" : 31.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4184,8 +4535,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -4197,8 +4548,8 @@
                       "upper" : 366.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4210,8 +4561,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -4250,8 +4601,8 @@
                           "upper" : 7.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4263,8 +4614,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4276,8 +4627,8 @@
                           "upper" : 31.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4289,8 +4640,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4302,8 +4653,8 @@
                           "upper" : 366.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4315,8 +4666,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -4353,8 +4704,8 @@
                           "upper" : 7.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4366,8 +4717,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4379,8 +4730,8 @@
                           "upper" : 31.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4392,8 +4743,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4405,8 +4756,8 @@
                           "upper" : 366.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4418,8 +4769,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -4465,8 +4816,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4478,8 +4829,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -4490,8 +4841,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4503,8 +4854,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 }, {
@@ -4515,8 +4866,8 @@
                       "lower" : 1.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -4528,8 +4879,8 @@
                       "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
-                      "upperUnbounded" : false,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
@@ -4567,8 +4918,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4580,8 +4931,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4592,8 +4943,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4605,8 +4956,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4617,8 +4968,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4630,8 +4981,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -4667,8 +5018,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4680,8 +5031,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4692,8 +5043,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4705,8 +5056,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -4717,8 +5068,8 @@
                           "lower" : 1.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "upperUnbounded" : true,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -4730,8 +5081,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "upperUnbounded" : false,
-                          "lowerUnbounded" : false
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -4814,8 +5165,8 @@
                     "upper" : 31,
                     "lowerIncluded" : true,
                     "upperIncluded" : true,
-                    "upperUnbounded" : false,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -4841,8 +5192,8 @@
                         "upper" : 31,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -4866,8 +5217,8 @@
                         "upper" : 31,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -4960,8 +5311,8 @@
                         "lower" : "P0D",
                         "lowerIncluded" : false,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -4992,8 +5343,8 @@
                         "lower" : "P0D",
                         "lowerIncluded" : false,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -5023,8 +5374,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
