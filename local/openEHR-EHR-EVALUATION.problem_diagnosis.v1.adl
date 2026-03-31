@@ -9,17 +9,17 @@ language
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
-				["name"] = <"Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch, Alina Rehberg">
-				["organisation"] = <"Universityhospital of Heidelberg, University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover">
+				["name"] = <"Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch, Alina Rehberg, Katharina Ginter, Annika Merkt">
+				["organisation"] = <"Universityhospital of Heidelberg, University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover, vitagroup AG">
 				["email"] = <"Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de">
 			>
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
-				["name"] = <"Kirsi Poikela, Jörgen Kuylenstierna, Anette Larsson, Åsa Skagerhult, Per Nemirovski">
-				["organisation"] = <"Tietoevry Sweden AB, eWeave AB, Region Östergötland, Region Uppsala">
-				["email"] = <"ext.kirsi.poikela@tieto.com, jorgen.kuylenstierna@solvikshalsan.se, anette.a.larsson@tietoevry.com, asa.skagerhult@regionostergotland.se, per.pertoft.nemirovski@regionuppsala.se">
+				["name"] = <"Kirsi Poikela, Jörgen Kuylenstierna, Anette Larsson, Åsa Skagerhult, Per Nemirovski, Manna Vosta">
+				["organisation"] = <"Tietoevry Sweden AB, eWeave AB, Region Östergötland, Region Uppsala, Karolinska University Hospital">
+				["email"] = <"ext.kirsi.poikela@tieto.com, jorgen.kuylenstierna@solvikshalsan.se, anette.a.larsson@tietoevry.com, asa.skagerhult@regionostergotland.se, per.pertoft.nemirovski@regionuppsala.se, manna.vosta@regionstockholm.se">
 			>
 		>
 		["fi"] = <
@@ -217,13 +217,13 @@ Not to be used for the explicit recording of an absence (or negative presence) o
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att dokumentera detaljer om hälsoproblem eller diagnoser.
 
-Hälsoproblem har en bred betydelse för att fånga alla objektiva eller upplevda hälsobesvär som i någon omfattning kan påverka en individs välbefinnande negativt. Ett hälsoproblem kan identifieras av individen, en anhörig vårdare eller hälso- och sjukvårdspersonal. En diagnos definieras däremot endast baserat på objektiva kliniska kriterier, och kan vanligen endast fastställas av hälso- och sjukvårdspersonal.
+Hälsoproblem har en bred betydelse för att fånga alla objektiva eller upplevda hälsobesvär som i någon omfattning kan påverka en individs välbefinnande negativt. Ett hälsoproblem kan identifieras av individen, en anhörigvårdare eller hälso- och sjukvårdspersonal. En diagnos definieras däremot endast baserat på objektiva kliniska kriterier, och kan vanligen endast fastställas av hälso- och sjukvårdspersonal.
 ">
 			use = <"Används för att dokumentera detaljer om ett identifierat hälsoproblem eller en diagnos. 
 
-I praktiken ligger ”problem” och ”diagnos” på ett spektrum – tydliga gränser är sällan möjliga, och samma dataelement i arketypen stöder båda. Med hjälp av klusterarketyper kan ytterligare information om hälsoproblemet eller diagnosen lagras allteftersom den blir tillgänglig. Typiska användningsområden är att dokumentera problem under ett vårdbesök, upprätthålla en problemlista eller sammanfatta tillstånd vid utskrivning.
+I praktiken ligger ”problem” och ”diagnos” på ett spektrum – tydliga gränser är sällan möjliga, och samma datafält i arketypen stöder båda. Med hjälp av CLUSTER-arketyper kan ytterligare information om hälsoproblemet eller diagnosen lagras allteftersom den blir tillgänglig. Typiska användningsområden är att dokumentera problem under ett vårdbesök, upprätthålla en problemlista eller sammanfatta tillstånd vid utskrivning.
 
-Statusmarkörer (exempelvis tidigare eller nuvarande, primär eller sekundär, aktiv eller inaktiv, inläggning eller utskrivning) ska modelleras separat i fältet Status. Deras innebörd är kontextberoende och kan variera mellan sammanhang och vårdspecialitet så de måste konfigureras manuellt för att förbli kliniskt korrekta, dvs tillämpas lokalt.
+Statusmarkörer (exempelvis tidigare eller nuvarande, primär eller sekundär, aktiv eller inaktiv, inläggning eller utskrivning) ska modelleras separat i SLOT för Status. Deras innebörd är kontextberoende och kan variera mellan sammanhang och vårdspecialitet så de måste konfigureras manuellt för att förbli kliniskt korrekta, dvs tillämpas lokalt.
 
 Registreringen är inte begränsad till läkare – all hälso- och sjukvårdspersonal kan registrera diagnos eller hälsoproblem.
 
@@ -233,7 +233,7 @@ Arketypen passar in i Larry Weeds problemorienterade journal (POMR); ytterligare
 
 Ska inte användas för att dokumentera undersökningsfynd. Använd istället någon OBSERVATION-arketyp med en undersökningsrelaterad CLUSTER-arketyp som extension.
 
-Ska inte användas för att dokumentera testresultat från laboratoriet eller för relaterade diagnoser, exempelvis patologiska diagnoser. Använd istället en laboratorierelaterad OBSERVATION-arketyp.
+Ska inte användas för att dokumentera laboratorieresultat eller för relaterade diagnoser, exempelvis patologiska diagnoser. Använd istället en laboratorierelaterad OBSERVATION-arketyp.
 
 Ska inte användas för att dokumentera undersökningsfynd från bildmedia eller genom bilddiagnostik. Använd istället en bildmediarelaterad OBSERVATION-arketyp.
 
@@ -701,7 +701,7 @@ EVALUATION.adverse_reaction.
 No utilitzar per registrar explícitament l’absència o (presència negativa) d’un problema o diagnòstic, per exemple, «Cap diabetis coneguda». Utilitzar l’arquetip EVALUATION.exclusion-problem_diagnosis per expressar una declaració positiva sobre l'exclusió d’un problema o diagnòstic.">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"published">
 	other_contributors = <"Grethe Almenning, Bergen kommune, Norway", "Tomas Alme, DIPS, Norway", "Nadim Anani, Karolinska Institutet, Sweden", "Erling Are Hole, Helse Bergen, Norway", "Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)", "Koray Atalag, GALATA-Digital, New Zealand", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "John Bennett, NEHTA, Australia", "Steve Bentley, Allscripts, United Kingdom", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Terje Bless, Helse Nord FIKS, Norway", "Fredrik Borchsenius, Oslo universitetssykehus, Norway", "Ian Bull, ACT Health, Australia", "Sergio Carmona, Chile", "Rong Chen, Cambio Healthcare Systems, Sweden", "Stephen Chu, Queensland Health, Australia", "Ed Conley, Cardiff University, United Kingdom", "Matthew Cordell, NEHTA, Australia", "Inderjit Daphu, Helse Bergen, Norway", "Paul Donaldson, Nursing Informatics Australia, Australia", "Gail Easterbrook, Flinders Medical Centre, Australia", "Aitor Eguzkitza, UPNA (Public University of Navarre) - CHN (Complejo Hospitalario de Navarra), Spain", "Tone Engen, Norway", "David Evans, Queensland Health, Australia", "Arild Faxvaag, NTNU, Norway", "Shahla Foozonkhah, Iran ministry of health and education, Iran", "Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway", "Peter Garcia-Webb, Australia", "Sebastian Garde, Ocean Informatics, Germany", "Bente Gjelsvik, Helse Bergen, Norway", "Andrew Goodchild, NEHTA, Australia", "Anneke Goossen, Results 4 Care, Netherlands", "Gyri Gradek, Senter for medisinsk genetikk og molekylærmedisin, Haukeland Universitetssykehus, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Trina Gregory, cpc, Australia", "Bjørn Grøva, Diretoratet for e-helse, Norway", "Dag Hanoa, Oslo universitetssykehus, Norway", "Knut Harboe, Stavanger Universitetssjukehus, Norway", "Sam Heard, Ocean Informatics, Australia", "Ingrid Heitmann, Oslo universitetssykehus HF, Norway", "Kristian Heldal, Telemark Hospital Trust, Norway", "Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway", "Anca Heyd, DIPS ASA, Norway", "Hilde Hollås, DIPS AS, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Eugene Igras, IRIS Systems, Inc., Canada", "Lars Ivar Mehlum, Helse Bergen HF, Norway", "Tom Jarl Jakobsen, Helse Bergen, Norway", "Aud Jorunn Mjelstad, Helse Bergen, Norway", "Gunnar Jårvik, Nasjonal IKT HF, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Mary Kelaher, NEHTA, Australia", "Eizen Kimura, Ehime Univ., Japan", "Shinji Kobayashi, NPO openEHR Japan, Japan", "Robert L'egan, NEHTA, Australia", "Sabine Leh, Haukeland University Hospital, Department of Pathology, Norway", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hugh Leslie, Ocean Informatics, Australia (Editor)", "Hallvard Lærum, Norwegian Directorate of e-health, Norway", "Luis Marco Ruiz, NST, Spain", "Siv Marie Lien, DIPS ASA, Norway", "Rohan Martin, Ambulance Victoria, Australia", "David McKillop, NEHTA, Australia", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom", "Chris Mitchell, RACGP, Australia", "Stewart Morrison, NEHTA, Australia", "Jörg Niggemann, compugroup, Germany", "Bjørn Næss, DIPS AS, Norway", "Mona Oppedal, Helse Bergen, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Chris Pearce, Melbourne East GP Network, Australia", "Camilla Preeston, Royal Australian College of General Practitioners, Australia", "Margaret Prichard, NEHTA, Australia", "Jodie Pycroft, Adelaide Northern Division of General Practice Ltd, Australia", "Cathy Richardson, NEHTA, Australia", "Robyn Richards, NEHTA - Clinical Terminology, Australia", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Thomas Schopf, University Hospital of North-Norway, Norway", "Thilo Schuler, Australia", "Anoop Shah, University College London, United Kingdom", "Arild Stangeland, Helse Bergen, Norway", "Line Sæle, Nasjonal IKT HF, Norway", "Line Sørensen, Helse Bergen, Norway", "Gordon Tomes, Australian Institute of Health and Welfare, Australia", "Richard Townley-O'Neill, NEHTA, Australia", "Donna Truran, ACCTI-UoW, Australia", "Jon Tysdahl, Furst medlab AS, Norway", "John Tore Valand, Helse Vest IKT, Norway (openEHR Editor)", "Kylie Young, The Royal Australian College of General Practitioners, Australia">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -717,9 +717,9 @@ Weed LL. Medical records that guide and teach. N Engl J Med. 1968 Mar 14;278(11)
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4555C10595DEB626666B3D5494264086">
-		["build_uid"] = <"c16b321e-74e6-401d-b8ac-1fc8f5897e35">
-		["revision"] = <"1.6.1-alpha">
+		["MD5-CAM-1.0.1"] = <"23814F45898EDABAB347AF0E329C95B5">
+		["build_uid"] = <"07f9e756-0ea4-4d12-a622-0bed8a4438fe">
+		["revision"] = <"1.7.1">
 	>
 
 definition
@@ -1110,7 +1110,7 @@ Si la localización anatómica está incluida en el nombre del problema o diagn�
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"Problem/Diagnose">
+					text = <"Diagnose/Symptom">
 					description = <"Angaben über einen einzelnen identifizierten Gesundheitszustand, eine Verletzung, eine Behinderung oder ein Problem, welches das körperliche, geistige und/oder soziale Wohlergehen einer Einzelperson beeinträchtigt.">
 					comment = <"Eine klare Abgrenzung zwischen Problem und Diagnose ist in der Praxis nicht einfach zu erreichen. Für die Zwecke der klinischen Dokumentation mit diesem Archetyp werden Problem und Diagnose als ein Kontinuum betrachtet, mit zunehmendem Detaillierungsgrad und unterstützenden Beweisen, die in der Regel dem Etikett \"Diagnose\" Gewicht verleihen.">
 				>
@@ -1119,8 +1119,8 @@ Si la localización anatómica está incluida en el nombre del problema o diagn�
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Name des Problems/ der Diagnose">
-					description = <"Namentliche Identifikation des Problems oder der Diagnose.">
+					text = <"Diagnose-/Symptombezeichnung">
+					description = <"Namentliche Bezeichnung des Symptoms (\"medical Problem\") oder der Diagnose.">
 					comment = <"Wo möglich, ist die Kodierung des Problems oder der Diagnose über eine Terminologie zu bevorzugen.">
 				>
 				["at0003"] = <
@@ -1153,9 +1153,9 @@ Si la localización anatómica está incluida en el nombre del problema o diagn�
 					description = <"@ internal @">
 				>
 				["at0039"] = <
-					text = <"Anatomische Stelle (strukturiert)">
-					description = <"Eine strukturierte anatomische Lokalisation des Problems oder der Diagnose.">
-					comment = <"Verwenden Sie diesen SLOT, um die Archetypen CLUSTER.anatomical_location oder CLUSTER.relative_location einzufügen, wenn die Anforderungen für die Aufnahme der anatomischen Position zur Laufzeit der Anwendung bestimmt werden oder komplexere Modellierungen wie z.B. relative Positionen erforderlich sind. Ist die anatomische Lokalisation über präkoordinierte Codes im Namen des Problems/Diagnose enthalten, wird die Verwendung dieses SLOT überflüssig.">
+					text = <"Strukturierte Körperstelle">
+					description = <"Eine strukturierte anatomische Beschreibung der Körperstelle, an der das Problem oder die Diagnose auftreten.">
+					comment = <"Verwenden Sie diesen SLOT, um die Archetypen CLUSTER.anatomical_location oder CLUSTER.relative_location einzufügen, wenn die Anforderungen für die Aufnahme der anatomischen Position zur Laufzeit der Anwendung bestimmt werden oder komplexere Modellierungen wie z.B. relative Positionen erforderlich sind. Ist die anatomische Körperstelle über präkoordinierte Codes im Namen des Problems/Diagnose enthalten, wird die Verwendung dieses SLOT überflüssig.">
 				>
 				["at0043"] = <
 					text = <"Spezifische Angaben">
@@ -1214,23 +1214,28 @@ Si la localización anatómica está incluida en el nombre del problema o diagn�
 					description = <"Die Diagnose wurde anhand anerkannter Kriterien bestätigt.">
 				>
 				["at0077"] = <
-					text = <"Datum/ Zeitpunkt des Auftretens/ der Erstdiagnose">
+					text = <"Datum des erstmaligen Auftretens">
 					description = <"Geschätzte oder exakte Zeit (bzw. Datum), zu der die Krankheitsanzeichen oder Symptome zum ersten mal beobachtet wurden.">
 					comment = <"Datumswerte, die als \"Alter zu Beginn\" erfasst/importiert werden, sollten anhand des Geburtsdatums der Person in ein Datum umgewandelt werden.">
 				>
 				["at0078"] = <
-					text = <"Ursache">
+					text = <"Ätiologie">
 					description = <"Die Ursache, eine Reihe von Ursachen oder eine Art und Weise der Verursachung des Problems oder der Diagnose.">
-					comment = <"Auch bekannt als „Ätiologie“. Die Codierung mit einer externen Terminologie wird nach Möglichkeit bevorzugt.">
+					comment = <"Die Codierung mit einer externen Terminologie wird nach Möglichkeit bevorzugt.">
 				>
 				["at0079"] = <
-					text = <"Variante">
+					text = <"Subtyp">
 					description = <"Spezifische Variante oder Subtyp der Diagnose, falls relevant.">
 					comment = <"Zum Beispiel: „Akute motorische axonale Neuropathie“ als Variante des Guillain-Barre-Syndroms. Wo möglich, ist die Kodierung des Namens der Variante über eine Terminologie zu bevorzugen.">
 				>
 				["at0080"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"">
+					text = <"Auswirkungen">
+					description = <"Gesamtbeurteilung der Auswirkungen der Diagnose/des Symptoms auf den Patienten.">
+					comment = <"Dieselbe Diagnose mit demselben Schweregrad kann sich bei jedem Patienten unterschiedlich auswirken. Dieser Relevanzfaktor bedeutet, dass die Gesamtbelastung durch dieses Gesundheitsproblem entsprechend den Merkmalen des Patienten angepasst werden muss.
+Beispiel: Zwei Patienten haben dieselbe Diagnose: Verbrennungen ersten Grades.
+Der eine ist gesund, der andere leidet an Diabetes.
+Die Belastung durch dieses Problem ist bei einem Diabetiker GRÖSSER (höheres Infektionsrisiko …, längere Heilungsdauer).
+Dieses Element soll verschiedene Arten von Auswirkungen berücksichtigen, darunter unter anderem: klinische Behandlung, Alltag zu Hause, Berufsleben.">
 				>
 			>
 		>
@@ -1357,11 +1362,11 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 				["at0079"] = <
 					text = <"Variant">
 					description = <"Specific variant or subtype of the Diagnosis, if relevant.">
-					comment = <"For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. ">
+					comment = <"For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.">
 				>
 				["at0080"] = <
 					text = <"Impact">
-					description = <"Overall assessment of the impact of a health problem for the specific patient. ">
+					description = <"Overall assessment of the impact of a health problem for the specific patient.">
 					comment = <"The same diagnosis, with the same severity, has a different impact on each patient. This relevance qualifier implies adjusting the overall impact of that health problem according to the patient's characteristics.
 For example: Two patients have the same diagnosis. First-degree burn.
 One is a healthy person, the other is a diabetic patient.
@@ -1759,8 +1764,9 @@ Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\
 					comment = <"For eksempel \"akutt motorisk aksonal nevropati\" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.">
 				>
 				["at0080"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"">
+					text = <"Innvirkning">
+					description = <"Overordnet vurdering av innvirkningen et helseproblem har for individet.">
+					comment = <"Den samme diagnosen, med samme alvorlighetsgrad, kan ha ulik innvirkning på ulike pasienter. Denne relevanskvalifikatoren innebærer å justere den totale påvirkningen av helseproblemet basert på pasientens individuelle medisinske og funksjonelle forutsetninger. For eksempel: To pasienter har samme diagnose – en førstegradsforbrenning. Den ene er frisk, den andre har diabetes. Innvirkningen for en diabetiker er høyere (større risiko for infeksjon, lengre tilhelingstid osv.). Dette elementet er ment å åpne for registrering av flere typer påvirkning, for eksempel innen klinisk behandling, funksjonsevne i hjemmet eller arbeidsliv.">
 				>
 			>
 		>
@@ -1796,11 +1802,11 @@ Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\
 					comment = <"Används för att ge en bakgrund och sammanhang, inklusive utveckling, episoder, framsteg och andra relevanta detaljer om problemet eller diagnosen.">
 				>
 				["at0012"] = <
-					text = <"Anatomisk plats">
+					text = <"Anatomisk position">
 					description = <"Identifiering av problemets eller diagnosens anatomiska plats.">
-					comment = <"Om möjligt, koda den anatomiska platsens namn med en terminologi. Använd det här fältet för att dokumentera prekoordinerade anatomiska platser. 
+					comment = <"Om möjligt, koda den anatomiska platsens namn med en terminologi. Använd det här fältet för att dokumentera prekoordinerade anatomiska positioner. 
 
-Om kraven på dokumentation av den anatomiska platsen bestäms vid körning av applikationen eller kräver mer komplex modellering, till exempel relativa platser (exempelvis 3 cm ovanför vänster knä), använd CLUSTER.anatomical_location eller CLUSTER.relative_location i SLOT \"Strukturerad anatomisk plats\" i denna arketyp. Förekomster av detta dataelement är obegränsat för att möjliggöra kliniska scenarier som att beskriva utslag på flera platser, men där alla andra egenskaper är identiska. Om den anatomiska platsen ingår i \"Benämning på problem/diagnos\" genom prekoordinerade koder blir detta fält överflödigt.">
+Om kraven på dokumentation av den anatomiska positionen bestäms automatiskt av vissa IT-system eller kräver mer komplex modellering, till exempel relativa platser (exempelvis 3 cm ovanför vänster knä), använd CLUSTER.anatomical_location eller CLUSTER.relative_location i SLOT för \"Strukturerad anatomisk plats\" i denna arketyp. Förekomster av detta datafält är obegränsat för att möjliggöra kliniska scenarier som att beskriva utslag på flera platser, men där alla andra egenskaper är identiska. Om den anatomiska platsen ingår i \"Benämning på problem/diagnos\" genom prekoordinerade koder blir detta fält överflödigt.">
 				>
 				["at0030"] = <
 					text = <"Datum och tid för tillfrisknande">
@@ -1812,9 +1818,9 @@ Om kraven på dokumentation av den anatomiska platsen bestäms vid körning av a
 					description = <"@ internal @">
 				>
 				["at0039"] = <
-					text = <"Strukturerad anatomisk plats">
+					text = <"Strukturerad anatomisk position">
 					description = <"En strukturerad anatomisk plats för problemet eller diagnosen.">
-					comment = <"Använd denna SLOT för att infoga CLUSTER.anatomical_location- eller CLUSTER.relative_location-arketyper om den anatomiska platsen bestäms automatiskt av applikationen eller kräver mer komplicerad modellering, som exempelvis relativa platser. Det här fältet är överflödigt om den anatomiska platsen är inkluderad i benämningen av problemet eller diagnosen med prekoordinerade koder.">
+					comment = <"Använd denna SLOT för att infoga CLUSTER.anatomical_location- eller CLUSTER.relative_location-arketyper om den anatomiska positionen bestäms automatiskt av vissa IT-system eller kräver mer komplicerad modellering, som exempelvis relativa platser. Det här fältet är överflödigt om den anatomiska platsen är inkluderad i benämningen av problemet eller diagnosen med prekoordinerade koder.">
 				>
 				["at0043"] = <
 					text = <"Specifika detaljer">
@@ -1824,7 +1830,8 @@ Om kraven på dokumentation av den anatomiska platsen bestäms vid körning av a
 				["at0046"] = <
 					text = <"Status">
 					description = <"Strukturerade specifika detaljer om den diagnostiska processen såsom plats, område, episod eller arbetsflöde.">
-					comment = <"Använd fältet med försiktighet eftersom användningen varierar i praktiken och kan inte garanteras om inte användningen är tydligt definierad. Exempelvis status på:
+					comment = <"Använd datafältet med försiktighet, eftersom användningen varierar i praktiken och interoperabilitet endast kan säkerställas om användningen är tydligt definierad. 
+Exempelvis status på:
 - Aktivitet, såsom aktiv, inaktiv, tillfrisknad, i remission
 - Förlopp, såsom initial, interimistisk, preliminär, slutlig
 - Tid, såsom nuvarande, tidigare
@@ -1896,8 +1903,13 @@ Om kraven på dokumentation av den anatomiska platsen bestäms vid körning av a
 					comment = <"Exempelvis \"akut motorisk axonal neuropati\" som en specificering av Guillain-Barre-syndromet. Om möjligt, koda specificeringen med en terminologi.">
 				>
 				["at0080"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"">
+					text = <"*Impact(en)">
+					description = <"*Overall assessment of the impact of a health problem for the specific patient. (en)">
+					comment = <"*The same diagnosis, with the same severity, has a different impact on each patient. This relevance qualifier implies adjusting the overall impact of that health problem according to the patient's characteristics.
+For example: Two patients have the same diagnosis. First-degree burn.
+One is a healthy person, the other is a diabetic patient.
+The impact for that problem in a diabetic patient is HIGHER (more risk of infection..., longuer time healing).
+This element is meant to allow for multiple types of impact, including but not limited to: clinical treatment, home functioning, work life.(en)">
 				>
 			>
 		>
