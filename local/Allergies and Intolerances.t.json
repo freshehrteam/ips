@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "27e76d0406534de52c825e5b9b9b8630",
+      "MD5-CAM-1.0.1" : "5c177283011bd098a9548d7411666adb",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.1.0-alpha.20",
+      "sem_ver" : "1.0.0-alpha.21",
       "build_uid" : ""
     },
     "details" : {
@@ -275,7 +275,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Allergies and Intolerances",
+          "text" : "IPS Allergies and Intolerances",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
@@ -838,6 +838,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0005.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
