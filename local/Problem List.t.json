@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ac8c2aeef0ca17197ac366b43e9c6f0e",
+      "MD5-CAM-1.0.1" : "45ec0de6aa34ea6831bcb2b7ea0ee9e6",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.0.0-alpha.21",
+      "sem_ver" : "1.0.0-alpha.22",
       "build_uid" : ""
     },
     "details" : {
@@ -275,7 +275,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Problem List",
+          "text" : "IPS Problem List",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
