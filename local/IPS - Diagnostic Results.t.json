@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "72c2ccbda192ef8b46e9c7fd609e0ab1",
-      "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
+      "MD5-CAM-1.0.1" : "7aec36d0c333fbbba1f9cde5ffa953c6",
+      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
       "de" : {
@@ -263,10 +263,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.0.6",
+        "nodeId" : "at0.0.8",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Diagnostic Results",
+        "archetypeRef" : "IPS Diagnostic Results",
         "referenceType" : "templateId"
       } ]
     } ],
@@ -370,6 +370,19 @@
           "code" : "at0000.1.1",
           "text" : "IPS - Diagnostic Results",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
         }
       },
       "zh" : {
