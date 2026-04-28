@@ -22,9 +22,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "sem_ver" : "1.0.0-alpha.7",
+      "sem_ver" : "1.0.0-alpha.8",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e9091d8573eb4991b75f9eb005e19684",
+      "MD5-CAM-1.0.1" : "ae51974bfebfbf76a808f5d47ceb8ca8",
       "PARENT:MD5-CAM-1.0.1" : "5CB43F1053E560A1369B271C90DFC20B"
     },
     "details" : {
@@ -111,10 +111,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.2",
+        "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Allergies and Intolerances",
+        "archetypeRef" : "IPS Allergies and Intolerances",
         "referenceType" : "templateId"
       } ]
     } ],
