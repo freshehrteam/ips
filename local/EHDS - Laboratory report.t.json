@@ -18,8 +18,8 @@
     "conversionDetails" : { },
     "otherDetails" : {
       "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6",
-      "MD5-CAM-1.0.1" : "c557b436e4f055b5ebc6735e3ac3a8d2",
-      "sem_ver" : "2.0.0-alpha.1",
+      "MD5-CAM-1.0.1" : "fd22346324867ea8709f4380c7ccc9b0",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : ""
     },
     "details" : {
@@ -2073,7 +2073,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4C91B974D7EE4B40B0579711D6B62439"
+        "PARENT:MD5-CAM-1.0.1" : "3764D273461D6A910F279DA504E33209"
       },
       "details" : {
         "de" : {
@@ -2119,6 +2119,21 @@
           "use" : "Use to record details about the structured name of an individual as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of an individual as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype.\r\n\r\nEach data element can be entered as a string of free text - for example, 'Prof Dr', 'Sonja Jane', 'Smith-Brown', 'MP'. Alternatively, as each data element is repeatable within a template:\r\n- 'Title' could be cloned to 'Title 1' for the value 'Prof' and 'Title 2' for the value 'Dr'; and\r\n-  'Given name' could be cloned and renamed to 'First name' for the value 'Sonja' and 'Middle name' for the value 'Jane'.\r\n\r\nWhile this archetype has been aligned with ISO 22220, preferred name, name usage, valid dates and the repeating Name component/Order grouping has intentionally not been replicated due to the reduced scope of this archetype.\r\n\r\nIt is anticipated that in most use cases for which this archetype has been designed, complex family names will simply be recorded as a string. However, it is possible to record them with more granularity and within this structured name pattern using guidance and examples from ISO 22220:2007 (Annex F), including:\r\n- Family name first, given name/s last;\r\n- Family names with prefixes eg El Haddad or van der Heyden; and\r\n- Names containing both father's and mother's family names.",
           "misuse" : "Not to be used if an unstructured text string representing the individual's name is adequate for the purpose. Use the 'Name' data element within the CLUSTER.person for this purpose.\r\n\r\nNot to be used for complex name representation or management, such as preferred names, name usage or valid dates of usage. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Registar os detalhes sobre o nome formal de um indivíduo tal como são conhecidos ou compreendidos no decurso da documentação clínica.",
+          "keywords" : [ "pessoa, indvíduo, nome" ],
+          "use" : "Utilize para registar detalhes sobre o nome formal de um indivíduo tal como são conhecidos ou compreendidos no decurso da documentação clínica, muitas vezes ad hoc ou quando não é apropriado ou possível utilizar um registo ou índice demográfico formal.\r\n\r\nNa maioria dos casos de utilização de registos clínicos simples, o elemento 'Nome' não formal no arquétipo CLUSTER.person será suficiente para registar o nome de um indivíduo como parte de um registo de saúde. No entanto, em circunstâncias em que um nome formal é necessário ou desejável para efeitos de registo clínico, coloque este arquétipo no SLOT 'Nome formal' no arquétipo CLUSTER.person.\r\n\r\nCada elemento de dados pode ser introduzido como uma sequência de texto livre - por exemplo, 'Prof Dr', 'Sonja Jane', 'Smith-Brown', 'MP'. Em alternativa, como cada elemento de dados pode ser repetido num modelo:\r\n- 'Título(s)' poderá ser clonado para 'Título 1' para o valor 'Prof' e 'Título 2' para o valor 'Dr'; e\r\n- 'Nome(s) próprio(s)' pode ser clonado e renomeado para 'Primeiro nome' para o valor 'Sonja' e 'Sehundo nome' para o valor 'Jane'.\r\n\r\nEmbora este arquétipo tenha sido alinhado com a ISO 22220, o nome preferencial, a utilização do nome, as datas válidas e o componente de nome repetido/agrupamento de encomendas não foram intencionalmente replicados devido ao âmbito reduzido deste arquétipo.\r\n\r\nPrevê-se que na maioria dos casos de utilização para os quais este arquétipo foi concebido, os nomes de família complexos serão simplesmente registados como uma string. No entanto, é possível registá-los com mais granularidade e dentro deste padrão de nome estruturado utilizando orientações e exemplos da ISO 22220:2007 (Anexo F), incluindo:\r\n- Primeiro o sobrenome, por último nome(s) próprio(s);\r\n- Nomes de família com prefixos, por exemplo, El Haddad ou van der Heyden; e\r\n- Nomes contendo simultaneamente apelidos do pai e da mãe.",
+          "misuse" : "Não deve ser utilizado se uma sequência de texto não estruturado que representa o nome do indivíduo for adequada para o efeito. Utilize o elemento de dados 'Nome' em CLUSTER.person para esta finalidade.\r\n\r\nNão deve ser utilizado para representação ou gestão de nomes complexos, como nomes preferenciais, utilização de nomes ou datas válidas de utilização. Utilize um Índice Mestre de Doentes ou um Índice de Prestadores de Cuidados de Saúde formal para esta finalidade, ou arquétipos baseados no Modelo de Informação Demográfica do openEHR.\r\n\r\nNão deve ser utilizado para representar ou substituir a gestão formal de identificação ou para efeitos de manutenção de um registo ou índice demográfico oficial. Utilize um Índice Mestre de Doentes ou um Índice de Prestadores de Cuidados de Saúde formal para esta finalidade, ou arquétipos baseados no Modelo de Informação Demográfica do openEHR.\r\n\r\nNão deve ser utilizado para representar o sujeito dos cuidados, participantes ou autor do registo e elementos de dados semelhantes que devem ser representados formalmente no registo de saúde utilizando os atributos do Modelo de Referência.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -2182,7 +2197,8 @@
           }
         },
         "de" : { },
-        "nb" : { }
+        "nb" : { },
+        "pt-pt" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2228,6 +2244,20 @@
         "email" : "john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no, kanika.kuwelker@helse-vest-ikt.no, marit.alice.venheim@helse-vest-ikt.no"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : {
+        "name" : "Hugo Silva",
+        "organisation" : "University of Minho",
+        "email" : "pg50416@uminho.pt"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -2240,7 +2270,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -3526,8 +3556,8 @@
                     "lower" : 0,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -5605,8 +5635,8 @@
                     "lower" : 0,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -9118,7 +9148,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -10078,7 +10108,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
