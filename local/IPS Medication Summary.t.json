@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ca30bf5215a9cb7dc84405c8764d3803",
+      "MD5-CAM-1.0.1" : "1f2bdf5585b7f8b942412030cc68c31b",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.0.0-alpha.19",
+      "sem_ver" : "1.0.0-alpha.20",
       "build_uid" : ""
     },
     "details" : {
@@ -1623,10 +1623,10 @@
                   "@type" : "C_ARCHETYPE_ROOT",
                   "rmTypeName" : "CLUSTER",
                   "occurrences" : "1..1",
-                  "nodeId" : "at0143.1",
+                  "nodeId" : "at0143.2",
                   "attributes" : [ ],
                   "attributeTuples" : [ ],
-                  "archetypeRef" : "Medication details",
+                  "archetypeRef" : "IPS Medication details",
                   "referenceType" : "templateId"
                 } ]
               } ],
@@ -2070,21 +2070,21 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
-                      "nodeId" : "at0046.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "Medication details",
-                      "referenceType" : "templateId"
-                    }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..1",
                       "nodeId" : "at0045.2",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
                       "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-therapeutic_direction-001.v1",
                       "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "1..1",
+                      "nodeId" : "at0046.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "IPS Medication details",
+                      "referenceType" : "templateId"
                     } ]
                   } ],
                   "attributeTuples" : [ ]
