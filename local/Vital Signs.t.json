@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "568a605475b02bf24991ed9e7b87ed57",
-      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
-      "sem_ver" : "1.0.0-alpha.3",
+      "MD5-CAM-1.0.1" : "6cfd8eae06c5d35fad836fff4d280c65",
+      "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : ""
     },
     "details" : {
@@ -172,6 +172,51 @@
         "keywords" : [ ],
         "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
         "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt"
+        },
+        "purpose" : "Para fornecer um cabeçalho de secção genérico que será renomeado ao nível do template para se adequar a um contexto clínico específico.",
+        "keywords" : [ ],
+        "use" : "Use para criar um título de secção ao nível do template que será renomeado para se adequar ao contexto clínico específico. Por exemplo: «Título ad hoc» renomeado para «Resultados do exame».",
+        "misuse" : "Não deve ser deixado inalterado ao nível do template.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-pt" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-pt"
+        },
+        "purpose" : "Para fornecer um cabeçalho de secção genérico que será renomeado ao nível do template para se adequar a um contexto clínico específico.",
+        "keywords" : [ ],
+        "use" : "Use para criar um título de secção ao nível do template que será renomeado para se adequar ao contexto clínico específico. Por exemplo: «Título ad hoc» renomeado para «Resultados do exame».",
+        "misuse" : "Não deve ser deixado inalterado ao nível do template.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "tr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "tr"
+        },
+        "purpose" : "Belirli bir klinik bağlama uyacak şekilde bir şablonda yeniden adlandırılacak genel bir bölüm başlığı sağlamak için.",
+        "keywords" : [ ],
+        "use" : "Bir şablonda, belirli klinik bağlama uyacak şekilde yeniden adlandırılacak bir bölüm başlığı oluşturmak için kullanılır. Örneğin: “Geçici başlık”ın “Muayene bulguları” olarak yeniden adlandırılması.",
+        "misuse" : "Bir şablonda değiştirilmeden bırakılmamalıdır.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -361,7 +406,10 @@
         }
       },
       "ca" : { },
-      "es" : { }
+      "es" : { },
+      "pt-pt" : { },
+      "pt" : { },
+      "tr" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -385,7 +433,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9BCFBC3ED25D38676D4DB71A384DBD89"
+        "PARENT:MD5-CAM-1.0.1" : "FF43C658C2F6609F551AFBB698BC238A"
       },
       "details" : {
         "de" : {
@@ -1113,7 +1161,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2E2CD19F36E1E5C145E13B29447A92DA"
+        "PARENT:MD5-CAM-1.0.1" : "33E2001AF2863B8775C887AAD1BF179B"
       },
       "details" : {
         "de" : {
@@ -1885,7 +1933,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "D30E71F22AB9B3E2CF4E3F7E095BCE24"
+        "PARENT:MD5-CAM-1.0.1" : "A1A7B5164F3CFAF0E68A2536547BD79E"
       },
       "details" : {
         "de" : {
@@ -2415,7 +2463,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "BF1B676F47835EC57EA052498DF49042"
+        "PARENT:MD5-CAM-1.0.1" : "571522540AA0D4E81150AA439158D6AF"
       },
       "details" : {
         "de" : {
@@ -3448,7 +3496,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6621F0164CE48887DE4BE1C20B1CBAF2"
+        "PARENT:MD5-CAM-1.0.1" : "411903DB5C73EC2DFE1379DAB272046E"
       },
       "details" : {
         "de" : {
@@ -4459,7 +4507,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9B34EF48D236BB3A28FB31CD3776BAA7"
+        "PARENT:MD5-CAM-1.0.1" : "FD27E48591AE14830A3D88079DF3C129"
       },
       "details" : {
         "de" : {
@@ -5688,7 +5736,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F5DB932744CD963FB5079719C817901C"
+        "PARENT:MD5-CAM-1.0.1" : "C46DF9F59D4EE35F313E629D24D18AFB"
       },
       "details" : {
         "de" : {
@@ -7275,5 +7323,49 @@
       "email" : "lmorallopez@gmail.com"
     },
     "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt"
+    },
+    "author" : {
+      "name" : "Vanessa Pereira",
+      "organisation" : "Luxembourg Institute of Health (LIH)",
+      "email" : "vanessapereira@protonmail.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-pt"
+    },
+    "author" : {
+      "name" : "Vanessa Pereira",
+      "organisation" : "Luxembourg Institute of Health (LIH)",
+      "email" : "vanessapereira@protonmail.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "tr"
+    },
+    "author" : {
+      "name" : "Olha Nikolaieva",
+      "organisation" : "University Hospital Basel",
+      "email" : "olha.nikolaieva@usb.ch"
+    },
+    "otherDetails" : {
+      "other_contributors" : "Koray Atalag, GALATA-Digital, New Zealand"
+    }
   } ]
 }
