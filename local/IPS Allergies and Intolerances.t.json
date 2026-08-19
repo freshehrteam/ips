@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5ce6fb982973de55849933153e7bc647",
+      "MD5-CAM-1.0.1" : "61f4f0b5e007b672b989155c543d3426",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.0.0-alpha.22",
+      "sem_ver" : "1.0.0-alpha.23",
       "build_uid" : ""
     },
     "details" : {
@@ -980,7 +980,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "C8015C0CAA2F425EF80DB7A794F19DB9"
+        "PARENT:MD5-CAM-1.0.1" : "9EF636F951CD7E56F009E24CD7840632"
       },
       "details" : {
         "de" : {
@@ -1101,6 +1101,21 @@
           "keywords" : [ "reacción", "alergia", "alérgico", "adverso", "evento", "efecto", "sensibilidad", "intolerancia", "hipersensibilidad", "efecto secundario", "toxicidad", "medicamento", "alimentos", "agente", "substancia", "inmune", "no inmune", "químico", "anafiláctico", "alergeno", "medicación", "suplemento", "medicina", "remedio natural", "inmunológico", "no inmunológico", "riesgo" ],
           "use" : "Usar para registrar una evaluación clínica de una propensión a una reacción adversa ante una futura exposición a una sustancia específica o a otra categoría de sustancias, incluidas, pero no limitadas a, excipientes y principios activos en los medicamentos, productos biológicos, sales metálicas y compuestos químicos orgánicos.\r\n\r\nEste arquetipo tiene como objetivo proporcionar un único lugar dentro de la historia clínica para documentar la propensión a todo tipo de reacciones, desde las triviales hasta las mortales:\r\n\r\nInmunomediadas: Tipo I-IV (incluidas reacciones alérgicas e hipersensibilidad); o\r\n\r\nNo inmunomediadas: incluidas reacciones pseudoalérgicas, efectos secundarios, intolerancias y toxicidad medicamentosa.\r\n\r\nEn la práctica clínica, puede resultar difícil distinguir entre las reacciones inmunomediadas y no inmunomediadas. Identificar el tipo de reacción no implica necesariamente una indicación de la gravedad o el riesgo de daño para el paciente.\r\n\r\nCuando se identifica una propensión, se puede registrar la información o evidencia de uno o más eventos de reacción mediante el uso del arquetipo CLUSTER.adverse_reaction_event dentro del SLOT «Resumen de eventos de reacción».\r\n\r\nIdentificar la gravedad de la manifestación de la reacción, registrada en el arquetipo CLUSTER.adverse_reaction_event, puede indicar la \"criticidad\" del riesgo de una reacción adversa. Por ejemplo, sufrir anafilaxia en la primera exposición a una sustancia justificaría clasificar la \"criticidad\" como \"Alta\", ya que existe un alto riesgo de que la anafilaxia vuelva a ocurrir en exposiciones posteriores.\r\n\r\nEste arquetipo ha sido diseñado para permitir el registro de información sobre sustancias específicas (amoxicilina, ostras, o el veneno de una picadura de abeja) o, alternativamente, sobre una categoría de sustancias (p. ej., penicilina). Si no se ha registrado una categoría de sustancias, la identificación de la sustancia exacta puede hacerse en una base por reacción, utilizando el arquetipo CLUSTER.adverse_reaction_event.\r\n\r\nUsar la información registrada sobre la existencia positiva de un riesgo de reacción adversa:\r\n\r\n- Para apoyar la atención clínica directa del paciente;\r\n- Como parte de una lista controlada de reacciones adversas o como lista de alergias/intolerancias;\r\n- Para facilitar el intercambio de información sobre la propensión y eventos relacionados con reacciones adversas;\r\n- Para la elaboración de informes de reacciones adversas, y\r\n- Para apoyar actividades informatizadas basadas en el conocimiento, como ayudas a la decisión y alertas clínicas.\r\n\r\nEl riesgo de un evento de reacción adversa o de una manifestación siempre sugiere una sustancia o categoría de sustancias causante. Si existe cierto grado de incertidumbre respecto a que una sustancia específica sea la causa, dicho nivel de incertidumbre puede registrarse utilizando los datos de \"Estado de verificación\". Si varias sustancias pudieran ser las causantes de una reacción o manifestación, cada sustancia debe registrarse utilizando una instancia separada de este arquetipo de riesgo de reacción adversa, con el campo de \"Estado de verificación\" inicialmente establecido como \"No confirmado\". De este modo, la comprobación de reacciones adversas puede activarse en los sistemas clínicos. Si posteriormente se demuestra que la sustancia no fue la causa, entonces el \"Estado de verificación\" puede modificarse a \"Refutado\", por ejemplo, tras realizar pruebas de alergia.",
           "misuse" : "No usar para registrar reacciones fisiológicas provocadas por agentes físicos, como el calor, el frío, la luz solar, la vibración, las actividades deportivas, agentes infecciosos o contaminantes alimentarios. Para este propósito, utilizar un arquetipo específico como EVALUATION.problem_diagnosis o CLUSTER.symptom_sign.\r\n\r\nNo usar para registrar eventos adversos, incluidas fallas en procesos, intervenciones o productos clínicos. Por ejemplo: uso indebido, dosificación incorrecta o mala administración de un agente o sustancia; error de etiquetado; sobredosis/envenenamiento, etc. Para ello, utilizar un arquetipo específico.\r\n\r\nNo usar para registrar reacciones adversas cuando la sustancia es desconocida. En estos casos, utilizar EVALUATION.problem_diagnosis o CLUSTER.symptom_sign como parte de la historia clínica, hasta que se identifique una posible sustancia causante.\r\n\r\nNo usar para registrar reacciones a transfusiones de productos sanguíneos. Utilizar un arquetipo específico para ese propósito.\r\n\r\nNo usar para registrar “alertas”. Para ello, utilizar EVALUATION.precaution, EVALUATION.contraindication o arquetipos relacionados con ese fin.\r\n\r\nNo usar para registrar terapias fallidas.\r\n\r\nNo usar para registrar explícitamente la ausencia (o ausencia negativa) de una reacción a “ninguna sustancia” o a sustancias específicas, por ejemplo: “Alergias o reacciones adversas desconocidas” o “Ninguna reacción alérgica conocida a la penicilina”. En estos casos, utilizar el arquetipo EVALUATION.exclusion_global o EVALUATION.exclusion_specific para expresar una declaración positiva de exclusión de una reacción adversa.\r\n\r\nNo usar para registrar explícitamente que no se pudo obtener información sobre el estado de reacciones adversas del paciente. Para ello, utilizar el arquetipo EVALUATION.absence para documentar, mediante una declaración positiva, que no se ha podido obtener información, por ejemplo, cuando un paciente no cooperativo se niega a responder preguntas.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Pour enregistrer l'évaluation clinique de la propension d'un individu à présenter un effet indésirable en cas d'exposition ou de réexposition à une substance ou à une classe de substances spécifiée.",
+          "keywords" : [ "réaction", "allergie", "allergique", "indésirable", "événement", "effet", "sensibilité", "intolérance", "hypersensibilité", "effet secondaire", "toxicité", "médicament", "alimentation", "agent", "substance", "immunitaire", "non immunitaire", "chimique", "anaphylaxie", "allergène", "médicament", "supplément", "médecine", "remèdes naturels", "immunologique", "non immunologique", "risque" ],
+          "use" : "À utiliser pour enregistrer une évaluation clinique de la propension à présenter un effet indésirable lors d’une future exposition à une substance ou à une classe de substances spécifiées, y compris, sans s’y limiter, les principes actifs et les excipients présents dans les médicament, les produits biologiques, les sels métalliques et les composés chimiques organiques. \r\n\r\nCet archétype a pour but de fournir un emplacement unique au sein du dossier médical pour documenter la propension à présenter toute la gamme des réactions, des plus bénignes à celles mettant la vie en danger :\r\n- à médiation immunitaire : types I à IV (y compris les réactions allergiques et les hypersensibilités) ; ou \r\n- à médiation non immunitaire : y compris les réactions pseudo-allergiques, les effets secondaires, les intolérances et les toxicités médicamenteuses.\r\nDans la pratique clinique, il peut être difficile de distinguer les réactions à médiation immunitaire de celles qui ne le sont pas. L’identification du type de réaction ne permet pas d’évaluer la gravité ou le risque nuire au patient.\r\n\r\nLorsqu’une propension est identifiée, les informations ou preuves relatives à un ou plusieurs événements de réaction peuvent être enregistrées à l’aide de l’archétype CLUSTER.adverse_reaction_event dans le SLOT « Résumé de l’événement de réaction ».\r\n\r\nL’identification de la gravité de la manifestation de la réaction, enregistrée dans l’archétype CLUSTER.adverse_reaction_event, peut éclairer la « criticité » du risque lié à l’effet indésirable. Par exemple, le fait de présenter une anaphylaxie lors de la première exposition à une substance justifierait de définir une « criticité » « élevée », en raison du risque élevé que l’anaphylaxie se reproduise lors de la deuxième exposition et des expositions suivantes.\r\n\r\nCet archétype a été conçu pour permettre l’enregistrement d’informations concernant une substance spécifique (amoxicilline, huîtres ou venin d’abeille) ou, à défaut, une classe de substances (par exemple, les pénicillines). Si une classe de substances est enregistrée, l’identification de la substance exacte peut être enregistrée pour chaque réaction à l’aide de l’archétype CLUSTER.adverse_reaction_event.\r\n\r\nÀ utiliser pour enregistrer des informations concernant la présence avérée d’un risque d’effet indésirable :\r\n- pour soutenir la prise en charge clinique directe d’un individu ; \r\n- dans le cadre d’une liste d’effets indésirables ou d’allergies/intolérances gérée ; \r\n- pour faciliter l’échange d’informations sur la propension et les événements liés aux effets indésirables ; \r\n- pour alimenter les déclarations d’effets indésirables ; et \r\n- pour faciliter les activités informatisées fondées sur la connaissance, telles que l’aide à la décision clinique et les alertes.\r\n\r\nLe risque d’événement ou de manifestation d’effet indésirable doit toujours proposer une substance ou une classe de substances en cause. S’il existe un degré d’incertitude quant à la responsabilité d’une substance spécifique, ce niveau d’incertitude peut être consigné à l’aide de l’élément de données « Statut de vérification ». Si plusieurs substances sont susceptibles d’avoir provoqué une réaction ou une manifestation, chacune d’entre elles doit être enregistrée à l’aide d’une instance distincte de cet archétype de risque d’effet indésirable, avec le « Statut de vérification » défini initialement sur « Non confirmé », afin que la vérification des effets indésirables puisse être activée dans les systèmes cliniques. S’il s’avère par la suite que la substance n’est pas en cause, le « Statut de vérification » peut être modifié en « Réfuté » – par exemple, après des tests d’allergie.",
+          "misuse" : "À ne pas utiliser pour enregister les réactions physiologiques à des agents physiques, tels que la chaleur, le froid, la lumière du soleil, les vibrations, l’activité physique, ni celles provoquées par des agents infectieux ou des contaminants alimentaires. Utiliser à cette fin un archétype spécifique de type EVALUATION.problem/diagnosis ou CLUSTER.symptom/sign.\r\n\r\nÀ ne pas utiliser pour enregister des événements indésirables, y compris les défaillances de processus cliniques, d’interventions ou de produits. Par exemple : utilisation anormale, posologie incorrecte ou mauvaise administration d’un agent ou d’une substance ; étiquetage erroné ; dommage ou blessure causé(e) par une intervention ou une procédure ; surdosage/empoisonnement, etc. Utilisez un archétype spécifique à cet effet. \r\n\r\nÀ ne pas utiliser pour enregistrer un effet indésirable lorsque la substance est inconnue. Utilisez EVALUATION.problem_diagnosis ou CLUSTER.symptom_sign pour enregistrer ces informations dans le dossier médical jusqu’à ce qu’une substance potentielle soit identifiée.\r\n\r\nÀ ne pas utiliser pour enregistrer les réactions à des transfusions de produits sanguins. Utilisez un archétype spécifique à cet effet. \r\n\r\nÀ ne pas utiliser pour enregistrer des « alertes ». Utilisez les archétypes EVALUATION.precaution, EVALUATION.contraindication ou des archétypes apparentés à cette fin.\r\n\r\nÀ ne pas utiliser pour enregistrer un échec thérapeutique.\r\n\r\nÀ ne pas utiliser pour enregistrer explicitement l’absence (ou la présence négative) d’une réaction à « toute substance » ou à des substances identifiées, par exemple « Aucune allergie ou effet indésirable connu » ou « Aucune allergie connue à la pénicilline ». Utilisez les archétypes EVALUATION.exclusion_global ou EVALUATION.exclusion_specific pour exprimer une affirmation positive d’exclusion d’un effet indésirable.\r\n\r\nÀ ne pas utiliser pour enregister explicitement qu’aucune information n’a pu être obtenue concernant le statut d’un patient en matière d’effets indésirables. Utilisez l’archétype EVALUATION.absence pour enregister une affirmation positive indiquant qu’aucune information n’a pu être obtenue, par exemple si un patient non coopératif refuse de répondre aux questions.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1540,6 +1555,20 @@
             "code" : "ac0.16",
             "description" : ""
           }
+        },
+        "fr" : {
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          }
         }
       },
       "termBindings" : {
@@ -1748,6 +1777,20 @@
       "otherDetails" : {
         "other_contributors" : "Tradcrea"
       }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Jonas Bucher",
+        "organisation" : "Cistec AG",
+        "email" : "jonas.bucher@cistec.com"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
