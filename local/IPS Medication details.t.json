@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "92cde1c4f86d3bf76248bfb22832374d",
-      "PARENT:MD5-CAM-1.0.1" : "301D939F428B1A2F46DDE641AAFC47E5",
-      "sem_ver" : "1.0.0-alpha.1",
+      "MD5-CAM-1.0.1" : "e631119ed46b9f22825e8bb68da00899",
+      "PARENT:MD5-CAM-1.0.1" : "2A670559F0806B97922C78743A81BC46",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : ""
     },
     "details" : {
@@ -120,6 +120,21 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "purpose" : "Pour enregistrer les informations relatives à un médicament ou à l'un de ses composants, notamment le dosage, la forme galénique et les détails concernant tout constituant spécifique.",
+        "keywords" : [ "médicament", "ordonner", "prescrire", "thérapie", "substance", "médicament", "thérapeutique", "produit thérapeutique", "ad hoc", "adhoc", "ad hoc", "préparé sur place", "formulation", "médicament" ],
+        "use" : "À utiliser pour enregistrer les détails relatifs à un médicament ou à un composant d’un médicament, notamment le dosage, la forme galénique et les détails concernant tout constituant spécifique.\r\n\r\nCet archétype est destiné à être utilisé pour enregistrer les détails d’un médicament ou d’un composant d’un médicament quand la forme galénique et la composition détaillée du médicament doivent être précisées de manière plus détaillée, par exemple dans le cas de perfusions et de préparations ad hoc, ou lorsqu’il n’existe pas de terminologie de médicaments. Dans le cadre d’une demande d’administration ou de distribution d’un médicament, imbriquez cet archétype dans le SLOT « Détails du médicament » de l’archétype INSTRUCTION.medication_order. Dans le cadre de l’enregistrement de l’administration ou de la distribution effective d’un médicament, imbriquez cet archétype dans le SLOT « Détails du médicament » de l’archétype ACTION.medication.\r\n\r\nCet archétype peut s’avérer redondant dans les situations où la prescription d’un médicament utilise une terminologie permettant d’identifier le produit. Dans ce cas, la marque ou le nom du produit peut permettre d’identifier la forme et le dosage de la substance.",
+        "misuse" : "À ne pas utiliser pour enregistrer la dose prévue ou administrée d’un médicament. Utilisez à cette fin l’archétype INSTRUCTION.medication_order ou CLUSTER.dosage.\r\n\r\nÀ ne pas utiliser pour enregister une liste de médicaments. Utilisez à cette fin un archétype ENTRY pertinent lié aux médicaments, tel que INSTRUCTION.medication_order ou ACTION.medication.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -139,7 +154,6 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
-        "occurrences" : "0..0",
         "nodeId" : "at0132.1",
         "attributes" : [ ],
         "attributeTuples" : [ ]
@@ -309,7 +323,8 @@
       "nl" : { },
       "sv" : { },
       "ca" : { },
-      "es" : { }
+      "es" : { },
+      "fr" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -333,7 +348,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "301D939F428B1A2F46DDE641AAFC47E5"
+        "PARENT:MD5-CAM-1.0.1" : "2A670559F0806B97922C78743A81BC46"
       },
       "details" : {
         "de" : {
@@ -456,6 +471,21 @@
           "misuse" : "No utilizar para el control del inventario de farmacia ni dentro de los catálogos de medicamentos.\r\n\r\nNo utilizar para registrar la dosis prevista o administrada de un medicamento. Utilizar los arquetipos INSTRUCTION.medication_order o CLUSTER.dosage para esta finalidad.\r\n\r\nNo utilizar por sí mismo para rellenar una lista de medicación. Utilizar un arquetipo relevante de tipo ENTRY relacionado con la medicación, como INSTRUCTION.medication_order o ACTION.medication para esta finalidad.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Pour enregistrer les informations relatives à un médicament ou à l'un de ses composants, notamment le dosage, la forme galénique et les détails concernant tout constituant spécifique.",
+          "keywords" : [ "médicament", "ordonner", "prescrire", "thérapie", "substance", "médicament", "thérapeutique", "produit thérapeutique", "ad hoc", "adhoc", "ad hoc", "préparé sur place", "formulation", "médicament" ],
+          "use" : "À utiliser pour enregistrer les détails relatifs à un médicament ou à un composant d’un médicament, notamment le dosage, la forme galénique et les détails concernant tout constituant spécifique.\r\n\r\nCet archétype est destiné à être utilisé pour enregistrer les détails d’un médicament ou d’un composant d’un médicament quand la forme galénique et la composition détaillée du médicament doivent être précisées de manière plus détaillée, par exemple dans le cas de perfusions et de préparations ad hoc, ou lorsqu’il n’existe pas de terminologie de médicaments. Dans le cadre d’une demande d’administration ou de distribution d’un médicament, imbriquez cet archétype dans le SLOT « Détails du médicament » de l’archétype INSTRUCTION.medication_order. Dans le cadre de l’enregistrement de l’administration ou de la distribution effective d’un médicament, imbriquez cet archétype dans le SLOT « Détails du médicament » de l’archétype ACTION.medication.\r\n\r\nCet archétype peut s’avérer redondant dans les situations où la prescription d’un médicament utilise une terminologie permettant d’identifier le produit. Dans ce cas, la marque ou le nom du produit peut permettre d’identifier la forme et le dosage de la substance.",
+          "misuse" : "À ne pas utiliser pour enregistrer la dose prévue ou administrée d’un médicament. Utilisez à cette fin l’archétype INSTRUCTION.medication_order ou CLUSTER.dosage.\r\n\r\nÀ ne pas utiliser pour enregister une liste de médicaments. Utilisez à cette fin un archétype ENTRY pertinent lié aux médicaments, tel que INSTRUCTION.medication_order ou ACTION.medication.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -476,7 +506,17 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0132.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -632,7 +672,8 @@
         "nl" : { },
         "sv" : { },
         "ca" : { },
-        "es" : { }
+        "es" : { },
+        "fr" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -750,6 +791,20 @@
         "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Jonas Bucher",
+        "organisation" : "Cistec AG",
+        "email" : "jonas.bucher@cistec.com"
+      },
+      "otherDetails" : { }
     } ]
   } ],
   "originalLanguage" : {
@@ -827,6 +882,20 @@
       "codeString" : "es"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : {
+      "name" : "Jonas Bucher",
+      "organisation" : "Cistec AG",
+      "email" : "jonas.bucher@cistec.com"
+    },
     "otherDetails" : { }
   } ]
 }
