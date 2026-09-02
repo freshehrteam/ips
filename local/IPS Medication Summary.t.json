@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "629bbc8f520fe980690300653bc58ddb",
+      "MD5-CAM-1.0.1" : "6c7dbf23fb90a767bda43ac990561359",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.0.0-alpha.34",
+      "sem_ver" : "1.0.0-alpha.35",
       "build_uid" : ""
     },
     "details" : {
@@ -1715,15 +1715,6 @@
                   "nodeId" : "at0167.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_ARCHETYPE_ROOT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "1..1",
-                  "nodeId" : "at0143.2",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ],
-                  "archetypeRef" : "IPS Medication details",
-                  "referenceType" : "templateId"
                 }, {
                   "@type" : "C_ARCHETYPE_ROOT",
                   "rmTypeName" : "CLUSTER",
