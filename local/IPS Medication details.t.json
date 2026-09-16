@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "df957c76463911149888e0a5a05827d2",
+      "MD5-CAM-1.0.1" : "eca995bfa79625e99a7aa9dec2b3a071",
       "PARENT:MD5-CAM-1.0.1" : "2A670559F0806B97922C78743A81BC46",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : ""
     },
     "details" : {
@@ -265,6 +265,7 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
         "nodeId" : "at0139.1",
         "attributes" : [ ],
         "attributeTuples" : [ ]
@@ -602,7 +603,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
+          "occurrences" : "0..1",
           "nodeId" : "at0150.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -612,23 +613,23 @@
               "rmTypeName" : "DV_TEXT",
               "attributes" : [ ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_IDENTIFIER",
-              "defaultValue" : {
-                "@type" : "DV_IDENTIFIER"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -647,7 +648,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0127.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -660,19 +660,15 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "at0080", "at0083", "at0084" ]
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -692,19 +688,103 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "nb" : { },
-        "pt" : { },
-        "de" : { },
-        "nl" : { },
-        "sv" : { },
-        "ca" : { },
-        "es" : { },
-        "fr" : { }
+        "en" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "pt" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0080", "at0083", "at0084" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0080", "at0083" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0080" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0080" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "61159117-6bd8-4837-80d9-e5dc9830aff7",
