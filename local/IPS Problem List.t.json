@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8b37ff596b5972ba8cf930c840d2b044",
+      "MD5-CAM-1.0.1" : "cd6137a78acda410e58deb854ed8201e",
       "PARENT:MD5-CAM-1.0.1" : "9FC6BA2D63BE451F034CE25153F4E298",
-      "sem_ver" : "1.0.0-alpha.25",
+      "sem_ver" : "1.0.0-alpha.26",
       "build_uid" : ""
     },
     "details" : {
@@ -980,7 +980,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "292840701D3FA6B7194CE29922FF897D",
+        "PARENT:MD5-CAM-1.0.1" : "44B35DE9CCD227A28F34FED2D010BFF0",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -1163,6 +1163,21 @@
           "keywords" : [ "problema", "activo", "inactivo", "estado", "episodio", "diagnóstico" ],
           "use" : "Utilícese para registrar un calificador pertinente específico del contexto o del momento que proporcione detalles adicionales que sean pertinentes en el momento del registro o dentro del contexto clínico en el que se registra un problema o diagnóstico. El calificador puede no ser apropiado en otro momento o en otro contexto clínico.\r\n\r\nEste arquetipo está diseñado para incluirse en Status SLOT en el arquetipo EVALUATION.problem_diagnosis. La intención es que el arquetipo EVALUATION.problem_diagnosis contenga toda la información que se aplica en todos los contextos, a diferencia de este arquetipo, que sólo describe la información que depende del contexto de uso.\r\n\r\nNOTAS IMPORTANTES PARA LA APLICACIÓN:\r\n- No está previsto ni implícito que alguno o todos estos calificadores deban utilizarse dentro del mismo contexto o periodo de tiempo. En contraste con el diseño habitual de los arquetipos, este arquetipo se ha diseñado deliberadamente para recopilar una serie de calificadores comunes en un solo lugar, en un esfuerzo por intentar una normalización sencilla dentro de un área muy desordenada de la práctica clínica. Se reconoce que los elementos de datos contenidos en este arquetipo abarcan muchos conceptos diferentes, y a veces incluso opuestos. Esto se ha hecho principalmente para evitar la necesidad de múltiples arquetipos de calificadores, cada uno de los cuales contiene sólo uno o dos elementos de datos.\r\n- Algunos de estos elementos de datos pueden entrar en conflicto directo si se utilizan simultáneamente en el mismo contexto; por ejemplo, no tendría sentido tener un problema «inactivo» junto con un episodio «en curso». Como tales, estos calificadores de estado deben utilizarse con extremo cuidado, ya que se aplican de forma variable en la práctica y la interoperabilidad no puede garantizarse a menos que las directrices de uso estén claramente definidas dentro de la comunidad clínica en la que el par de arquetipos «Problema/Diagnóstico» y «Calificador Problema/Diagnóstico» puede ser compartido. \r\n\r\nLa codificación DRG completa requerirá los elementos de datos relacionados con DRG de este arquetipo en combinación con elementos de datos de otros arquetipos.",
           "misuse" : "No debe utilizarse para representar un diagnóstico diferencial - utilice el arquetipo EVALUATION.differential_diagnosis para este fin.\r\n\r\nNo debe utilizarse para representar la certeza diagnóstica - utilice el elemento de datos \"Certeza diagnóstica\" dentro del arquetipo EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Pour enregistrer un qualificatif propre à un contexte clinique ou à un moment donné pour un problème ou un diagnostic spécifié.",
+          "keywords" : [ "problème", "actif", "inactif", "statut", "épisode", "diagnostic" ],
+          "use" : "À utiliser pour enregistrer un qualificatif pertinent, propre à un contexte clinique ou à un moment donné, qui apporte des informations complémentaires au moment de l’enregistrement ou dans le contexte clinique dans lequel un problème ou un diagnostic est enregistré. Ce qualificatif peut ne pas être approprié à un autre moment ou dans un autre contexte clinique.\r\n\r\nCet archétype est conçu pour être inclus dans le SLOT « Status » de l’archétype EVALUATION.problem_diagnosis. L’objectif est que l’archétype EVALUATION.problem_diagnosis contienne toutes les informations applicables dans tous les contextes, tandis que le présent archétype décrit uniquement les informations qui dépendent du contexte d’utilisation.\r\n\r\nNotes importantes pour l’implémentation\r\n- Il n’est ni prévu ni sous-entendu qu’un ou plusieurs de ces qualificatifs, voire leur ensemble, soient utilisés dans un même contexte ou au cours d’une même période. Contrairement à la conception habituelle des archétypes, cet archétype a été délibérément conçu pour regrouper en un seul endroit plusieurs qualificatifs couramment utilisés, dans le but d’apporter une certaine standardisation dans un domaine particulièrement hétérogène de la pratique clinique. Il est reconnu que les éléments de données contenus dans cet archétype recouvrent de nombreux concepts différents, parfois même concurrents. Ce choix a principalement été fait afin d’éviter la nécessité de créer plusieurs archétypes de qualificatifs ne contenant chacun qu’un ou deux éléments de données.\r\n- Certains de ces éléments de données peuvent être directement contradictoires s’ils sont utilisés simultanément dans un même contexte. Par exemple, il ne serait pas cohérent qu’un problème soit qualifié d’« Inactif » alors que le « Statut de l’épisode » est « En cours ». Ces qualificatifs de statut doivent donc être utilisés avec une extrême prudence, car ils sont appliqués de manière variable dans la pratique. L’interopérabilité ne peut être garantie que si des règles d’utilisation sont clairement définies au sein de la communauté clinique dans laquelle la paire d’archétypes « Problème/Diagnostic » et « Qualificatif du problème/diagnostic » est susceptible d’être partagée.\r\n\r\nLe codage DRG complet nécessite de combiner les éléments de données relatifs aux DRG contenus dans cet archétype avec des éléments de données provenant d’autres archétypes.",
+          "misuse" : "À ne pas utiliser pour enregistrer un diagnostic différentiel  - utiliser à cette fin l’archétype EVALUATION.differential_diagnosis.\r\n\r\nÀ ne pas utiliser pour enregistrer la certitude diagnostique - utiliser l’élément de données « Certitude diagnostique » de l’archétype EVALUATION.problem_diagnosis.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -2385,6 +2400,74 @@
             "code" : "ac0.19",
             "description" : ""
           }
+        },
+        "fr" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.10",
+            "description" : ""
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.14",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
+            "description" : ""
+          },
+          "ac0.19" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.19",
+            "description" : ""
+          }
         }
       },
       "termBindings" : {
@@ -2662,6 +2745,22 @@
         "email" : "ccalleja@catsalut.cat"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Jonas Bucher",
+        "organisation" : "Cistec AG",
+        "email" : "jonas.bucher@cistec.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Jean-Pierre Messerli, jean-pierre.messerli@jpm-consulting.ch"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
