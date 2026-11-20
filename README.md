@@ -10,6 +10,6 @@ This repository contains openEHR data models that are being developed to meet th
 
 **FHIR IPS IG v2.0.0:** https://build.fhir.org/ig/HL7/fhir-ips/en/ 
 
-**New openEHR IPS templates will be shared in this CKM repository:** https://ckm.openehr.org/ckm/incubators/1013.30.135
+**New openEHR IPS templates are shared in this CKM repository:** https://ckm.openehr.org/ckm/incubators/1013.30.135
 
 **More information about the working group:** https://confluence.hl7.org/spaces/PC/pages/391645300/HL7+openEHR+Collaboration+-+International+Patient+Summary+Alignment+Workstream
